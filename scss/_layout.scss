@@ -1,0 +1,17 @@
+@import 'function';
+
+.container {
+  max-width: rem(1220);
+  margin: rem(200) auto;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: rem(10);
+  margin-bottom: rem(50);
+}
+
+.tabs {
+  margin-bottom: rem(50);
+}

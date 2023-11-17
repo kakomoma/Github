@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta name='description' content='This is my portfolio, where i show my work as a product designer'>
+  <meta name='author' content='Alejandro Moreno'>
+  <meta name='keywords' content='Portfolio, product designer, UX/UI design, web development'>
+  <title>Alejandro Moreno - Poroduct designer</title>
+  <!--Favicon-->
+  <link rel='icon' type='image/x-icon' href='/dist/assets/i/favicon.ico'>
+  <!--Icons-->
+  <script src="https://kit.fontawesome.com/35d35eeb85.js" crossorigin="anonymous"></script>
+  <!--CSS-->
+  <link rel='stylesheet' type='text/css' href='css/main.css'>
+</head>
+
+<body>
+  <header class="menu">
+    <div class="menu-bt" onclick="toggleNav()">
+      <i class="fa-solid fa-bars"></i>
+    </div>
+    <a href="#" class="logo"><img src="/dist/assets/i/logo.png" alt="Logo"></a>
+    <ul class="nav-menu">
+      <li class="nav-menu__item page-transition"><a href="index.html" class="nav-menu__link active">Home</a></li>
+      <li class="nav-menu__item page-transition"><a href="projects.html" class="nav-menu__link">Projects</a></li>
+      <li class="nav-menu__item page-transition"><a href="blog.html" class="nav-menu__link">Blog</a></li>
+    </ul>
+    <label class="toggle">
+      <input id="themeToggle" type="checkbox">
+      <i class="toggle-sun fa-solid fa-sun"></i>
+      <i class="toggle-moon fa-solid fa-moon"></i>
+    </label>
+    <nav class="sidelist">
+      <ul class="nav-menu">
+        <li class="nav-menu__item page-transition"><a href="index.html" class="nav-menu__link active">Home</a></li>
+        <li class="nav-menu__item page-transition"><a href="projects.html" class="nav-menu__link">Projects</a></li>
+        <li class="nav-menu__item page-transition"><a href="blog.html" class="nav-menu__link">Blog</a></li>
+      </ul>
+      <p>&copy; 2024 Alejandro Moreno</p>
+      <div class="social">
+        <div class="social-btn"><a href="#!"><i class="social-icon fa-brands fa-linkedin-in"></i></a></div>
+        <div class="social-btn"><a href="#!"><i class="social-icon fa-brands fa-github"></i></a></div>
+        <div class="social-btn"><a href="#!"><i class="social-icon fa-brands fa-whatsapp"></i></a></div>
+        <div class="social-btn"><a href="#!"><i class="social-icon fa-solid fa-envelope"></i></a></div>
+      </div>
+    </nav>
+  </header>
+  <main>    
+    <section class="container section-about-me">
+      <div class="hero">
+        <h1 class="hero__title">Hi, I'm Alejandro Moreno. I'm product designer, currently working on Geomites, a mobile game.</h1>
+        <div class="hero__paragraph flow">
+          <p class="--regular">I love <b>designing and creating digital experiences</b> that solve real user problems
+            and help companies achieve their goals. I consider myself a positive, proactive, methodical, self-taught
+            person,
+            and <b>I put my all</b> into every project I undertake.
+          </p>
+          <p class="--regular">When I'm not working, I enjoy exercising, reading, traveling, spending time with family
+            and friends, cooking, and learning new skills.
+          </p>
+          <hr>
+          <div class="hero__paragraph-btns">
+            <div class="social section-welcome__social">
+              <div class="social-btn"><a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/"
+                  target="_blank"><i class="social-icon fa-brands fa-linkedin-in"></i></a></div>
+              <div class="social-btn"><a href="https://github.com/kakomoma" target="_blank"><i
+                    class="social-icon fa-brands fa-github"></i></a></div>
+              <div class="social-btn"><a href="https://wa.me/+34618110583" target="_blank"><i
+                    class="social-icon fa-brands fa-whatsapp"></i></a></div>
+              <div class="social-btn"><a href="mailto:alejandromorenomartin1990@gmail.com"><i
+                    class="social-icon fa-solid fa-envelope"></i></a></div>
+            </div>
+            <a class="hero__paragraph-btns-resume" href="#!" target="_blank">Download resume</a>
+          </div>
+        </div>
+        <picture>          
+          <img src="/dist/assets/img/alejandromoreno.jpg" width="300" height="300" alt="Alejandro Moreno" loading="lazy"
+            decoding="async">
+        </picture>
+      </div>     
+      <div class="section-header">
+        <h2>About me</h2>
+        <p class="--regular">Get to know a bit about what I've done and what I do</p>
+      </div>
+      <div class="tabs">
+        <button class="tab-button__about active" onclick="changeTab('educacion')" id="educacionBtn">Educación</button>
+        <button class="tab-button__about" onclick="changeTab('experiencia')" id="experienciaBtn">Experiencia</button>
+      </div>
+      <!-- Bloque de Educación -->
+      <div id="educacion" class="tab-content active">
+        <div class="card-about">
+          <div class="card-about__header">
+            <img src="/dist/assets/i/Udemy.png" alt="Udemy">
+            <div class="card-about__header-text">
+              <h3>Advanced CSS at <a href="https://www.udemy.com/" target="_blank">Udemy</a></h3>
+              <span>2023</span>
+            </div>
+          </div>
+          <p>Flexbox & Grid layout, responsive design, animations & transitions, advanced selectors, CSS preposessors,
+            CSS custom properties, transformations & transitions, filters & shadows, CSS grid systems and perfomance
+            optimization </p>
+          <a class="card-about__btn" href="#!" target="_blank">Certificate</a>
+        </div>
+        <div class="card-about">
+          <div class="card-about__header">
+            <img src="/dist/assets/i/IDF.png" alt="Interaction design foundation">
+            <div class="card-about__header-text">
+              <h3>Design 21st century at <a href="https://www.interaction-design.org/" target="_blank">IDF</a></h3>
+              <span>2022</span>
+            </div>
+          </div>
+          <p>How to solve global problems, how can we democratize design, how can we apply human-centered design and
+            how can we move up in a company</p>
+          <a class="card-about__btn" href="/dist/assets/cert/21st.pdf" target="_blank">Certificate</a>
+        </div>
+        <div class="card-about">
+          <div class="card-about__header">
+            <img src="/dist/assets/i/IDF.png" alt="Interaction design foundation">
+            <div class="card-about__header-text">
+              <h3>Information visualization at <a href="https://www.interaction-design.org/" target="_blank">IDF</a>
+              </h3>
+              <span>2022</span>
+            </div>
+          </div>
+          <p>Mobile interfaces, mobile user experience, UI (android and IOS), how to avoid bad design and UX design
+            strategy</p>
+          <a class="card-about__btn" href="/dist/assets/cert/in.pdf" target="_blank">Certificate</a>
+        </div>
+        <div class="card-about">
+          <div class="card-about__header">
+            <img src="/dist/assets/i/IDF.png" alt="Interaction design foundation">
+            <div class="card-about__header-text">
+              <h3>Emotional design at <a href="https://www.interaction-design.org/" target="_blank">IDF</a></h3>
+              <span>2022</span>
+            </div>
+          </div>
+          <p>Emotion and design, how human factors affect, positive emotional experiences, what the “Triune brain” is
+            and visceral & reflective design</p>
+          <a class="card-about__btn" href="/dist/assets/cert/em.pdf" target="_blank">Certificate</a>
+        </div>
+        <div class="card-about">
+          <div class="card-about__header">
+            <img src="/dist/assets/i/IDF.png" alt="Interaction design foundation">
+            <div class="card-about__header-text">
+              <h3>Visual design at <a href="https://www.interaction-design.org/" target="_blank">IDF</a></h3>
+              <span>2022</span>
+            </div>
+          </div>
+          <p>Mobile interfaces, mobile user experience, UI (android and IOS), how to avoid bad design and UX design
+            strategy</p>
+          <a class="card-about__btn" href="/dist/assets/cert/vi.pdf" target="_blank">Certificate</a>
+        </div>
+        <div class="card-about">
+          <div class="card-about__header">
+            <img src="/dist/assets/i/IDF.png" alt="Interaction design foundation">
+            <div class="card-about__header-text">
+              <h3>Human computer interaction at <a href="https://www.interaction-design.org/" target="_blank">IDF</a>
+              </h3>
+              <span>2021</span>
+            </div>
+          </div>
+          <p>Intuitive user experience, loyalty & business profitability and navigation & screen design</p>
+          <a class="card-about__btn" href="/dist/assets/cert/hu.pdf" target="_blank">Certificate</a>
+        </div>
+        <div class="card-about">
+          <div class="card-about__header">
+            <img src="/dist/assets/i/IDF.png" alt="Interaction design foundation">
+            <div class="card-about__header-text">
+              <h3>User research at <a href="https://www.interaction-design.org/" target="_blank">IDF</a></h3>
+              <span>2021</span>
+            </div>
+          </div>
+          <p>Qualitative user research, design process, validation & ethical sound, usability test & observation, how
+            to deal with results and how to deal with clients, bosses & stakeholders</p>
+          <a class="card-about__btn" href="/dist/assets/cert/us.pdf" target="_blank">Certificate</a>
+        </div>
+        <div class="card-about">
+          <div class="card-about__header">
+            <img src="/dist/assets/i/IDF.png" alt="Interaction design foundation">
+            <div class="card-about__header-text">
+              <h3>Gestalt psychology at <a href="https://www.interaction-design.org/" target="_blank">IDF</a></h3>
+              <span>2021</span>
+            </div>
+          </div>
+          <p>Gestalt principles, origins of gestalt, gestalt laws, gestalt driven approach and perceptual organization
+          </p>
+          <a class="card-about__btn" href="/dist/assets/cert/ge_3.pdf" target="_blank">Certificate</a>
+        </div>
+        <div class="card-about">
+          <div class="card-about__header">
+            <img src="/dist/assets/i/Google.png" alt="Google & Coursera">
+            <div class="card-about__header-text">
+              <h3>Foundations of UX at <a href="https://www.interaction-design.org/" target="_blank">IDF</a></h3>
+              <span>2021</span>
+            </div>
+          </div>
+          <p>Consumers and business, UX design concepts, experience design, design sprints, UX research methods and
+            biases in UX design</p>
+          <a class="card-about__btn" href="/dist/assets/cert/G&C.pdf" target="_blank">Certificate</a>
+        </div>
+        <div class="card-about">
+          <div class="card-about__header">
+            <img src="/dist/assets/i/URJC.png" alt="URJC">
+            <div class="card-about__header-text">
+              <h3>Marketing degree at <a href="https://www.urjc.es/" target="_blank">URJC</a></h3>
+              <span>2016</span>
+            </div>
+          </div>
+          <p>Data analysis and synthesis, organizational skills, communication, economic and business,
+            interdisciplinary skills and critical capacity</p>
+          <a class="card-about__btn" href="/dist/assets/cert/URJC.pdf" target="_blank">Certificate</a>
+        </div>
+      </div>
+      <!-- Bloque de Experiencia -->
+      <div id="experiencia" class="tab-content">
+        <div class="card-about">
+          <div class="card-about__header">
+            <img src="/dist/assets/i/geomites.png" alt="Geomites">
+            <div class="card-about__header-text">
+              <h3>Product designer at <a href="#" target="_blank">Geomites</a></h3>
+              <span>2023 - present</span>
+            </div>
+          </div>
+          <p>As a product designer, I am responsible for conducting market research, heuristic and content
+            evaluations, information architecture, user flows, wireframes, prototypes, and working closely with
+            developers to ensure designs are implemented effectively</p>
+        </div>
+        <div class="card-about">
+          <div class="card-about__header">
+            <img src="/dist/assets/i/atipiko.png" alt="Atipiko Tours">
+            <div class="card-about__header-text">
+              <h3>Product design at <a href="https://atipikotours.com/" target="_blank">Atipiko Tours</a></h3>
+              <span>2023</span>
+            </div>
+          </div>
+          <p>Atipiko Tours is a company dedicated to organizing trips worldwide. The objective of the project was to
+            design and develop a website that would establish the company's online presence and enable users to view
+            offers and make reservations</p>
+        </div>
+        <div class="card-about">
+          <div class="card-about__header">
+            <img src="/dist/assets/i/tattoo.png" alt="Tattoo Paradise">
+            <div class="card-about__header-text">
+              <h3>Product designer at <a href="https://atipikotours.com/" target="_blank">Tattoo Paradise</a></h3>
+              <span>2022</span>
+            </div>
+          </div>
+          <p>Tattoo Paradise is a personal project that entails building a mobile application from the ground up,
+            enabling users in the realm of tattoos to browse designs and discover independent studios and artists
+            based on their preferences</p>
+        </div>
+        <div class="card-about">
+          <div class="card-about__header">
+            <img src="/dist/assets/i/senzo.png" alt="Senzo Studio">
+            <div class="card-about__header-text">
+              <h3>Product design at <a href="https://senzostudio.com/" target="_blank">Senzo Studio</a></h3>
+              <span>2022</span>
+            </div>
+          </div>
+          <p>Senzo Studio is a VFX company dedicated to the creation of visual effects for film production companies,
+            TV series, and other sectors such as video games, music, and advertising. The objective of the project is
+            the design and development of a website that positions the company online and allows users to obtain basic
+            information and view the company's showreel</p>
+        </div>
+        <div class="card-about">
+          <div class="card-about__header">
+            <img src="/dist/assets/i/dako.png" alt="Dako">
+            <div class="card-about__header-text">
+              <h3>Co-founder at <a href="#" target="_blank">Dako</a></h3>
+              <span>2021 - 2022</span>
+            </div>
+          </div>
+          <p>Dako was a personal project, through which we created a brand for food delivery in Madrid, specializing
+            in fresh pasta. The project didn't come to fruition due to funding issues</p>
+        </div>
+        <div class="card-about">
+          <div class="card-about__header">
+            <img src="/dist/assets/i/promam.png" alt="Promam">
+            <div class="card-about__header-text">
+              <h3>Purchasing manager at <a href="https://www.promam.es/en/" target="_blank">Promam</a></h3>
+              <span>2021</span>
+            </div>
+          </div>
+          <p>Promam is an industrial machinery manufacturing company, specializing in the energy sector, specifically
+            in liquefied petroleum gas. Its main activity is to supply companies in the machinery sector with the
+            necessary equipment, spare parts, and maintenance to support their operations</p>
+        </div>
+      </div>
+    </section>
+    <section class="container section-services">
+      <div class="section-header">
+        <h2>Services</h2>
+        <p class="--regular">My goal is to unite users and business objectives in my designs. To achieve this, I
+          specialize in the following activities</p>
+      </div>
+      <div class="section-services__cards">
+        <div class="section-services__card">
+          <i class="fa-solid fa-magnifying-glass"></i>
+          <h3>User research</h3>
+          <p>Understanding users' needs and preferences through the collection and analysis of data on their behavior,
+            includes conducting usability tests and experience evaluations, creating detailed user profiles and empathy
+            maps</p>
+        </div>
+        <div class="section-services__card">
+          <i class="fa-solid fa-lightbulb"></i>
+          <h3>Ideation</h3>
+          <p>Creatively generating innovative solutions to address specific design challenges. This is achieved through
+            collaborative brainstorming sessions that foster concept generation and exploration of multiple approaches
+          </p>
+        </div>
+        <div class="section-services__card">
+          <i class="fa-solid fa-handshake-simple"></i>
+          <h3>Facilitation</h3>
+          <p>Guiding effective and efficient collaboration among team members and stakeholders to achieve project goals.
+            This includes conducting workshops, meetings, and design sprints to encourage open communication, creative
+            thinking, and consensus building</p>
+        </div>
+        <div class="section-services__card">
+          <i class="fa-solid fa-mobile-screen"></i>
+          <h3>Prototyping</h3>
+          <p>Creating simplified, functional representations of a product to test and validate design concepts,
+            developing interactive models that simulate the user experience, allowing for early feedback and iteration.
+            Aiding in the refinement of the final product and ensuring its alignment with user needs and preferences</p>
+        </div>
+        <div class="section-services__card">
+          <i class="fa-solid fa-pen-nib"></i>
+          <h3>Design systems</h3>
+          <p>Creating and maintaining a comprehensive set of design standards, guidelines, and reusable components to
+            ensure consistency and cohesiveness across all digital products and platforms. This includes establishing a
+            unified visual language, typography, color schemes, and interface elements that streamline the design and
+            development process</p>
+        </div>
+        <div class="section-services__card">
+          <i class="fa-solid fa-comments"></i>
+          <h3>Communication</h3>
+          <p>Effectively conveying design concepts, ideas, and research findings to various stakeholders, including team
+            members, clients, and users. This includes presenting user research insights, design proposals, and
+            usability test results in a clear and concise manner</p>
+        </div>
+      </div>
+    </section>
+    <section class="container section-toolstack">
+      <div class="section-header">
+        <h2>Toolstack</h2>
+        <p class="--regular">As a designer, I strive to stay up-to-date on new technologies and tools. Here are some of
+          the ones I typically use</p>
+      </div>
+      <div class="scroller">
+        <ul class="toolstack__list scroller__inner">
+          <li class="--small"><img src="/dist/assets/i/figma.png" alt="Figma">Figma</li>
+          <li class="--small"><img src="/dist/assets/i/ai.png" alt="Adobe ilustrator">Adobe Il</li>
+          <li class="--small"><img src="/dist/assets/i/ae.png" alt="Adobe after effects">Adobe AE</li>
+          <li class="--small"><img src="/dist/assets/i/wordpress.png" alt="Wordpress">Wordpress</li>
+          <li class="--small"><img src="/dist/assets/i/framer.png" alt="Framer">Framer</li>
+          <li class="--small"><img src="/dist/assets/i/webflow.png" alt="Webflow">Webflow</li>
+          <li class="--small"><img src="/dist/assets/i/html.png" alt="HTML">HTML</li>
+          <li class="--small"><img src="/dist/assets/i/css.png" alt="CSS">CSS</li>
+          <li class="--small"><img src="/dist/assets/i/javascript.png" alt="Javascript">Javascript</li>
+          <li class="--small"><img src="/dist/assets/i/notion.png" alt="Notion">Notion</li>
+          <li class="--small"><img src="/dist/assets/i/slack.png" alt="Slack">Slack</li>
+          <li class="--small"><img src="/dist/assets/i/miro.png" alt="Miro">Miro</li>
+        </ul>
+      </div>
+    </section>
+    <section class="container section-testimonial">
+      <div class="section-header">
+        <h2>Testimonial</h2>
+        <p class="--regular">Some of the people I collaborate with or have worked with have offered to write their
+          testimonies about that experience</p>
+      </div>
+      <div class="section-testimonial__cards">
+        <article class="card-testimonial grid-col-span-2">
+          <div class="testimonial-header">
+            <div class="testimonial-image"><img src="/dist/assets/img/diego-min.png" alt="Diego Villaroel"></div>
+            <div>
+              <h3>Diego Villarroel</h3>
+              <p>Director of product design at<a href="https://about.rappi.com/"> Rappi</a></p>
+            </div>
+          </div>
+          <i class="quote fa-solid fa-quote-left"></i>
+          <span>
+            Alejandro is an exceptional coworker.
+          </span>
+          <p>
+            “His ability and commitment to problem-solving, combined with his passion for design, make working with him
+            a real delight. A highly valuable asset to any team.”
+          </p>
+          <div class="testimonial-btn"><a href="https://www.linkedin.com/in/diego-villarroel-zaballos/"
+              target="_blank"><i class="testimonial-icon fa-brands fa-linkedin-in"></i></a></div>
+        </article>
+        <article class="card-testimonial bg-secondary-400">
+          <div class="testimonial-header">
+            <div class="testimonial-image"><img src="/dist/assets/img/alvaro-min.png" alt="Álvaro Torrijos Herrera">
+            </div>
+            <div>
+              <h3>Álvaro Torrijos</h3>
+              <p>Product designer at<a href="https://www.sisnet360.com/"> SISnet</a></p>
+            </div>
+          </div>
+          <span>
+            Alejandro provided invaluable support and motivation throughout the project.
+          </span>
+          <p>
+            “His effort, dedication, and design skills have elevated the quality of Geomites, allowing us to tackle new
+            objectives with confidence.”
+          </p>
+          <div class="testimonial-btn"><a href="https://www.linkedin.com/in/%C3%A1lvaro-torrijos-herrera/"
+              target="_blank"><i class="testimonial-icon fa-brands fa-linkedin-in"></i></a></div>
+        </article>
+        <article class="card-testimonial bg-neutral-100">
+          <div class="testimonial-header">
+            <div class="testimonial-image"><img src="/dist/assets/img/lluis-min.png" alt="Lluis Fortuny Marin"></div>
+            <div>
+              <h3>Lluis Fortuny</h3>
+              <p>Graphic designer at<a href="https://zitrogames.com/"> Zitro</a></p>
+            </div>
+          </div>
+          <span>
+            Working with Alejandro improved the project. </span>
+          <p>
+            “He is passionate about what he does, organized, methodical, and self-taught”
+          </p>
+          <div class="testimonial-btn"><a href="https://www.linkedin.com/in/llu%C3%ADs-fortuny-marin-a76999186/"
+              target="_blank"><i class="testimonial-icon fa-brands fa-linkedin-in"></i></a></div>
+        </article>
+        <article class="card-testimonial grid-col-span-2">
+          <div class="testimonial-header">
+            <div class="testimonial-image"><img src="/dist/assets/img/ruben-min.png" alt="Rubén Hinarejos"></div>
+            <div>
+              <h3>Rubén Hinarejos</h3>
+              <p>CEO & FX artist at <a href="https://senzostudio.com/"> Senzo Studio</a></p>
+            </div>
+          </div>
+          <span>
+            We hired Alejandro to design our website.
+          </span>
+          <p>
+            "We weren't quite sure how to steer the project, and ultimately, Alejandro helped us design and build our
+            website so that users could visit and contact us."
+          </p>
+          <div class="testimonial-btn"><a href="https://www.linkedin.com/in/rub%C3%A9n-hinarejos-guerra-b2365910b/"
+              target="_blank"><i class="testimonial-icon fa-brands fa-linkedin-in"></i></a></div>
+        </article>
+        <article class="card-testimonial">
+          <div class="testimonial-header">
+            <div class="testimonial-image"><img src="/dist/assets/img/marc-min.png" alt="Marc Bernardo"></div>
+            <div>
+              <h3>Marc Bernardo</h3>
+              <p>Backend developer at <a href="https://www.bmat.com/"> BMAT</a></p>
+            </div>
+          </div>
+          <span>
+            I started working with Alejandro almost a year ago, side by side.
+          </span>
+          <p>
+            "We collaborated on the design and development of a mobile game, with him as the product designer and myself
+            as the backend developer. His use of Figma in the project has been crucial for elevating the quality of the
+            design. He's a great collaborator."
+          </p>
+          <div class="testimonial-btn"><a href="https://www.linkedin.com/in/llu%C3%ADs-fortuny-marin-a76999186/"
+              target="_blank"><i class="testimonial-icon fa-brands fa-linkedin-in"></i></a></div>
+        </article>
+      </div>
+    </section>
+    <section class="container section-recommended">
+      <div class="section-header">
+        <h2>Recommended readings</h2>
+        <p class="--regular">I love reading and learning new things. Here are some readings I can
+          recommend to you</p>
+      </div>
+      <div class="tabs">
+        <button class="tab-button__recommended active" onclick="filterCards('all')">All</button>
+        <button class="tab-button__recommended" onclick="filterCards('UX/UI design')">UX/UI design</button>
+        <button class="tab-button__recommended" onclick="filterCards('Productivity')">Productivity</button>
+        <button class="tab-button__recommended" onclick="filterCards('Psychology')">Psychology</button>
+      </div>
+      <div class="section-recommended__cards" id="cards-container">
+        <div class="card-recommended" data-category="UX/UI design">
+          <div class="card-recommended__header">
+            <img src="/dist/assets/img/about.png" alt="About face the essential of interaction design">
+            <div class="card-recommended__header-text">
+              <span>UX/UI design</span>
+              <h3>About face the essential of interaction design</h3>
+            </div>
+          </div>
+          <p>Written by industry experts, this book focuses on the essential principles of interaction design. It
+            provides a detailed guide on how to design products that are intuitive, efficient, and enjoyable for users
+          </p>
+          <a href="https://www.amazon.de/-/en/Alan-Cooper/dp/1118766571/ref=sr_1_1?crid=2JHKRL7ZUNJN3&keywords=%22About+Face%3A+The+Essentials+of+Interaction+Design&qid=1699875134&sprefix=about+face+the+essentials+of+interaction+design%2Caps%2C108&sr=8-1"
+            target="_blank">View book</a>
+        </div>
+        <div class="card-recommended" data-category="UX/UI design">
+          <div class="card-recommended__header">
+            <img src="/dist/assets/img/everyday.png" alt="The design of every day things">
+            <div class="card-recommended__header-text">
+              <span>UX/UI design</span>
+              <h3>The design of every day things</h3>
+            </div>
+          </div>
+          <p>Don Norman is a reference in design and cognitive psychology. In this book, he explores how people
+            interact with objects in their everyday lives and how these principles can be applied to the design of
+            digital products to make them more efficient and satisfying
+          </p>
+          <a href="https://www.amazon.es/Design-Everyday-Things-Revised-Expanded/dp/0465050654/ref=sr_1_1?crid=1Z99LX6QQA5WD&keywords=the+design+of+everyday+things&qid=1700058056&sprefix=The+design+of+every+day+things%2Caps%2C82&sr=8-1"
+            target="_blank">View book</a>
+        </div>
+        <div class="card-recommended" data-category="UX/UI design">
+          <div class="card-recommended__header">
+            <img src="/dist/assets/img/dont-min.png" alt="Don't make me think">
+            <div class="card-recommended__header-text">
+              <span>UX/UI design</span>
+              <h3>Don't make me think</h3>
+            </div>
+          </div>
+          <p>This book is a classic in the field of interaction design. Krug presents fundamental principles of
+            usability in an accessible and practical way, focusing on the idea that good design should be intuitive
+            and understandable without effort
+          </p>
+          <a href="https://www.amazon.es/Dont-Make-Think-Revisited-Usability/dp/0321965515/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=95EMSZDPHB4Q&keywords=Don%27t+make+me+think&qid=1700058078&sprefix=don%27t+make+me+think%2Caps%2C86&sr=8-1"
+            target="_blank">View book</a>
+        </div>
+        <div class="card-recommended" data-category="UX/UI design">
+          <div class="card-recommended__header">
+            <img src="/dist/assets/img/seductive-min.png" alt="Seductive interaction design">
+            <div class="card-recommended__header-text">
+              <span>UX/UI design</span>
+              <h3>Seductive interaction design</h3>
+            </div>
+          </div>
+          <p>Anderson addresses the emotional aspect of interaction design. He explores how designers can create
+            engaging and captivating experiences by understanding and leveraging users' emotions
+          </p>
+          <a href="https://www.amazon.es/Seductive-Interaction-Design-Effective-Experiences/dp/0321725522/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2127J284MWG4W&keywords=Seductive+interaction+design&qid=1700058100&sprefix=seductive+interaction+design%2Caps%2C85&sr=8-1"
+            target="_blank">View book</a>
+        </div>
+        <div class="card-recommended" data-category="Productivity">
+          <div class="card-recommended__header">
+            <img src="/dist/assets/img/getting.png" alt="Getting Things Done">
+            <div class="card-recommended__header-text">
+              <span>Productivity</span>
+              <h3>Getting Things Done</h3>
+            </div>
+          </div>
+          <p>This book is a classic in time management and productivity. David Allen presents a comprehensive system
+            for organizing tasks and improving efficiency
+          </p>
+          <a href="https://www.amazon.es/Getting-Things-Done-David-Allen/dp/0143126563/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2BXQVZSLU7Z4E&keywords=Getting+Things+Done&qid=1700058130&sprefix=getting+things+done%2Caps%2C104&sr=8-1"
+            target="_blank">View book</a>
+        </div>
+        <div class="card-recommended" data-category="Productivity">
+          <div class="card-recommended__header">
+            <img src="/dist/assets/img/7.png" alt="The 7 Habits of Highly Effective People">
+            <div class="card-recommended__header-text">
+              <span>Productivity</span>
+              <h3>The 7 Habits of Highly Effective People</h3>
+            </div>
+          </div>
+          <p>Covey explores seven habits that can transform personal and professional effectiveness. It's a highly
+            influential book in the productivity realm
+          </p>
+          <a href="https://www.amazon.es/Habits-Highly-Effective-People-Anniversary/dp/1471195201/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=EZ58JU7F24BS&keywords=The+7+Habits+of+Highly+Effective+People&qid=1700058147&sprefix=the+7+habits+of+highly+effective+people%2Caps%2C89&sr=8-1"
+            target="_blank">View book</a>
+        </div>
+        <div class="card-recommended" data-category="Productivity">
+          <div class="card-recommended__header">
+            <img src="/dist/assets/img/atomic.png" alt="Atomic Habits">
+            <div class="card-recommended__header-text">
+              <span>Productivity</span>
+              <h3>Atomic Habits</h3>
+            </div>
+          </div>
+          <p>While not specifically focused on productivity, this book explores how small habits can have a
+            significant impact on performance and effectiveness
+          </p>
+          <a href="https://www.amazon.es/Atomic-Habits-MR-EXP-Proven-Build/dp/0593189647/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=GD6M5GCVG32J&keywords=Atomic+Habits&qid=1700058167&sprefix=atomic+habits%2Caps%2C88&sr=8-1"
+            target="_blank">View book</a>
+        </div>
+        <div class="card-recommended" data-category="Productivity">
+          <div class="card-recommended__header">
+            <img src="/dist/assets/img/deep.png" alt="Deep Work">
+            <div class="card-recommended__header-text">
+              <span>Productivity</span>
+              <h3>Deep Work</h3>
+            </div>
+          </div>
+          <p>Newport examines the importance of deep concentration in a world full of distractions. He offers
+            strategies to cultivate the ability to do meaningful, uninterrupted work
+          </p>
+          <a href="https://www.amazon.es/C%C3%A9ntrate-Deep-Work-distracci%C3%B3n-PENINSULA/dp/8411000516/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=32FKYTF89RLHK&keywords=Deep+Work&qid=1700058185&sprefix=deep+work%2Caps%2C81&sr=8-1"
+            target="_blank">View book</a>
+        </div>
+        <div class="card-recommended" data-category="Psychology">
+          <div class="card-recommended__header">
+            <img src="/dist/assets/img/chatter.png" alt="Chatter">
+            <div class="card-recommended__header-text">
+              <span>Psychology</span>
+              <h3>Chatter</h3>
+            </div>
+          </div>
+          <p>Explores the impact of our inner voice on mental well-being. It offers insights and strategies to
+            manage self-talk positively
+          </p>
+          <a href="https://www.amazon.es/Chatter-Voice-Our-Head-Harness/dp/1785041967/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=11QW2LIN6GXSP&keywords=Chatter&qid=1700058201&sprefix=chatter%2Caps%2C86&sr=8-1"
+            target="_blank">View book</a>
+        </div>
+        <div class="card-recommended" data-category="Psychology">
+          <div class="card-recommended__header">
+            <img src="/dist/assets/img/thinking.png" alt="Thinking, Fast and Slow">
+            <div class="card-recommended__header-text">
+              <span>Psychology</span>
+              <h3>Thinking, Fast and Slow</h3>
+            </div>
+          </div>
+          <p>Provides valuable insights into human decision-making. Designers can benefit from understanding the
+            cognitive processes that influence user choices and behaviors
+          </p>
+          <a href="https://www.amazon.es/Thinking-Fast-Slow-Daniel-Kahneman/dp/0141033576/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=2LKQCZW0PP07K&keywords=thinking+fast+and+slow&qid=1700058218&sprefix=thinking+fast+and+slow%2Caps%2C82&sr=8-1"
+            target="_blank">View book</a>
+        </div>
+        <div class="card-recommended" data-category="Psychology">
+          <div class="card-recommended__header">
+            <img src="/dist/assets/img/influence.png" alt="Thinking, Fast and Slow">
+            <div class="card-recommended__header-text">
+              <span>Psychology</span>
+              <h3>Influence: The Psychology of Persuasion</h3>
+            </div>
+          </div>
+          <p>Explores the psychology of persuasion. Cialdini outlines key principles shaping human behavior, offering
+            insights into effective communication
+          </p>
+          <a href="https://www.amazon.es/Influence-New-Expanded-Psychology-Persuasion/dp/0062937650/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=13ZOYTXQYF759&keywords=Influence%3A+The+Psychology+of+Persuasion&qid=1700058241&sprefix=influence+the+psychology+of+persuasion%2Caps%2C80&sr=8-1"
+            target="_blank">View book</a>
+        </div>
+        <div class="card-recommended" data-category="Psychology">
+          <div class="card-recommended__header">
+            <img src="/dist/assets/img/predict.png">
+            <div class="card-recommended__header-text">
+              <span>Psychology</span>
+              <h3>Predictably Irrational: The Hidden Forces That Shape Our Decisions</h3>
+            </div>
+          </div>
+          <p>Designers can gain insights into how to anticipate and leverage these irrational tendencies in
+            creating more effective designs
+          </p>
+          <a href="https://www.amazon.es/Predictably-Irrational-Hidden-Forces-Decisions/dp/0007256531/ref=sr_1_1?__mk_es_ES=%C3%85M%C3%85%C5%BD%C3%95%C3%91&crid=28DO9MR3VZKI9&keywords=Predictably+Irrational%3A+The+Hidden+Forces+That+Shape+Our+Decisions&qid=1700058260&sprefix=predictably+irrational+the+hidden+forces+that+shape+our+decisions%2Caps%2C85&sr=8-1"
+            target="_blank">View book</a>
+        </div>
+      </div>
+    </section>
+    <section class="container section-faq">
+      <div class="section-header">
+        <h2>FAQ</h2>
+        <p class="--regular">Some of the most frequently asked questions I receive</p>
+      </div>
+      <section class="section-faq-accordion">
+        <div class="accordion">
+          <div class="accordion__item">
+            <button class="accordion__question">
+              <i class="fa-solid fa-caret-right"></i>
+              <p class="--large">What is your typical design approach or process?</p>
+            </button>
+            <div class="accordion__collapse collapse">
+              <div class="accordion__content">
+                <p class="--regular">"I enjoy the iteration process, through which I establish the design process based
+                  on different
+                  stages: research, user empathy, ideation, wireframing, prototyping, feedback, and iteration,
+                  high-fidelity designs, and development."</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__question">
+              <i class="fa-solid fa-caret-right"></i>
+              <p class="--large">What are your key skills as a product designer?</p>
+            </button>
+            <div class="accordion__collapse collapse">
+              <div class="accordion__content">
+                <p class="--regular">"I possess several valuable skills as a designer that enable me to identify and
+                  solve user problems.
+                  I am empathetic, a good listener, and observer. I have a toolkit that allows me to create, coupled
+                  with development knowledge to bring designs to life."</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__question">
+              <i class="fa-solid fa-caret-right"></i>
+              <p class="--large">How do you manage deadlines and deliverables?</p>
+            </button>
+            <div class="accordion__collapse collapse">
+              <div class="accordion__content">
+                <p class="--regular">"I believe that being organized and methodical is key to meeting established
+                  deadlines and making
+                  accurate delivery forecasts."</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__question">
+              <i class="fa-solid fa-caret-right"></i>
+              <p class="--large">How do you manage projects in collaboration with other departments?</p>
+            </button>
+            <div class="accordion__collapse collapse">
+              <div class="accordion__content">
+                <p class="--regular">"I enjoy staying informed about the project's needs and maintaining close
+                  collaboration with all its
+                  members. Understanding the company's needs as a whole rather than isolated departments is important to
+                  me."</p>
+              </div>
+            </div>
+          </div>
+          <div class="accordion__item">
+            <button class="accordion__question">
+              <i class="fa-solid fa-caret-right"></i>
+              <p class="--large">How long have you been working as a product designer?</p>
+            </button>
+            <div class="accordion__collapse collapse">
+              <div class="accordion__content">
+                <p class="--regular">"I started working as a product designer in 2021. During this time, I have
+                  self-taught and have been
+                  able to assist companies in creating and improving their designs."</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </main>
+  <footer>
+    <a href="#" class="logo"><img src="/dist/assets/i/logo.png" alt="Logo"></a>
+    <p>&copy; 2024 Alejandro Moreno</p>
+    <div class="social">
+      <div class="social-btn"><a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank"><i
+            class="social-icon fa-brands fa-linkedin-in"></i></a></div>
+      <div class="social-btn"><a href="https://github.com/kakomoma" target="_blank"><i
+            class="social-icon fa-brands fa-github"></i></a></div>
+      <div class="social-btn"><a href="https://wa.me/+34618110583" target="_blank"><i
+            class="social-icon fa-brands fa-whatsapp"></i></a></div>
+      <div class="social-btn"><a href="mailto:alejandromorenomartin1990@gmail.com"><i
+            class="social-icon fa-solid fa-envelope"></i></a></div>
+    </div>
+  </footer>
+  <div id="progress">
+    <span id="progress-value">
+      <i class="fa-solid fa-chevron-up"></i>
+    </span>
+  </div>
+  <!--Scritps-->
+  <script defer src='js/main.js'></script>
+</body>
+
+</html>

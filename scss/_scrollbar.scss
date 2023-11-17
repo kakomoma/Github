@@ -1,0 +1,38 @@
+@import 'breakpoints';
+@import 'font';
+@import 'function';
+@import 'variables';
+
+::-webkit-scrollbar{
+  width: rem(5);
+
+  @media (max-width:750px){
+    width: 0!important;
+    height: 0!important;
+  }
+}
+
+::-webkit-scrollbar-track{
+  background: transparent;
+
+  @media (max-width:750px){
+    background: transparent;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ancent);
+  border-radius: rem(10);
+
+  @media (max-width:750px){
+    background: transparent;
+    border-radius: 0;
+  }
+}
+
+::selection{
+  background-color: var(--ancent);
+  color: var(--bg);
+}
+
+ 

@@ -1,0 +1,3594 @@
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;700;800&display=swap");
+@media screen and (max-width: 1250px) {
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(20);
+  }
+  .about-me__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+:root {
+  --font: "Proza Libre";
+}
+
+/*VARIABLES*/
+:root {
+  --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
+  --black: #000;
+  --white: #fff;
+  --dark-bg: hsl(225, 22%, 4%);
+  --dark-bg-hover: hsl(225, 22%, 14%);
+  --dark-btn: hsl(205, 16%, 30%);
+  --dark-btn-hover: hsl(212, 20%, 41%);
+  --dark-menu: hsl(213, 19%, 12%);
+  --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
+  --dark-card-tag: hsl(218, 19%, 24%);
+  --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
+  --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
+  --dark-ancent: hsl(29, 100%, 50%);
+  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-text-ancent: hsl(255, 12%, 18%);
+  --dark-text-1: hsl(204, 21%, 91%);
+  --dark-text-2: hsl(211, 20%, 76%);
+  --dark-text-3: hsl(212, 18%, 71%);
+  --dark-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.25) inset, -1px -1px 2px 0px rgba(131, 131, 131, 0.05) inset;
+  --dark-shadow-hero: 0 0.05em 1em hsl(204, 21%, 91%);
+  --light-bg: hsl(210, 50%, 94%);
+  --light-bg-hover: hsl(210, 50%, 84%);
+  --light-btn: hsl(216, 15%, 76%);
+  --light-btn-hover: hsl(208, 17%, 67%);
+  --light-menu: hsl(0, 0%, 100%);
+  --light-card: linear-gradient(90deg, hsl(210, 36%, 96%) 0%, hsl(207, 39%, 95%) 99.91%);
+  --light-card-tag: hsl(210, 46%, 90%);
+  --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
+  --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
+  --light-ancent: hsl(29, 100%, 50%);
+  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-text-ancent: hsl(0, 3%, 11%);
+  --light-text-1: hsl(220, 11%, 24%);
+  --light-text-2: hsl(209, 26%, 26%);
+  --light-text-3: hsl(0, 0%, 37%);
+  --light-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --light-shadow-hero: 0 0.1em 1em hsl(220, 11%, 24%);
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light-bg);
+    --bg-hover: (--light-bg-hover);
+    --btn: var(--light-btn);
+    --btn-hover: var(--light-btn-hover);
+    --menu: var(--light-menu);
+    --card: var(--light-card);
+    --card-tag: var(--light-card-tag);
+    --tab: var(--light-tab);
+    --tab-btn: var(--light-tab-btn);
+    --ancent: var(--light-ancent);
+    --ancent-hover: var(--light-ancent-hover);
+    --text-ancent: var(--light-text-ancent);
+    --text-1: var(--light-text-1);
+    --text-2: var(--light-text-2);
+    --text-3: var(--light-text-3);
+    --shadow: var(--light-shadow);
+    --shadow-hero: var(--light-shadow-hero);
+  }
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --bg-hover: (--light-bg-hover);
+  --btn: var(--light-btn);
+  --btn-hover: var(--light-btn-hover);
+  --menu: var(--light-menu);
+  --card: var(--light-card);
+  --card-tag: var(--light-card-tag);
+  --tab: var(--light-tab);
+  --tab-btn: var(--light-tab-btn);
+  --ancent: var(--light-ancent);
+  --ancent-hover: var(--light-ancent-hover);
+  --text-ancent: var(--light-text-ancent);
+  --text-1: var(--light-text-1);
+  --text-2: var(--light-text-2);
+  --text-3: var(--light-text-3);
+  --shadow: var(--light-shadow);
+  --shadow-hero: var(--light-shadow-hero);
+}
+
+/*General - Variables*/
+/*btnHover*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+p a {
+  display: inline;
+}
+
+video, iframe, picture, figure {
+  max-width: 100%;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 0.75rem;
+}
+
+form, select, textarea, button, label {
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.blog-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
+  gap: 1.25rem;
+}
+
+.card-blog {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  border-radius: 0.625rem;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.card-blog__header {
+  padding: 1.25rem;
+  padding-bottom: 0;
+}
+.card-blog__header img {
+  display: block;
+  width: 100%;
+  max-height: 150px;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: 0.25s transform ease-in-out;
+}
+.card-blog__body {
+  display: flex;
+  flex-direction: column;
+  gap: 0.9375rem;
+  padding: 0 0.9375rem 0.9375rem;
+  flex-grow: 1;
+}
+.card-blog__body-header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.card-blog__body-header .card-blog__date {
+  color: var(--text-3);
+}
+.card-blog__body-header .card-blog__tag {
+  padding: 0.3125rem 0.625rem;
+  border-radius: 0.3125rem;
+  background: var(--card-tag);
+  box-shadow: var(--shadow);
+}
+.card-blog__body p {
+  line-height: 1.4;
+}
+.card-blog__body a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.625rem;
+  padding: 0.75rem 1rem;
+  color: var(--text-1);
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: var(--btn);
+  border-radius: 0.3125rem;
+  transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
+  font-size: 1rem;
+  margin-top: auto;
+}
+.card-blog__body a:hover {
+  transform: translateY(-10%);
+  background-color: var(--btn-hover);
+}
+
+.card-blog__header.card-blog__img {
+  overflow: hidden;
+  padding: 0;
+}
+
+.card-blog:hover .card-blog__header.card-blog__img > img {
+  transform: scale(1.05);
+}
+
+.card-blog.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .about-me__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 1250px) {
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .about-me__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+:root {
+  --font: "Proza Libre";
+}
+
+/*VARIABLES*/
+:root {
+  --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
+  --black: #000;
+  --white: #fff;
+  --dark-bg: hsl(225, 22%, 4%);
+  --dark-bg-hover: hsl(225, 22%, 14%);
+  --dark-btn: hsl(205, 16%, 30%);
+  --dark-btn-hover: hsl(212, 20%, 41%);
+  --dark-menu: hsl(213, 19%, 12%);
+  --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
+  --dark-card-tag: hsl(218, 19%, 24%);
+  --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
+  --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
+  --dark-ancent: hsl(29, 100%, 50%);
+  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-text-ancent: hsl(255, 12%, 18%);
+  --dark-text-1: hsl(204, 21%, 91%);
+  --dark-text-2: hsl(211, 20%, 76%);
+  --dark-text-3: hsl(212, 18%, 71%);
+  --dark-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.25) inset, -1px -1px 2px 0px rgba(131, 131, 131, 0.05) inset;
+  --dark-shadow-hero: 0 0.05em 1em hsl(204, 21%, 91%);
+  --light-bg: hsl(210, 50%, 94%);
+  --light-bg-hover: hsl(210, 50%, 84%);
+  --light-btn: hsl(216, 15%, 76%);
+  --light-btn-hover: hsl(208, 17%, 67%);
+  --light-menu: hsl(0, 0%, 100%);
+  --light-card: linear-gradient(90deg, hsl(210, 36%, 96%) 0%, hsl(207, 39%, 95%) 99.91%);
+  --light-card-tag: hsl(210, 46%, 90%);
+  --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
+  --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
+  --light-ancent: hsl(29, 100%, 50%);
+  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-text-ancent: hsl(0, 3%, 11%);
+  --light-text-1: hsl(220, 11%, 24%);
+  --light-text-2: hsl(209, 26%, 26%);
+  --light-text-3: hsl(0, 0%, 37%);
+  --light-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --light-shadow-hero: 0 0.1em 1em hsl(220, 11%, 24%);
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light-bg);
+    --bg-hover: (--light-bg-hover);
+    --btn: var(--light-btn);
+    --btn-hover: var(--light-btn-hover);
+    --menu: var(--light-menu);
+    --card: var(--light-card);
+    --card-tag: var(--light-card-tag);
+    --tab: var(--light-tab);
+    --tab-btn: var(--light-tab-btn);
+    --ancent: var(--light-ancent);
+    --ancent-hover: var(--light-ancent-hover);
+    --text-ancent: var(--light-text-ancent);
+    --text-1: var(--light-text-1);
+    --text-2: var(--light-text-2);
+    --text-3: var(--light-text-3);
+    --shadow: var(--light-shadow);
+    --shadow-hero: var(--light-shadow-hero);
+  }
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --bg-hover: (--light-bg-hover);
+  --btn: var(--light-btn);
+  --btn-hover: var(--light-btn-hover);
+  --menu: var(--light-menu);
+  --card: var(--light-card);
+  --card-tag: var(--light-card-tag);
+  --tab: var(--light-tab);
+  --tab-btn: var(--light-tab-btn);
+  --ancent: var(--light-ancent);
+  --ancent-hover: var(--light-ancent-hover);
+  --text-ancent: var(--light-text-ancent);
+  --text-1: var(--light-text-1);
+  --text-2: var(--light-text-2);
+  --text-3: var(--light-text-3);
+  --shadow: var(--light-shadow);
+  --shadow-hero: var(--light-shadow-hero);
+}
+
+/*General - Variables*/
+/*btnHover*/
+.section-about-me {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero {
+  display: grid;
+  gap: 1.25rem;
+  grid-template-areas: "heading" "image" "paragraph";
+  position: relative;
+  margin-bottom: 3.125rem;
+}
+.hero .hero__title {
+  padding: 0.5rem 0;
+  grid-area: heading;
+}
+.hero__paragraph {
+  grid-area: paragraph;
+  margin-bottom: 0.625rem;
+}
+.hero__paragraph-btns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.hero__paragraph-btns-resume {
+  grid-column: 2/span 1;
+  grid-row: span 1;
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 0.625rem;
+  padding: 0.75rem 1rem;
+  color: var(--text-1);
+  background-color: var(--btn);
+  border-radius: 0.3125rem;
+  transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
+  font-size: 1rem;
+  font-weight: 700;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: auto;
+}
+.hero__paragraph-btns-resume:hover {
+  transform: translateY(-10%);
+  background-color: var(--btn-hover);
+}
+.hero picture {
+  align-self: start;
+  background: var(--bg);
+  border: 0.5em solid transparent;
+  border-radius: 0.625rem;
+  box-shadow: var(--shadow-hero);
+  grid-area: image;
+  overflow: hidden;
+}
+.hero picture img {
+  border-radius: 0.625rem;
+  height: 100%;
+  max-height: inherit;
+  max-width: inherit;
+  min-width: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: inherit;
+}
+.hero img,
+.hero picture {
+  display: block;
+  max-width: 100%;
+}
+.hero .flow {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  gap: 1.25rem;
+}
+
+@media screen and (min-width: 1250px) {
+  .hero {
+    grid-template-areas: "image heading heading" "image paragraph paragraph";
+  }
+}
+@media screen and (max-width: 1250px) and (min-width: 751px) {
+  .hero {
+    grid-template-areas: "image heading" "paragraph paragraph";
+  }
+}
+.hero::before {
+  background: var(--ancent-linear);
+  border-radius: 1em;
+  bottom: -0.5em;
+  content: "";
+  grid-row: 1/2;
+  left: -0.5em;
+  position: absolute;
+  right: -0.5em;
+  top: -0.5em;
+  z-index: -1;
+}
+
+.tabs {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.625rem 0.625rem;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.625rem;
+  background: var(--tab);
+  box-shadow: var(--shadow);
+}
+
+.tab-button__about {
+  display: flex;
+  padding: 0.75rem 1.125rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.75rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.tab-button__about.active {
+  box-shadow: var(--shadow);
+  background: var(--tab-btn);
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(25rem, 100%), 1fr));
+  gap: 1.25rem;
+}
+
+.card-about {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+.card-about .card-about__header {
+  display: flex;
+  gap: 1.25rem;
+  justify-content: flex-start;
+  align-items: center;
+}
+.card-about .card-about__header img {
+  width: 4.5rem;
+  height: 4.5rem;
+}
+.card-about .card-about__header a {
+  display: inline-block;
+  color: var(--ancent);
+}
+.card-about .card-about__header span {
+  color: var(--text-3);
+}
+.card-about p {
+  line-height: 1.4;
+}
+.card-about .card-about__btn {
+  grid-column: 2/span 1;
+  grid-row: span 1;
+  all: unset;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  gap: 0.625rem;
+  padding: 0.75rem 1rem;
+  color: var(--text-1);
+  background-color: var(--btn);
+  border-radius: 0.3125rem;
+  transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
+  font-size: 1rem;
+  font-weight: 700;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin-top: auto;
+}
+.card-about .card-about__btn:hover {
+  transform: translateY(-10%);
+  background-color: var(--btn-hover);
+}
+
+@media screen and (max-width: 1250px) {
+  .tab-content.active {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(30rem, 100%), 1fr));
+    gap: 1.25rem;
+  }
+}
+@media screen and (max-width: 1250px) {
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .about-me__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+:root {
+  --font: "Proza Libre";
+}
+
+/*VARIABLES*/
+:root {
+  --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
+  --black: #000;
+  --white: #fff;
+  --dark-bg: hsl(225, 22%, 4%);
+  --dark-bg-hover: hsl(225, 22%, 14%);
+  --dark-btn: hsl(205, 16%, 30%);
+  --dark-btn-hover: hsl(212, 20%, 41%);
+  --dark-menu: hsl(213, 19%, 12%);
+  --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
+  --dark-card-tag: hsl(218, 19%, 24%);
+  --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
+  --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
+  --dark-ancent: hsl(29, 100%, 50%);
+  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-text-ancent: hsl(255, 12%, 18%);
+  --dark-text-1: hsl(204, 21%, 91%);
+  --dark-text-2: hsl(211, 20%, 76%);
+  --dark-text-3: hsl(212, 18%, 71%);
+  --dark-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.25) inset, -1px -1px 2px 0px rgba(131, 131, 131, 0.05) inset;
+  --dark-shadow-hero: 0 0.05em 1em hsl(204, 21%, 91%);
+  --light-bg: hsl(210, 50%, 94%);
+  --light-bg-hover: hsl(210, 50%, 84%);
+  --light-btn: hsl(216, 15%, 76%);
+  --light-btn-hover: hsl(208, 17%, 67%);
+  --light-menu: hsl(0, 0%, 100%);
+  --light-card: linear-gradient(90deg, hsl(210, 36%, 96%) 0%, hsl(207, 39%, 95%) 99.91%);
+  --light-card-tag: hsl(210, 46%, 90%);
+  --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
+  --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
+  --light-ancent: hsl(29, 100%, 50%);
+  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-text-ancent: hsl(0, 3%, 11%);
+  --light-text-1: hsl(220, 11%, 24%);
+  --light-text-2: hsl(209, 26%, 26%);
+  --light-text-3: hsl(0, 0%, 37%);
+  --light-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --light-shadow-hero: 0 0.1em 1em hsl(220, 11%, 24%);
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light-bg);
+    --bg-hover: (--light-bg-hover);
+    --btn: var(--light-btn);
+    --btn-hover: var(--light-btn-hover);
+    --menu: var(--light-menu);
+    --card: var(--light-card);
+    --card-tag: var(--light-card-tag);
+    --tab: var(--light-tab);
+    --tab-btn: var(--light-tab-btn);
+    --ancent: var(--light-ancent);
+    --ancent-hover: var(--light-ancent-hover);
+    --text-ancent: var(--light-text-ancent);
+    --text-1: var(--light-text-1);
+    --text-2: var(--light-text-2);
+    --text-3: var(--light-text-3);
+    --shadow: var(--light-shadow);
+    --shadow-hero: var(--light-shadow-hero);
+  }
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --bg-hover: (--light-bg-hover);
+  --btn: var(--light-btn);
+  --btn-hover: var(--light-btn-hover);
+  --menu: var(--light-menu);
+  --card: var(--light-card);
+  --card-tag: var(--light-card-tag);
+  --tab: var(--light-tab);
+  --tab-btn: var(--light-tab-btn);
+  --ancent: var(--light-ancent);
+  --ancent-hover: var(--light-ancent-hover);
+  --text-ancent: var(--light-text-ancent);
+  --text-1: var(--light-text-1);
+  --text-2: var(--light-text-2);
+  --text-3: var(--light-text-3);
+  --shadow: var(--light-shadow);
+  --shadow-hero: var(--light-shadow-hero);
+}
+
+/*General - Variables*/
+/*btnHover*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+p a {
+  display: inline;
+}
+
+video, iframe, picture, figure {
+  max-width: 100%;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 0.75rem;
+}
+
+form, select, textarea, button, label {
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.tab-button__recommended {
+  display: flex;
+  padding: 0.75rem 1.125rem;
+  justify-content: center;
+  align-items: center;
+  border-radius: 0.75rem;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.tab-button__recommended.active {
+  box-shadow: var(--shadow);
+  background: var(--tab-btn);
+}
+
+.section-recommended__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(25rem, 100%), 1fr));
+  gap: 1.25rem;
+}
+
+.card-recommended {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+.card-recommended img {
+  display: block;
+  max-width: 75px;
+  max-height: 100px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  border-radius: 0.625rem;
+  transition: transform 0.25s ease-in-out;
+}
+.card-recommended img:hover {
+  transform: scale(1.05);
+}
+.card-recommended__header {
+  display: flex;
+  align-items: center;
+  gap: 1.25rem;
+}
+.card-recommended__header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.card-recommended a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.625rem;
+  padding: 0.75rem 1rem;
+  color: var(--text-1);
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: var(--btn);
+  border-radius: 0.3125rem;
+  transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
+  font-size: 1rem;
+  font-weight: 700;
+}
+.card-recommended a:hover {
+  transform: translateY(-10%);
+  background-color: var(--btn-hover);
+}
+.card-recommended p {
+  line-height: 1.4;
+}
+.card-recommended span {
+  display: inline-flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.3125rem 0.625rem;
+  border-radius: 0.3125rem;
+  background: var(--card-tag);
+}
+
+.card-recommended.hidden {
+  display: none;
+}
+
+@media screen and (max-width: 1250px) {
+  .section-recommended__cards {
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    gap: 1.25rem;
+  }
+}
+@media screen and (max-width: 1250px) {
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .about-me__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+:root {
+  --font: "Proza Libre";
+}
+
+/*VARIABLES*/
+:root {
+  --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
+  --black: #000;
+  --white: #fff;
+  --dark-bg: hsl(225, 22%, 4%);
+  --dark-bg-hover: hsl(225, 22%, 14%);
+  --dark-btn: hsl(205, 16%, 30%);
+  --dark-btn-hover: hsl(212, 20%, 41%);
+  --dark-menu: hsl(213, 19%, 12%);
+  --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
+  --dark-card-tag: hsl(218, 19%, 24%);
+  --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
+  --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
+  --dark-ancent: hsl(29, 100%, 50%);
+  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-text-ancent: hsl(255, 12%, 18%);
+  --dark-text-1: hsl(204, 21%, 91%);
+  --dark-text-2: hsl(211, 20%, 76%);
+  --dark-text-3: hsl(212, 18%, 71%);
+  --dark-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.25) inset, -1px -1px 2px 0px rgba(131, 131, 131, 0.05) inset;
+  --dark-shadow-hero: 0 0.05em 1em hsl(204, 21%, 91%);
+  --light-bg: hsl(210, 50%, 94%);
+  --light-bg-hover: hsl(210, 50%, 84%);
+  --light-btn: hsl(216, 15%, 76%);
+  --light-btn-hover: hsl(208, 17%, 67%);
+  --light-menu: hsl(0, 0%, 100%);
+  --light-card: linear-gradient(90deg, hsl(210, 36%, 96%) 0%, hsl(207, 39%, 95%) 99.91%);
+  --light-card-tag: hsl(210, 46%, 90%);
+  --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
+  --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
+  --light-ancent: hsl(29, 100%, 50%);
+  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-text-ancent: hsl(0, 3%, 11%);
+  --light-text-1: hsl(220, 11%, 24%);
+  --light-text-2: hsl(209, 26%, 26%);
+  --light-text-3: hsl(0, 0%, 37%);
+  --light-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --light-shadow-hero: 0 0.1em 1em hsl(220, 11%, 24%);
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light-bg);
+    --bg-hover: (--light-bg-hover);
+    --btn: var(--light-btn);
+    --btn-hover: var(--light-btn-hover);
+    --menu: var(--light-menu);
+    --card: var(--light-card);
+    --card-tag: var(--light-card-tag);
+    --tab: var(--light-tab);
+    --tab-btn: var(--light-tab-btn);
+    --ancent: var(--light-ancent);
+    --ancent-hover: var(--light-ancent-hover);
+    --text-ancent: var(--light-text-ancent);
+    --text-1: var(--light-text-1);
+    --text-2: var(--light-text-2);
+    --text-3: var(--light-text-3);
+    --shadow: var(--light-shadow);
+    --shadow-hero: var(--light-shadow-hero);
+  }
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --bg-hover: (--light-bg-hover);
+  --btn: var(--light-btn);
+  --btn-hover: var(--light-btn-hover);
+  --menu: var(--light-menu);
+  --card: var(--light-card);
+  --card-tag: var(--light-card-tag);
+  --tab: var(--light-tab);
+  --tab-btn: var(--light-tab-btn);
+  --ancent: var(--light-ancent);
+  --ancent-hover: var(--light-ancent-hover);
+  --text-ancent: var(--light-text-ancent);
+  --text-1: var(--light-text-1);
+  --text-2: var(--light-text-2);
+  --text-3: var(--light-text-3);
+  --shadow: var(--light-shadow);
+  --shadow-hero: var(--light-shadow-hero);
+}
+
+/*General - Variables*/
+/*btnHover*/
+.section-testimonial {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-testimonial__cards {
+  display: grid;
+  gap: 1.25rem;
+  padding-block: 1.25rem;
+  margin-inline: auto;
+}
+
+.card-testimonial {
+  display: flex;
+  flex-direction: column;
+  padding: 1.25rem;
+  gap: 1.25rem;
+  border-radius: 0.625rem;
+  border: 1px solid var(--text-3);
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+.card-testimonial .quote {
+  position: absolute;
+  top: 0;
+  right: 5%;
+  font-size: 12rem;
+  background: var(--ancent-linear);
+  -webkit-background-clip: text;
+  color: transparent;
+  z-index: -1;
+  opacity: 0.25;
+}
+.card-testimonial span {
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+.card-testimonial p {
+  font-size: 1rem;
+  line-height: 1.4;
+}
+.card-testimonial .testimonial-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  padding: 0.125rem 0.5rem;
+  color: var(--text-1);
+  background-color: var(--btn);
+  border-radius: 6.25rem;
+  transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
+}
+.card-testimonial .testimonial-btn:hover {
+  transform: translateY(-10%);
+  background-color: var(--btn-hover);
+}
+.card-testimonial .testimonial-icon {
+  font-size: 1.25rem;
+}
+
+.card-testimonial:hover {
+  transform: translateY(-2.5%);
+}
+
+.testimonial-header {
+  display: flex;
+  gap: 1.25rem;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+.testimonial-header .testimonial-image {
+  width: 3.75rem;
+  height: 3.75rem;
+}
+.testimonial-header .testimonial-image img {
+  border-radius: 50%;
+}
+.testimonial-header h3 {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+.testimonial-header p {
+  color: var(--text-3);
+}
+.testimonial-header a {
+  font-size: inherit;
+  font-weight: 700;
+  color: var(--ancent);
+  line-height: 1.1;
+}
+
+@media screen and (min-width: 1250px) {
+  .grid-col-span-2 {
+    grid-column: span 2;
+  }
+  .section-testimonial__cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+  .card-testimonial:last-child {
+    grid-column-start: 4;
+    grid-row: 1/3;
+  }
+}
+@media screen and (max-width: 1250px) {
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .about-me__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+:root {
+  --font: "Proza Libre";
+}
+
+/*VARIABLES*/
+:root {
+  --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
+  --black: #000;
+  --white: #fff;
+  --dark-bg: hsl(225, 22%, 4%);
+  --dark-bg-hover: hsl(225, 22%, 14%);
+  --dark-btn: hsl(205, 16%, 30%);
+  --dark-btn-hover: hsl(212, 20%, 41%);
+  --dark-menu: hsl(213, 19%, 12%);
+  --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
+  --dark-card-tag: hsl(218, 19%, 24%);
+  --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
+  --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
+  --dark-ancent: hsl(29, 100%, 50%);
+  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-text-ancent: hsl(255, 12%, 18%);
+  --dark-text-1: hsl(204, 21%, 91%);
+  --dark-text-2: hsl(211, 20%, 76%);
+  --dark-text-3: hsl(212, 18%, 71%);
+  --dark-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.25) inset, -1px -1px 2px 0px rgba(131, 131, 131, 0.05) inset;
+  --dark-shadow-hero: 0 0.05em 1em hsl(204, 21%, 91%);
+  --light-bg: hsl(210, 50%, 94%);
+  --light-bg-hover: hsl(210, 50%, 84%);
+  --light-btn: hsl(216, 15%, 76%);
+  --light-btn-hover: hsl(208, 17%, 67%);
+  --light-menu: hsl(0, 0%, 100%);
+  --light-card: linear-gradient(90deg, hsl(210, 36%, 96%) 0%, hsl(207, 39%, 95%) 99.91%);
+  --light-card-tag: hsl(210, 46%, 90%);
+  --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
+  --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
+  --light-ancent: hsl(29, 100%, 50%);
+  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-text-ancent: hsl(0, 3%, 11%);
+  --light-text-1: hsl(220, 11%, 24%);
+  --light-text-2: hsl(209, 26%, 26%);
+  --light-text-3: hsl(0, 0%, 37%);
+  --light-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --light-shadow-hero: 0 0.1em 1em hsl(220, 11%, 24%);
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light-bg);
+    --bg-hover: (--light-bg-hover);
+    --btn: var(--light-btn);
+    --btn-hover: var(--light-btn-hover);
+    --menu: var(--light-menu);
+    --card: var(--light-card);
+    --card-tag: var(--light-card-tag);
+    --tab: var(--light-tab);
+    --tab-btn: var(--light-tab-btn);
+    --ancent: var(--light-ancent);
+    --ancent-hover: var(--light-ancent-hover);
+    --text-ancent: var(--light-text-ancent);
+    --text-1: var(--light-text-1);
+    --text-2: var(--light-text-2);
+    --text-3: var(--light-text-3);
+    --shadow: var(--light-shadow);
+    --shadow-hero: var(--light-shadow-hero);
+  }
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --bg-hover: (--light-bg-hover);
+  --btn: var(--light-btn);
+  --btn-hover: var(--light-btn-hover);
+  --menu: var(--light-menu);
+  --card: var(--light-card);
+  --card-tag: var(--light-card-tag);
+  --tab: var(--light-tab);
+  --tab-btn: var(--light-tab-btn);
+  --ancent: var(--light-ancent);
+  --ancent-hover: var(--light-ancent-hover);
+  --text-ancent: var(--light-text-ancent);
+  --text-1: var(--light-text-1);
+  --text-2: var(--light-text-2);
+  --text-3: var(--light-text-3);
+  --shadow: var(--light-shadow);
+  --shadow-hero: var(--light-shadow-hero);
+}
+
+/*General - Variables*/
+/*btnHover*/
+.section-faq .section-header {
+  margin-bottom: 3.125rem;
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+}
+
+.accordion__item {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.accordion__item p {
+  line-height: 1.4;
+}
+
+.accordion__question {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.625rem;
+  width: 100%;
+  border: none;
+  background: transparent;
+}
+.accordion__question i {
+  font-size: 1.25rem;
+}
+.accordion__question p {
+  color: var(--text-1);
+  font-weight: 700;
+}
+
+.accordion__question.open p {
+  font-weight: 700;
+}
+
+.accordion__question.open i {
+  transform: rotate(90deg);
+  color: var(--ancent);
+}
+
+.accordion__content {
+  display: flex;
+  padding: 1.25rem;
+  background: var(--card);
+  border-radius: 0.625rem;
+}
+
+.accordion__collapse {
+  transition: height 300ms ease;
+}
+
+.accordion__collapse.collapse {
+  display: none;
+}
+
+.accordion__collapse.collapsing {
+  height: 0;
+  overflow: hidden;
+}
+
+.accordion__collapse.open {
+  display: block;
+}
+
+/* DESKTOP STYLES */
+:root {
+  --font: "Proza Libre";
+}
+
+/*VARIABLES*/
+:root {
+  --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
+  --black: #000;
+  --white: #fff;
+  --dark-bg: hsl(225, 22%, 4%);
+  --dark-bg-hover: hsl(225, 22%, 14%);
+  --dark-btn: hsl(205, 16%, 30%);
+  --dark-btn-hover: hsl(212, 20%, 41%);
+  --dark-menu: hsl(213, 19%, 12%);
+  --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
+  --dark-card-tag: hsl(218, 19%, 24%);
+  --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
+  --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
+  --dark-ancent: hsl(29, 100%, 50%);
+  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-text-ancent: hsl(255, 12%, 18%);
+  --dark-text-1: hsl(204, 21%, 91%);
+  --dark-text-2: hsl(211, 20%, 76%);
+  --dark-text-3: hsl(212, 18%, 71%);
+  --dark-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.25) inset, -1px -1px 2px 0px rgba(131, 131, 131, 0.05) inset;
+  --dark-shadow-hero: 0 0.05em 1em hsl(204, 21%, 91%);
+  --light-bg: hsl(210, 50%, 94%);
+  --light-bg-hover: hsl(210, 50%, 84%);
+  --light-btn: hsl(216, 15%, 76%);
+  --light-btn-hover: hsl(208, 17%, 67%);
+  --light-menu: hsl(0, 0%, 100%);
+  --light-card: linear-gradient(90deg, hsl(210, 36%, 96%) 0%, hsl(207, 39%, 95%) 99.91%);
+  --light-card-tag: hsl(210, 46%, 90%);
+  --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
+  --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
+  --light-ancent: hsl(29, 100%, 50%);
+  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-text-ancent: hsl(0, 3%, 11%);
+  --light-text-1: hsl(220, 11%, 24%);
+  --light-text-2: hsl(209, 26%, 26%);
+  --light-text-3: hsl(0, 0%, 37%);
+  --light-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --light-shadow-hero: 0 0.1em 1em hsl(220, 11%, 24%);
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light-bg);
+    --bg-hover: (--light-bg-hover);
+    --btn: var(--light-btn);
+    --btn-hover: var(--light-btn-hover);
+    --menu: var(--light-menu);
+    --card: var(--light-card);
+    --card-tag: var(--light-card-tag);
+    --tab: var(--light-tab);
+    --tab-btn: var(--light-tab-btn);
+    --ancent: var(--light-ancent);
+    --ancent-hover: var(--light-ancent-hover);
+    --text-ancent: var(--light-text-ancent);
+    --text-1: var(--light-text-1);
+    --text-2: var(--light-text-2);
+    --text-3: var(--light-text-3);
+    --shadow: var(--light-shadow);
+    --shadow-hero: var(--light-shadow-hero);
+  }
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --bg-hover: (--light-bg-hover);
+  --btn: var(--light-btn);
+  --btn-hover: var(--light-btn-hover);
+  --menu: var(--light-menu);
+  --card: var(--light-card);
+  --card-tag: var(--light-card-tag);
+  --tab: var(--light-tab);
+  --tab-btn: var(--light-tab-btn);
+  --ancent: var(--light-ancent);
+  --ancent-hover: var(--light-ancent-hover);
+  --text-ancent: var(--light-text-ancent);
+  --text-1: var(--light-text-1);
+  --text-2: var(--light-text-2);
+  --text-3: var(--light-text-3);
+  --shadow: var(--light-shadow);
+  --shadow-hero: var(--light-shadow-hero);
+}
+
+/*General - Variables*/
+/*btnHover*/
+/*VARIABLES*/
+:root {
+  --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
+  --black: #000;
+  --white: #fff;
+  --dark-bg: hsl(225, 22%, 4%);
+  --dark-bg-hover: hsl(225, 22%, 14%);
+  --dark-btn: hsl(205, 16%, 30%);
+  --dark-btn-hover: hsl(212, 20%, 41%);
+  --dark-menu: hsl(213, 19%, 12%);
+  --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
+  --dark-card-tag: hsl(218, 19%, 24%);
+  --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
+  --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
+  --dark-ancent: hsl(29, 100%, 50%);
+  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-text-ancent: hsl(255, 12%, 18%);
+  --dark-text-1: hsl(204, 21%, 91%);
+  --dark-text-2: hsl(211, 20%, 76%);
+  --dark-text-3: hsl(212, 18%, 71%);
+  --dark-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.25) inset, -1px -1px 2px 0px rgba(131, 131, 131, 0.05) inset;
+  --dark-shadow-hero: 0 0.05em 1em hsl(204, 21%, 91%);
+  --light-bg: hsl(210, 50%, 94%);
+  --light-bg-hover: hsl(210, 50%, 84%);
+  --light-btn: hsl(216, 15%, 76%);
+  --light-btn-hover: hsl(208, 17%, 67%);
+  --light-menu: hsl(0, 0%, 100%);
+  --light-card: linear-gradient(90deg, hsl(210, 36%, 96%) 0%, hsl(207, 39%, 95%) 99.91%);
+  --light-card-tag: hsl(210, 46%, 90%);
+  --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
+  --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
+  --light-ancent: hsl(29, 100%, 50%);
+  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-text-ancent: hsl(0, 3%, 11%);
+  --light-text-1: hsl(220, 11%, 24%);
+  --light-text-2: hsl(209, 26%, 26%);
+  --light-text-3: hsl(0, 0%, 37%);
+  --light-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --light-shadow-hero: 0 0.1em 1em hsl(220, 11%, 24%);
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light-bg);
+    --bg-hover: (--light-bg-hover);
+    --btn: var(--light-btn);
+    --btn-hover: var(--light-btn-hover);
+    --menu: var(--light-menu);
+    --card: var(--light-card);
+    --card-tag: var(--light-card-tag);
+    --tab: var(--light-tab);
+    --tab-btn: var(--light-tab-btn);
+    --ancent: var(--light-ancent);
+    --ancent-hover: var(--light-ancent-hover);
+    --text-ancent: var(--light-text-ancent);
+    --text-1: var(--light-text-1);
+    --text-2: var(--light-text-2);
+    --text-3: var(--light-text-3);
+    --shadow: var(--light-shadow);
+    --shadow-hero: var(--light-shadow-hero);
+  }
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --bg-hover: (--light-bg-hover);
+  --btn: var(--light-btn);
+  --btn-hover: var(--light-btn-hover);
+  --menu: var(--light-menu);
+  --card: var(--light-card);
+  --card-tag: var(--light-card-tag);
+  --tab: var(--light-tab);
+  --tab-btn: var(--light-tab-btn);
+  --ancent: var(--light-ancent);
+  --ancent-hover: var(--light-ancent-hover);
+  --text-ancent: var(--light-text-ancent);
+  --text-1: var(--light-text-1);
+  --text-2: var(--light-text-2);
+  --text-3: var(--light-text-3);
+  --shadow: var(--light-shadow);
+  --shadow-hero: var(--light-shadow-hero);
+}
+
+/*General - Variables*/
+/*btnHover*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+p a {
+  display: inline;
+}
+
+video, iframe, picture, figure {
+  max-width: 100%;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 0.75rem;
+}
+
+form, select, textarea, button, label {
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: 1.25rem 7.5rem;
+  width: 100%;
+  margin: 0 auto;
+  bottom: 0;
+  background: var(--menu);
+  -webkit-backdrop-filter: var(--blur);
+          backdrop-filter: var(--blur);
+}
+footer p {
+  color: var(--text-2);
+}
+
+.social {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: 1.25rem;
+}
+.social-btn {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0.1875rem 0.5rem;
+  color: var(--text-1);
+  background-color: var(--btn);
+  border-radius: 6.25rem;
+  transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
+}
+.social-btn:hover {
+  transform: translateY(-10%);
+  background-color: var(--btn-hover);
+}
+.social-icon {
+  font-size: 1.25rem;
+}
+
+.container {
+  max-width: 76.25rem;
+  margin: 12.5rem auto;
+}
+
+.section-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+  margin-bottom: 3.125rem;
+}
+
+.tabs {
+  margin-bottom: 3.125rem;
+}
+
+/*VARIABLES*/
+:root {
+  --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
+  --black: #000;
+  --white: #fff;
+  --dark-bg: hsl(225, 22%, 4%);
+  --dark-bg-hover: hsl(225, 22%, 14%);
+  --dark-btn: hsl(205, 16%, 30%);
+  --dark-btn-hover: hsl(212, 20%, 41%);
+  --dark-menu: hsl(213, 19%, 12%);
+  --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
+  --dark-card-tag: hsl(218, 19%, 24%);
+  --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
+  --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
+  --dark-ancent: hsl(29, 100%, 50%);
+  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-text-ancent: hsl(255, 12%, 18%);
+  --dark-text-1: hsl(204, 21%, 91%);
+  --dark-text-2: hsl(211, 20%, 76%);
+  --dark-text-3: hsl(212, 18%, 71%);
+  --dark-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.25) inset, -1px -1px 2px 0px rgba(131, 131, 131, 0.05) inset;
+  --dark-shadow-hero: 0 0.05em 1em hsl(204, 21%, 91%);
+  --light-bg: hsl(210, 50%, 94%);
+  --light-bg-hover: hsl(210, 50%, 84%);
+  --light-btn: hsl(216, 15%, 76%);
+  --light-btn-hover: hsl(208, 17%, 67%);
+  --light-menu: hsl(0, 0%, 100%);
+  --light-card: linear-gradient(90deg, hsl(210, 36%, 96%) 0%, hsl(207, 39%, 95%) 99.91%);
+  --light-card-tag: hsl(210, 46%, 90%);
+  --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
+  --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
+  --light-ancent: hsl(29, 100%, 50%);
+  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-text-ancent: hsl(0, 3%, 11%);
+  --light-text-1: hsl(220, 11%, 24%);
+  --light-text-2: hsl(209, 26%, 26%);
+  --light-text-3: hsl(0, 0%, 37%);
+  --light-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --light-shadow-hero: 0 0.1em 1em hsl(220, 11%, 24%);
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light-bg);
+    --bg-hover: (--light-bg-hover);
+    --btn: var(--light-btn);
+    --btn-hover: var(--light-btn-hover);
+    --menu: var(--light-menu);
+    --card: var(--light-card);
+    --card-tag: var(--light-card-tag);
+    --tab: var(--light-tab);
+    --tab-btn: var(--light-tab-btn);
+    --ancent: var(--light-ancent);
+    --ancent-hover: var(--light-ancent-hover);
+    --text-ancent: var(--light-text-ancent);
+    --text-1: var(--light-text-1);
+    --text-2: var(--light-text-2);
+    --text-3: var(--light-text-3);
+    --shadow: var(--light-shadow);
+    --shadow-hero: var(--light-shadow-hero);
+  }
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --bg-hover: (--light-bg-hover);
+  --btn: var(--light-btn);
+  --btn-hover: var(--light-btn-hover);
+  --menu: var(--light-menu);
+  --card: var(--light-card);
+  --card-tag: var(--light-card-tag);
+  --tab: var(--light-tab);
+  --tab-btn: var(--light-tab-btn);
+  --ancent: var(--light-ancent);
+  --ancent-hover: var(--light-ancent-hover);
+  --text-ancent: var(--light-text-ancent);
+  --text-1: var(--light-text-1);
+  --text-2: var(--light-text-2);
+  --text-3: var(--light-text-3);
+  --shadow: var(--light-shadow);
+  --shadow-hero: var(--light-shadow-hero);
+}
+
+/*General - Variables*/
+/*btnHover*/
+/*VARIABLES*/
+:root {
+  --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
+  --black: #000;
+  --white: #fff;
+  --dark-bg: hsl(225, 22%, 4%);
+  --dark-bg-hover: hsl(225, 22%, 14%);
+  --dark-btn: hsl(205, 16%, 30%);
+  --dark-btn-hover: hsl(212, 20%, 41%);
+  --dark-menu: hsl(213, 19%, 12%);
+  --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
+  --dark-card-tag: hsl(218, 19%, 24%);
+  --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
+  --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
+  --dark-ancent: hsl(29, 100%, 50%);
+  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-text-ancent: hsl(255, 12%, 18%);
+  --dark-text-1: hsl(204, 21%, 91%);
+  --dark-text-2: hsl(211, 20%, 76%);
+  --dark-text-3: hsl(212, 18%, 71%);
+  --dark-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.25) inset, -1px -1px 2px 0px rgba(131, 131, 131, 0.05) inset;
+  --dark-shadow-hero: 0 0.05em 1em hsl(204, 21%, 91%);
+  --light-bg: hsl(210, 50%, 94%);
+  --light-bg-hover: hsl(210, 50%, 84%);
+  --light-btn: hsl(216, 15%, 76%);
+  --light-btn-hover: hsl(208, 17%, 67%);
+  --light-menu: hsl(0, 0%, 100%);
+  --light-card: linear-gradient(90deg, hsl(210, 36%, 96%) 0%, hsl(207, 39%, 95%) 99.91%);
+  --light-card-tag: hsl(210, 46%, 90%);
+  --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
+  --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
+  --light-ancent: hsl(29, 100%, 50%);
+  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-text-ancent: hsl(0, 3%, 11%);
+  --light-text-1: hsl(220, 11%, 24%);
+  --light-text-2: hsl(209, 26%, 26%);
+  --light-text-3: hsl(0, 0%, 37%);
+  --light-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --light-shadow-hero: 0 0.1em 1em hsl(220, 11%, 24%);
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light-bg);
+    --bg-hover: (--light-bg-hover);
+    --btn: var(--light-btn);
+    --btn-hover: var(--light-btn-hover);
+    --menu: var(--light-menu);
+    --card: var(--light-card);
+    --card-tag: var(--light-card-tag);
+    --tab: var(--light-tab);
+    --tab-btn: var(--light-tab-btn);
+    --ancent: var(--light-ancent);
+    --ancent-hover: var(--light-ancent-hover);
+    --text-ancent: var(--light-text-ancent);
+    --text-1: var(--light-text-1);
+    --text-2: var(--light-text-2);
+    --text-3: var(--light-text-3);
+    --shadow: var(--light-shadow);
+    --shadow-hero: var(--light-shadow-hero);
+  }
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --bg-hover: (--light-bg-hover);
+  --btn: var(--light-btn);
+  --btn-hover: var(--light-btn-hover);
+  --menu: var(--light-menu);
+  --card: var(--light-card);
+  --card-tag: var(--light-card-tag);
+  --tab: var(--light-tab);
+  --tab-btn: var(--light-tab-btn);
+  --ancent: var(--light-ancent);
+  --ancent-hover: var(--light-ancent-hover);
+  --text-ancent: var(--light-text-ancent);
+  --text-1: var(--light-text-1);
+  --text-2: var(--light-text-2);
+  --text-3: var(--light-text-3);
+  --shadow: var(--light-shadow);
+  --shadow-hero: var(--light-shadow-hero);
+}
+
+/*General - Variables*/
+/*btnHover*/
+.page-transition {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.page-hidden {
+  opacity: 0;
+}
+
+.menu {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: fixed;
+  padding: 1.25rem 1.25rem;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: var(--menu);
+  z-index: 999;
+  transition: all 0.3s ease-in-out;
+}
+
+.menu-bt {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: none;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  background: var(--btn);
+  cursor: pointer;
+  transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
+}
+.menu-bt:hover {
+  transform: translateY(-10%);
+  background-color: var(--btn-hover);
+}
+.menu-bt .fa-solid {
+  color: var(--text-1);
+  font-size: 1.25rem;
+}
+
+.logo {
+  width: 2.25rem;
+  height: 2.25rem;
+  transform: scale(0);
+}
+
+.animate-logo {
+  transition: 2s 0.5s;
+  transform: scale(1) rotate(2160deg);
+}
+
+.nav-menu {
+  display: flex;
+  flex-direction: row;
+  gap: 2.5rem;
+  align-items: center;
+}
+.nav-menu__link {
+  font-size: 1.25rem;
+  position: relative;
+}
+.nav-menu__link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  top: 1.875rem;
+  bottom: 0;
+  left: 0;
+  background: var(--ancent-linear);
+  transition: all 0.3s ease-in-out;
+}
+.nav-menu__link:hover::after {
+  width: 100%;
+}
+
+.nav-menu__link.active {
+  color: var(--ancent);
+}
+
+.toggle {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: var(--btn);
+  transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
+}
+.toggle:hover {
+  transform: translateY(-10%);
+  background-color: var(--btn-hover);
+}
+.toggle input {
+  position: absolute;
+  opacity: 0;
+}
+.toggle .fa-moon {
+  color: var(--text-1);
+  font-size: 1.25rem;
+  position: absolute;
+  transform: scale(0);
+  transition: 1s ease;
+}
+.toggle input:checked ~ .fa-moon {
+  transform: scale(1) rotate(360deg);
+  transition-delay: 0.8s;
+}
+.toggle .fa-sun {
+  color: var(--text-1);
+  font-size: 1.25rem;
+  transition: 1s ease;
+  transition-delay: 0.8s;
+}
+.toggle input:checked ~ .fa-sun {
+  transform: rotate(360deg) scale(0);
+  transition-delay: 0s;
+}
+
+.sidelist {
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 0 auto;
+  height: 100dvh;
+  width: 100vw;
+  z-index: -1;
+  -webkit-backdrop-filter: blur(250px);
+          backdrop-filter: blur(250px);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.75rem;
+  gap: 3.75rem;
+  overflow: hidden;
+}
+.sidelist .nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+}
+
+@media screen and (max-width: 1024px) {
+  .nav-menu {
+    display: none;
+  }
+  .menu-bt {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+/* SCROLL STUFF */
+.scroll-down .menu {
+  transform: translate3d(0, -120%, 0);
+}
+
+/*VARIABLES*/
+:root {
+  --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
+  --black: #000;
+  --white: #fff;
+  --dark-bg: hsl(225, 22%, 4%);
+  --dark-bg-hover: hsl(225, 22%, 14%);
+  --dark-btn: hsl(205, 16%, 30%);
+  --dark-btn-hover: hsl(212, 20%, 41%);
+  --dark-menu: hsl(213, 19%, 12%);
+  --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
+  --dark-card-tag: hsl(218, 19%, 24%);
+  --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
+  --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
+  --dark-ancent: hsl(29, 100%, 50%);
+  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-text-ancent: hsl(255, 12%, 18%);
+  --dark-text-1: hsl(204, 21%, 91%);
+  --dark-text-2: hsl(211, 20%, 76%);
+  --dark-text-3: hsl(212, 18%, 71%);
+  --dark-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.25) inset, -1px -1px 2px 0px rgba(131, 131, 131, 0.05) inset;
+  --dark-shadow-hero: 0 0.05em 1em hsl(204, 21%, 91%);
+  --light-bg: hsl(210, 50%, 94%);
+  --light-bg-hover: hsl(210, 50%, 84%);
+  --light-btn: hsl(216, 15%, 76%);
+  --light-btn-hover: hsl(208, 17%, 67%);
+  --light-menu: hsl(0, 0%, 100%);
+  --light-card: linear-gradient(90deg, hsl(210, 36%, 96%) 0%, hsl(207, 39%, 95%) 99.91%);
+  --light-card-tag: hsl(210, 46%, 90%);
+  --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
+  --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
+  --light-ancent: hsl(29, 100%, 50%);
+  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-text-ancent: hsl(0, 3%, 11%);
+  --light-text-1: hsl(220, 11%, 24%);
+  --light-text-2: hsl(209, 26%, 26%);
+  --light-text-3: hsl(0, 0%, 37%);
+  --light-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --light-shadow-hero: 0 0.1em 1em hsl(220, 11%, 24%);
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light-bg);
+    --bg-hover: (--light-bg-hover);
+    --btn: var(--light-btn);
+    --btn-hover: var(--light-btn-hover);
+    --menu: var(--light-menu);
+    --card: var(--light-card);
+    --card-tag: var(--light-card-tag);
+    --tab: var(--light-tab);
+    --tab-btn: var(--light-tab-btn);
+    --ancent: var(--light-ancent);
+    --ancent-hover: var(--light-ancent-hover);
+    --text-ancent: var(--light-text-ancent);
+    --text-1: var(--light-text-1);
+    --text-2: var(--light-text-2);
+    --text-3: var(--light-text-3);
+    --shadow: var(--light-shadow);
+    --shadow-hero: var(--light-shadow-hero);
+  }
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --bg-hover: (--light-bg-hover);
+  --btn: var(--light-btn);
+  --btn-hover: var(--light-btn-hover);
+  --menu: var(--light-menu);
+  --card: var(--light-card);
+  --card-tag: var(--light-card-tag);
+  --tab: var(--light-tab);
+  --tab-btn: var(--light-tab-btn);
+  --ancent: var(--light-ancent);
+  --ancent-hover: var(--light-ancent-hover);
+  --text-ancent: var(--light-text-ancent);
+  --text-1: var(--light-text-1);
+  --text-2: var(--light-text-2);
+  --text-3: var(--light-text-3);
+  --shadow: var(--light-shadow);
+  --shadow-hero: var(--light-shadow-hero);
+}
+
+/*General - Variables*/
+/*btnHover*/
+@media screen and (max-width: 1250px) {
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .about-me__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+:root {
+  --font: "Proza Libre";
+}
+
+/*VARIABLES*/
+:root {
+  --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
+  --black: #000;
+  --white: #fff;
+  --dark-bg: hsl(225, 22%, 4%);
+  --dark-bg-hover: hsl(225, 22%, 14%);
+  --dark-btn: hsl(205, 16%, 30%);
+  --dark-btn-hover: hsl(212, 20%, 41%);
+  --dark-menu: hsl(213, 19%, 12%);
+  --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
+  --dark-card-tag: hsl(218, 19%, 24%);
+  --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
+  --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
+  --dark-ancent: hsl(29, 100%, 50%);
+  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-text-ancent: hsl(255, 12%, 18%);
+  --dark-text-1: hsl(204, 21%, 91%);
+  --dark-text-2: hsl(211, 20%, 76%);
+  --dark-text-3: hsl(212, 18%, 71%);
+  --dark-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.25) inset, -1px -1px 2px 0px rgba(131, 131, 131, 0.05) inset;
+  --dark-shadow-hero: 0 0.05em 1em hsl(204, 21%, 91%);
+  --light-bg: hsl(210, 50%, 94%);
+  --light-bg-hover: hsl(210, 50%, 84%);
+  --light-btn: hsl(216, 15%, 76%);
+  --light-btn-hover: hsl(208, 17%, 67%);
+  --light-menu: hsl(0, 0%, 100%);
+  --light-card: linear-gradient(90deg, hsl(210, 36%, 96%) 0%, hsl(207, 39%, 95%) 99.91%);
+  --light-card-tag: hsl(210, 46%, 90%);
+  --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
+  --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
+  --light-ancent: hsl(29, 100%, 50%);
+  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-text-ancent: hsl(0, 3%, 11%);
+  --light-text-1: hsl(220, 11%, 24%);
+  --light-text-2: hsl(209, 26%, 26%);
+  --light-text-3: hsl(0, 0%, 37%);
+  --light-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --light-shadow-hero: 0 0.1em 1em hsl(220, 11%, 24%);
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light-bg);
+    --bg-hover: (--light-bg-hover);
+    --btn: var(--light-btn);
+    --btn-hover: var(--light-btn-hover);
+    --menu: var(--light-menu);
+    --card: var(--light-card);
+    --card-tag: var(--light-card-tag);
+    --tab: var(--light-tab);
+    --tab-btn: var(--light-tab-btn);
+    --ancent: var(--light-ancent);
+    --ancent-hover: var(--light-ancent-hover);
+    --text-ancent: var(--light-text-ancent);
+    --text-1: var(--light-text-1);
+    --text-2: var(--light-text-2);
+    --text-3: var(--light-text-3);
+    --shadow: var(--light-shadow);
+    --shadow-hero: var(--light-shadow-hero);
+  }
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --bg-hover: (--light-bg-hover);
+  --btn: var(--light-btn);
+  --btn-hover: var(--light-btn-hover);
+  --menu: var(--light-menu);
+  --card: var(--light-card);
+  --card-tag: var(--light-card-tag);
+  --tab: var(--light-tab);
+  --tab-btn: var(--light-tab-btn);
+  --ancent: var(--light-ancent);
+  --ancent-hover: var(--light-ancent-hover);
+  --text-ancent: var(--light-text-ancent);
+  --text-1: var(--light-text-1);
+  --text-2: var(--light-text-2);
+  --text-3: var(--light-text-3);
+  --shadow: var(--light-shadow);
+  --shadow-hero: var(--light-shadow-hero);
+}
+
+/*General - Variables*/
+/*btnHover*/
+#progress {
+  position: fixed;
+  background: var(--ancent-linear);
+  z-index: 1000;
+  bottom: 5%;
+  right: 2.5%;
+  width: 50px;
+  height: 50px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--ancent-linear);
+  cursor: pointer;
+}
+
+#progress-value {
+  display: grid;
+  height: calc(100% - 8px);
+  width: calc(100% - 8px);
+  background: var(--bg);
+  border-radius: 50%;
+  color: var(--text-3);
+  place-items: center;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 1250px) {
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .about-me__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+:root {
+  --font: "Proza Libre";
+}
+
+/*VARIABLES*/
+:root {
+  --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
+  --black: #000;
+  --white: #fff;
+  --dark-bg: hsl(225, 22%, 4%);
+  --dark-bg-hover: hsl(225, 22%, 14%);
+  --dark-btn: hsl(205, 16%, 30%);
+  --dark-btn-hover: hsl(212, 20%, 41%);
+  --dark-menu: hsl(213, 19%, 12%);
+  --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
+  --dark-card-tag: hsl(218, 19%, 24%);
+  --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
+  --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
+  --dark-ancent: hsl(29, 100%, 50%);
+  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-text-ancent: hsl(255, 12%, 18%);
+  --dark-text-1: hsl(204, 21%, 91%);
+  --dark-text-2: hsl(211, 20%, 76%);
+  --dark-text-3: hsl(212, 18%, 71%);
+  --dark-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.25) inset, -1px -1px 2px 0px rgba(131, 131, 131, 0.05) inset;
+  --dark-shadow-hero: 0 0.05em 1em hsl(204, 21%, 91%);
+  --light-bg: hsl(210, 50%, 94%);
+  --light-bg-hover: hsl(210, 50%, 84%);
+  --light-btn: hsl(216, 15%, 76%);
+  --light-btn-hover: hsl(208, 17%, 67%);
+  --light-menu: hsl(0, 0%, 100%);
+  --light-card: linear-gradient(90deg, hsl(210, 36%, 96%) 0%, hsl(207, 39%, 95%) 99.91%);
+  --light-card-tag: hsl(210, 46%, 90%);
+  --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
+  --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
+  --light-ancent: hsl(29, 100%, 50%);
+  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-text-ancent: hsl(0, 3%, 11%);
+  --light-text-1: hsl(220, 11%, 24%);
+  --light-text-2: hsl(209, 26%, 26%);
+  --light-text-3: hsl(0, 0%, 37%);
+  --light-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --light-shadow-hero: 0 0.1em 1em hsl(220, 11%, 24%);
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light-bg);
+    --bg-hover: (--light-bg-hover);
+    --btn: var(--light-btn);
+    --btn-hover: var(--light-btn-hover);
+    --menu: var(--light-menu);
+    --card: var(--light-card);
+    --card-tag: var(--light-card-tag);
+    --tab: var(--light-tab);
+    --tab-btn: var(--light-tab-btn);
+    --ancent: var(--light-ancent);
+    --ancent-hover: var(--light-ancent-hover);
+    --text-ancent: var(--light-text-ancent);
+    --text-1: var(--light-text-1);
+    --text-2: var(--light-text-2);
+    --text-3: var(--light-text-3);
+    --shadow: var(--light-shadow);
+    --shadow-hero: var(--light-shadow-hero);
+  }
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --bg-hover: (--light-bg-hover);
+  --btn: var(--light-btn);
+  --btn-hover: var(--light-btn-hover);
+  --menu: var(--light-menu);
+  --card: var(--light-card);
+  --card-tag: var(--light-card-tag);
+  --tab: var(--light-tab);
+  --tab-btn: var(--light-tab-btn);
+  --ancent: var(--light-ancent);
+  --ancent-hover: var(--light-ancent-hover);
+  --text-ancent: var(--light-text-ancent);
+  --text-1: var(--light-text-1);
+  --text-2: var(--light-text-2);
+  --text-3: var(--light-text-3);
+  --shadow: var(--light-shadow);
+  --shadow-hero: var(--light-shadow-hero);
+}
+
+/*General - Variables*/
+/*btnHover*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+p a {
+  display: inline;
+}
+
+video, iframe, picture, figure {
+  max-width: 100%;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 0.75rem;
+}
+
+form, select, textarea, button, label {
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.project-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(20rem, 100%), 1fr));
+  gap: 1.25rem;
+}
+
+.card-project {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  border-radius: 0.625rem;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  overflow: hidden;
+}
+.card-project__header {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+.card-project__header img {
+  display: block;
+  width: 100%;
+  max-height: 200px;
+  aspect-ratio: 16/9;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transition: 0.25s transform ease-in-out;
+}
+.card-project__header-date {
+  color: var(--text-3);
+}
+.card-project__header-tag {
+  padding: 0.3125rem 0.625rem;
+  border-radius: 0.3125rem;
+  background: var(--card-tag);
+  box-shadow: var(--shadow);
+}
+.card-project__body {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  padding: 0 1.25rem 1.25rem;
+}
+.card-project__body-header {
+  display: flex;
+  gap: 1.25rem;
+  align-items: center;
+}
+.card-project__body p {
+  line-height: 1.4;
+}
+.card-project__body a {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 0.625rem;
+  padding: 0.75rem 1rem;
+  color: var(--text-1);
+  width: -moz-fit-content;
+  width: fit-content;
+  background-color: var(--btn);
+  border-radius: 0.3125rem;
+  transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
+  font-size: 1rem;
+}
+.card-project__body a:hover {
+  transform: translateY(-10%);
+  background-color: var(--btn-hover);
+}
+
+.card-project__header.card-project__img {
+  overflow: hidden;
+  padding: 0;
+}
+
+.card-project:hover .card-project__header.card-project__img > img {
+  transform: scale(1.05);
+}
+
+.card-project.hidden {
+  display: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+p a {
+  display: inline;
+}
+
+video, iframe, picture, figure {
+  max-width: 100%;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 0.75rem;
+}
+
+form, select, textarea, button, label {
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+@media screen and (max-width: 1250px) {
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .about-me__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+:root {
+  --font: "Proza Libre";
+}
+
+/*VARIABLES*/
+:root {
+  --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
+  --black: #000;
+  --white: #fff;
+  --dark-bg: hsl(225, 22%, 4%);
+  --dark-bg-hover: hsl(225, 22%, 14%);
+  --dark-btn: hsl(205, 16%, 30%);
+  --dark-btn-hover: hsl(212, 20%, 41%);
+  --dark-menu: hsl(213, 19%, 12%);
+  --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
+  --dark-card-tag: hsl(218, 19%, 24%);
+  --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
+  --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
+  --dark-ancent: hsl(29, 100%, 50%);
+  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-text-ancent: hsl(255, 12%, 18%);
+  --dark-text-1: hsl(204, 21%, 91%);
+  --dark-text-2: hsl(211, 20%, 76%);
+  --dark-text-3: hsl(212, 18%, 71%);
+  --dark-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.25) inset, -1px -1px 2px 0px rgba(131, 131, 131, 0.05) inset;
+  --dark-shadow-hero: 0 0.05em 1em hsl(204, 21%, 91%);
+  --light-bg: hsl(210, 50%, 94%);
+  --light-bg-hover: hsl(210, 50%, 84%);
+  --light-btn: hsl(216, 15%, 76%);
+  --light-btn-hover: hsl(208, 17%, 67%);
+  --light-menu: hsl(0, 0%, 100%);
+  --light-card: linear-gradient(90deg, hsl(210, 36%, 96%) 0%, hsl(207, 39%, 95%) 99.91%);
+  --light-card-tag: hsl(210, 46%, 90%);
+  --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
+  --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
+  --light-ancent: hsl(29, 100%, 50%);
+  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-text-ancent: hsl(0, 3%, 11%);
+  --light-text-1: hsl(220, 11%, 24%);
+  --light-text-2: hsl(209, 26%, 26%);
+  --light-text-3: hsl(0, 0%, 37%);
+  --light-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --light-shadow-hero: 0 0.1em 1em hsl(220, 11%, 24%);
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light-bg);
+    --bg-hover: (--light-bg-hover);
+    --btn: var(--light-btn);
+    --btn-hover: var(--light-btn-hover);
+    --menu: var(--light-menu);
+    --card: var(--light-card);
+    --card-tag: var(--light-card-tag);
+    --tab: var(--light-tab);
+    --tab-btn: var(--light-tab-btn);
+    --ancent: var(--light-ancent);
+    --ancent-hover: var(--light-ancent-hover);
+    --text-ancent: var(--light-text-ancent);
+    --text-1: var(--light-text-1);
+    --text-2: var(--light-text-2);
+    --text-3: var(--light-text-3);
+    --shadow: var(--light-shadow);
+    --shadow-hero: var(--light-shadow-hero);
+  }
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --bg-hover: (--light-bg-hover);
+  --btn: var(--light-btn);
+  --btn-hover: var(--light-btn-hover);
+  --menu: var(--light-menu);
+  --card: var(--light-card);
+  --card-tag: var(--light-card-tag);
+  --tab: var(--light-tab);
+  --tab-btn: var(--light-tab-btn);
+  --ancent: var(--light-ancent);
+  --ancent-hover: var(--light-ancent-hover);
+  --text-ancent: var(--light-text-ancent);
+  --text-1: var(--light-text-1);
+  --text-2: var(--light-text-2);
+  --text-3: var(--light-text-3);
+  --shadow: var(--light-shadow);
+  --shadow-hero: var(--light-shadow-hero);
+}
+
+/*General - Variables*/
+/*btnHover*/
+::-webkit-scrollbar {
+  width: 0.3125rem;
+}
+@media (max-width: 750px) {
+  ::-webkit-scrollbar {
+    width: 0 !important;
+    height: 0 !important;
+  }
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+@media (max-width: 750px) {
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ancent);
+  border-radius: 0.625rem;
+}
+@media (max-width: 750px) {
+  ::-webkit-scrollbar-thumb {
+    background: transparent;
+    border-radius: 0;
+  }
+}
+
+::-moz-selection {
+  background-color: var(--ancent);
+  color: var(--bg);
+}
+
+::selection {
+  background-color: var(--ancent);
+  color: var(--bg);
+}
+
+@media screen and (max-width: 1250px) {
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .about-me__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+:root {
+  --font: "Proza Libre";
+}
+
+/*VARIABLES*/
+:root {
+  --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
+  --black: #000;
+  --white: #fff;
+  --dark-bg: hsl(225, 22%, 4%);
+  --dark-bg-hover: hsl(225, 22%, 14%);
+  --dark-btn: hsl(205, 16%, 30%);
+  --dark-btn-hover: hsl(212, 20%, 41%);
+  --dark-menu: hsl(213, 19%, 12%);
+  --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
+  --dark-card-tag: hsl(218, 19%, 24%);
+  --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
+  --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
+  --dark-ancent: hsl(29, 100%, 50%);
+  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-text-ancent: hsl(255, 12%, 18%);
+  --dark-text-1: hsl(204, 21%, 91%);
+  --dark-text-2: hsl(211, 20%, 76%);
+  --dark-text-3: hsl(212, 18%, 71%);
+  --dark-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.25) inset, -1px -1px 2px 0px rgba(131, 131, 131, 0.05) inset;
+  --dark-shadow-hero: 0 0.05em 1em hsl(204, 21%, 91%);
+  --light-bg: hsl(210, 50%, 94%);
+  --light-bg-hover: hsl(210, 50%, 84%);
+  --light-btn: hsl(216, 15%, 76%);
+  --light-btn-hover: hsl(208, 17%, 67%);
+  --light-menu: hsl(0, 0%, 100%);
+  --light-card: linear-gradient(90deg, hsl(210, 36%, 96%) 0%, hsl(207, 39%, 95%) 99.91%);
+  --light-card-tag: hsl(210, 46%, 90%);
+  --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
+  --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
+  --light-ancent: hsl(29, 100%, 50%);
+  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-text-ancent: hsl(0, 3%, 11%);
+  --light-text-1: hsl(220, 11%, 24%);
+  --light-text-2: hsl(209, 26%, 26%);
+  --light-text-3: hsl(0, 0%, 37%);
+  --light-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --light-shadow-hero: 0 0.1em 1em hsl(220, 11%, 24%);
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light-bg);
+    --bg-hover: (--light-bg-hover);
+    --btn: var(--light-btn);
+    --btn-hover: var(--light-btn-hover);
+    --menu: var(--light-menu);
+    --card: var(--light-card);
+    --card-tag: var(--light-card-tag);
+    --tab: var(--light-tab);
+    --tab-btn: var(--light-tab-btn);
+    --ancent: var(--light-ancent);
+    --ancent-hover: var(--light-ancent-hover);
+    --text-ancent: var(--light-text-ancent);
+    --text-1: var(--light-text-1);
+    --text-2: var(--light-text-2);
+    --text-3: var(--light-text-3);
+    --shadow: var(--light-shadow);
+    --shadow-hero: var(--light-shadow-hero);
+  }
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --bg-hover: (--light-bg-hover);
+  --btn: var(--light-btn);
+  --btn-hover: var(--light-btn-hover);
+  --menu: var(--light-menu);
+  --card: var(--light-card);
+  --card-tag: var(--light-card-tag);
+  --tab: var(--light-tab);
+  --tab-btn: var(--light-tab-btn);
+  --ancent: var(--light-ancent);
+  --ancent-hover: var(--light-ancent-hover);
+  --text-ancent: var(--light-text-ancent);
+  --text-1: var(--light-text-1);
+  --text-2: var(--light-text-2);
+  --text-3: var(--light-text-3);
+  --shadow: var(--light-shadow);
+  --shadow-hero: var(--light-shadow-hero);
+}
+
+/*General - Variables*/
+/*btnHover*/
+h1 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+h3 {
+  font-size: 1.75rem;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+p {
+  font-weight: 400;
+  color: var(--text-2);
+  line-height: 1.1;
+}
+
+.--large-bold {
+  font-size: 1.75rem;
+  font-weight: 700;
+  letter-spacing: 0.15625rem;
+}
+
+.--large {
+  font-size: 1.5rem;
+}
+
+.--regular-cap {
+  font-size: 1.25rem;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.--regular-bold {
+  font-size: 1.25rem;
+  font-weight: 700;
+}
+
+.--regular {
+  font-size: 1.25rem;
+  line-height: 1.4;
+}
+
+.--small {
+  font-size: 1rem;
+}
+
+.--little {
+  font-size: 0.75rem;
+}
+
+/*VARIABLES*/
+:root {
+  --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
+  --black: #000;
+  --white: #fff;
+  --dark-bg: hsl(225, 22%, 4%);
+  --dark-bg-hover: hsl(225, 22%, 14%);
+  --dark-btn: hsl(205, 16%, 30%);
+  --dark-btn-hover: hsl(212, 20%, 41%);
+  --dark-menu: hsl(213, 19%, 12%);
+  --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
+  --dark-card-tag: hsl(218, 19%, 24%);
+  --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
+  --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
+  --dark-ancent: hsl(29, 100%, 50%);
+  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-text-ancent: hsl(255, 12%, 18%);
+  --dark-text-1: hsl(204, 21%, 91%);
+  --dark-text-2: hsl(211, 20%, 76%);
+  --dark-text-3: hsl(212, 18%, 71%);
+  --dark-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.25) inset, -1px -1px 2px 0px rgba(131, 131, 131, 0.05) inset;
+  --dark-shadow-hero: 0 0.05em 1em hsl(204, 21%, 91%);
+  --light-bg: hsl(210, 50%, 94%);
+  --light-bg-hover: hsl(210, 50%, 84%);
+  --light-btn: hsl(216, 15%, 76%);
+  --light-btn-hover: hsl(208, 17%, 67%);
+  --light-menu: hsl(0, 0%, 100%);
+  --light-card: linear-gradient(90deg, hsl(210, 36%, 96%) 0%, hsl(207, 39%, 95%) 99.91%);
+  --light-card-tag: hsl(210, 46%, 90%);
+  --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
+  --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
+  --light-ancent: hsl(29, 100%, 50%);
+  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-text-ancent: hsl(0, 3%, 11%);
+  --light-text-1: hsl(220, 11%, 24%);
+  --light-text-2: hsl(209, 26%, 26%);
+  --light-text-3: hsl(0, 0%, 37%);
+  --light-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --light-shadow-hero: 0 0.1em 1em hsl(220, 11%, 24%);
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light-bg);
+    --bg-hover: (--light-bg-hover);
+    --btn: var(--light-btn);
+    --btn-hover: var(--light-btn-hover);
+    --menu: var(--light-menu);
+    --card: var(--light-card);
+    --card-tag: var(--light-card-tag);
+    --tab: var(--light-tab);
+    --tab-btn: var(--light-tab-btn);
+    --ancent: var(--light-ancent);
+    --ancent-hover: var(--light-ancent-hover);
+    --text-ancent: var(--light-text-ancent);
+    --text-1: var(--light-text-1);
+    --text-2: var(--light-text-2);
+    --text-3: var(--light-text-3);
+    --shadow: var(--light-shadow);
+    --shadow-hero: var(--light-shadow-hero);
+  }
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --bg-hover: (--light-bg-hover);
+  --btn: var(--light-btn);
+  --btn-hover: var(--light-btn-hover);
+  --menu: var(--light-menu);
+  --card: var(--light-card);
+  --card-tag: var(--light-card-tag);
+  --tab: var(--light-tab);
+  --tab-btn: var(--light-tab-btn);
+  --ancent: var(--light-ancent);
+  --ancent-hover: var(--light-ancent-hover);
+  --text-ancent: var(--light-text-ancent);
+  --text-1: var(--light-text-1);
+  --text-2: var(--light-text-2);
+  --text-3: var(--light-text-3);
+  --shadow: var(--light-shadow);
+  --shadow-hero: var(--light-shadow-hero);
+}
+
+/*General - Variables*/
+/*btnHover*/
+body {
+  background: var(--bg);
+  color: var(--text-1);
+  font-family: var(--font);
+  line-height: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+
+a {
+  text-decoration: none;
+  font-size: 1.75rem;
+}
+
+/* Section Welcome */
+.section-welcome {
+  display: flex;
+  gap: 3.125rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.section-welcome .h2--job {
+  position: relative;
+  display: inline-block;
+}
+.section-welcome .h2--job span {
+  background: var(--ancent);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  cursor: pointer;
+}
+.section-welcome .h2--job span:nth-child(odd) {
+  display: inline-block;
+  animation: shake 0.75s forwards;
+}
+.section-welcome .h2--job span:nth-child(odd):hover {
+  animation: goUp 2s ease-in-out;
+}
+.section-welcome .h2--job span:nth-child(even) {
+  display: inline-block;
+  animation: shake-opposite 0.75s forwards;
+}
+.section-welcome .h2--job span:nth-child(even):hover {
+  animation: goDown 0.5s ease-in-out;
+}
+.section-welcome p {
+  text-align: center;
+}
+.section-welcome hr {
+  width: 100%;
+  border: none;
+  height: 1px;
+  margin: 20px 0;
+  background-image: var(--ancent-linear);
+}
+
+@keyframes goUp {
+  0%, 100% {
+    transform: translateY(-10%);
+  }
+}
+@keyframes goDown {
+  0%, 100% {
+    transform: translateY(10%);
+  }
+}
+@keyframes shake {
+  0%, 100% {
+    transform: translate(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate(-4px, -2px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translate(2px, 2px);
+  }
+}
+@keyframes shake-opposite {
+  0%, 100% {
+    transform: translate(0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate(2px, 2px);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translate(-2px, -4px);
+  }
+}
+/* Section Services */
+.section-services {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-services__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+  gap: 1.25rem;
+}
+
+.section-services__card {
+  display: flex;
+  padding: 1.25rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  border-radius: 0.625rem;
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+.section-services__card i {
+  font-size: 3rem;
+  background: var(--ancent-linear);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+.section-services__card p {
+  line-height: 1.4;
+}
+
+/* Section Toolstack */
+.section-toolstack .section-header {
+  margin-bottom: 3.125rem;
+}
+
+.toolstack__list {
+  margin: 0;
+  padding-inline: 0;
+  list-style: none;
+  display: flex;
+}
+.toolstack__list li {
+  background: var(--card);
+  border-radius: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+.toolstack__list img {
+  width: 3rem;
+  height: auto;
+  background: var(--ancent-linear);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+.scroller {
+  max-width: 1220px;
+}
+.scroller__card {
+  background-color: lime;
+}
+
+.scroller__card {
+  background: lime;
+}
+
+.scroller__inner {
+  display: flex;
+  gap: 1.25rem;
+  padding-block: 1.25rem;
+  flex-wrap: wrap;
+}
+
+.scroller[data-animated=true] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated=true] .scroller__inner {
+  width: -moz-max-content;
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.3125rem));
+  }
+}/*# sourceMappingURL=main.css.map */

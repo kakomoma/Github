@@ -1,0 +1,125 @@
+@import 'breakpoints';
+@import 'font';
+@import 'function';
+@import 'variables';
+
+.section-testimonial {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-testimonial__cards {
+  display: grid;
+  gap: rem(20);
+  padding-block: rem(20);
+  margin-inline: auto;
+}
+
+.card-testimonial {
+  display: flex;
+  flex-direction: column;
+  padding: rem(20);
+  gap: rem(20);
+  border-radius: rem(10);
+  border: 1px solid var(--text-3);
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+
+  .quote {
+    position: absolute;
+    top: 0;
+    right: 5%;
+    font-size: rem(48*4);
+    background: var(--ancent-linear);
+    -webkit-background-clip: text;
+    color: transparent;
+    z-index: -1;
+    opacity: .25;
+  }
+
+  span {
+    font-size: rem(20);
+    font-weight: 600;
+    line-height: 1.4;
+  }
+
+  p {
+    font-size: rem(16);
+    line-height: 1.4;
+  }
+
+  .testimonial-btn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: fit-content;
+    padding: rem(2) rem(8);
+    color: var(--text-1);
+    background-color: var(--btn);
+    border-radius: rem(100);
+    transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
+
+    &:hover {
+      transform: translateY(-10%);
+      background-color: (var(--btn-hover));
+    }
+  }
+
+  .testimonial-icon {
+    font-size: rem(20);
+  }
+}
+
+.card-testimonial:hover {
+  transform: translateY(-2.5%);
+}
+
+
+.testimonial-header {
+  display: flex;
+  gap: rem(20);
+  flex-wrap: nowrap;
+  align-items: center;
+
+
+  .testimonial-image {
+    width: rem(60);
+    height: rem(60);
+
+    img{
+      border-radius: 50%;
+    }
+  }
+
+  h3 {
+    font-size: rem(20);
+    line-height: 1.4;
+  }
+
+  p {
+    color: var(--text-3);
+  }
+
+  a {
+    font-size: inherit;
+    font-weight: 700;
+    color: var(--ancent);
+    line-height: 1.1;   
+  }
+}
+
+@media screen and (min-width: 1250px) {
+  .grid-col-span-2 {
+    grid-column: span 2;
+  }
+
+  .section-testimonial__cards {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .card-testimonial:last-child {
+    grid-column-start: 4;
+    grid-row: 1 / 3;
+  }
+}

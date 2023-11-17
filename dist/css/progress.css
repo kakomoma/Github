@@ -1,0 +1,159 @@
+@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;700;800&display=swap");
+@media screen and (max-width: 1250px) {
+  main {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: rem(20);
+  }
+  .about-me__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+:root {
+  --font: "Proza Libre";
+}
+
+/*General - Colors*/
+:root {
+  --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
+  --dark-bg: hsl(225, 22%, 4%);
+  --dark-btn: hsl(205, 16%, 30%);
+  --dark-btn-hover: hsl(212, 20%, 41%);
+  --dark-menu: linear-gradient(90deg, #181D23 76.03%, rgba(7, 8, 11, 0.00) 99.98%);
+  --dark-card: linear-gradient(90deg, #181C23 0%, #101318 99.91%);
+  --dark-card-tag: hsl(213, 6%, 15%);
+  --dark-tab: linear-gradient(90deg, #1A2025 0%, #171B20 99.91%);
+  --dark-tab-btn: linear-gradient(90deg, #2C363F 0%, #272D34 99.91%);
+  --dark-ancent: hsl(29, 100%, 50%);
+  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-text-ancent: hsl(255, 12%, 18%);
+  --dark-text-1: hsl(0, 0%, 95%);
+  --dark-text-2: hsl(213, 30%, 66%);
+  --dark-text-3: hsl(213, 15%, 52%);
+  --dark-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.25) inset, -1px -1px 2px 0px rgba(131, 131, 131, 0.05) inset;
+  --light-bg: hsl(210, 50%, 94%);
+  --light-btn: hsl(216, 15%, 76%);
+  --light-btn-hover: hsl(208, 17%, 67%);
+  --light-menu: linear-gradient(90deg, #FFF 73.46%, #EDF2F7 99.98%);
+  --light-card: linear-gradient(90deg, #F0F4F8 0%, #EFF4F8 99.91%);
+  --light-card-tag: hsl(0, 0%, 85%);
+  --light-tab: linear-gradient(90deg, #FFF 0%, #F6F6F6 99.91%);
+  --light-tab-btn: linear-gradient(90deg, #DADEE2 0%, #D3D8DD 99.91%);
+  --light-ancent: hsl(29, 100%, 50%);
+  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-text-ancent: hsl(0, 3%, 11%);
+  --light-text-1: hsl(220, 11%, 24%);
+  --light-text-2: hsl(209, 26%, 26%);
+  --light-text-3: hsl(0, 0%, 37%);
+  --light-shadow: 1px 1px 16px 0px rgba(0, 0, 0, 0.13);
+  --bg: var(--dark-bg);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light-bg);
+    --btn: var(--light-btn);
+    --btn-hover: var(--light-btn-hover);
+    --menu: var(--light-menu);
+    --card: var(--light-card);
+    --card-tag: var(--light-card-tag);
+    --tab: var(--light-tab);
+    --tab-btn: var(--light-tab-btn);
+    --ancent: var(--light-ancent);
+    --ancent-hover: var(--light-ancent-hover);
+    --text-ancent: var(--light-text-ancent);
+    --text-1: var(--light-text-1);
+    --text-2: var(--light-text-2);
+    --text-3: var(--light-text-3);
+    --shadow: var(--light-shadow);
+  }
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --btn: var(--light-btn);
+  --btn-hover: var(--light-btn-hover);
+  --menu: var(--light-menu);
+  --card: var(--light-card);
+  --card-tag: var(--light-card-tag);
+  --tab: var(--light-tab);
+  --tab-btn: var(--light-tab-btn);
+  --ancent: var(--light-ancent);
+  --ancent-hover: var(--light-ancent-hover);
+  --text-ancent: var(--light-text-ancent);
+  --text-1: var(--light-text-1);
+  --text-2: var(--light-text-2);
+  --text-3: var(--light-text-3);
+  --shadow: var(--light-shadow);
+}
+
+/*General - Variables*/
+/*btnHover*/
+#progress {
+  position: fixed;
+  /* background: #194eb9; */
+  z-index: 1000;
+  bottom: 60px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  color: #1d002c;
+  cursor: pointer;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+#progress-value {
+  display: grid;
+  height: calc(100% - 12px);
+  width: calc(100% - 12px);
+  background: var(--gradient-color-bg);
+  border-radius: 50%;
+  color: #fff;
+  place-items: center;
+  font-size: 25px;
+}/*# sourceMappingURL=progress.css.map */

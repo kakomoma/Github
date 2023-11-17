@@ -1,0 +1,81 @@
+@import 'breakpoints';
+@import 'font';
+@import 'function';
+@import 'variables';
+
+.section-faq {
+  .section-header {
+    margin-bottom: rem(50);
+  }
+}
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: rem(60);
+}
+
+.accordion__item {
+  display: flex;
+  flex-direction: column;
+  gap: rem(10);
+
+  p {    
+    line-height: 1.4;    
+  }
+}
+
+.accordion__question {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: rem(10);
+  width: 100%;
+  border: none;
+  background: transparent;
+
+  i {
+    font-size: rem(20);
+  }
+
+  p {
+    color: var(--text-1);
+    font-weight: 700;
+  }
+}
+
+.accordion__question.open p {
+  font-weight: 700;
+}
+
+.accordion__question.open i {
+  transform: rotate(90deg);
+  color: var(--ancent);
+}
+
+.accordion__content {
+  display: flex;
+  padding: rem(20);
+  background: var(--card);
+  border-radius: rem(10);
+
+}
+
+.accordion__collapse {
+  transition: height 300ms ease;
+}
+
+.accordion__collapse.collapse {
+  display: none;
+}
+
+.accordion__collapse.collapsing {
+  height: 0;
+  overflow: hidden;
+}
+
+.accordion__collapse.open {
+  display: block;
+}
+
+/* DESKTOP STYLES */

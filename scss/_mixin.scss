@@ -1,0 +1,18 @@
+@import 'variables';
+
+@mixin transition-ease(){
+  transition: all 0.3s ease-in-out;
+}
+
+@mixin transition(){
+  transform: translateY(-10%);
+}
+
+@mixin borderRadius($argumento1 : 10px){
+  border-radius: $argumento1;
+}
+
+@mixin btnHover($transition, $transform){
+  transition: $transition;
+  transform: $transform; 
+}

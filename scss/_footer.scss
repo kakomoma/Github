@@ -1,0 +1,51 @@
+@import 'mixin';
+@import 'variables';
+@import 'function';
+@import 'reset';
+
+footer{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+  padding: rem(20) rem(120);
+  width: 100%;
+  margin: 0 auto;  
+  bottom: 0;
+  background: var(--menu);
+  backdrop-filter: var(--blur); 
+
+  p{
+    color: var(--text-2);
+  }  
+}
+
+.social{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  gap: rem(20);
+
+  &-btn{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: rem(3) rem(8);
+    color: var(--text-1);
+    background-color: var(--btn);
+    border-radius: rem(100); 
+    transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
+    
+    &:hover{
+      transform: translateY(-10%);
+      background-color: (var(--btn-hover));
+    }
+  } 
+
+  &-icon{    
+    font-size: rem(20); 
+  }
+}
+

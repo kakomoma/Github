@@ -1,0 +1,31 @@
+@import 'breakpoints';
+@import 'font';
+@import 'function';
+@import 'variables';
+
+#progress {
+  position: fixed;
+  background: var(--ancent-linear);
+  z-index: 1000;
+  bottom: 5%;
+  right: 2.5%;
+  width: 50px;
+  height: 50px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--ancent-linear);
+  cursor: pointer;
+}
+
+
+#progress-value {
+  display: grid;
+  height: calc(100% - 8px);
+  width: calc(100% - 8px);
+  background: var(--bg);
+  border-radius: 50%;
+  color: var(--text-3);
+  place-items: center;
+  font-size: rem(24);
+}
