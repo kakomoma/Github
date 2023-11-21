@@ -6,7 +6,7 @@
 .section-testimonial__cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
+  
   gap: rem(20);
   padding-block: rem(20);
   margin-inline: auto;
@@ -21,7 +21,7 @@
   border: 1px solid var(--ancent-lighter);
   position: relative;
   transition: transform 0.3s ease-in-out; 
-
+ 
   .quote {
     position: absolute;
     top: 0;
@@ -66,10 +66,10 @@
 }
 
 .grid1{
-  grid-column: span 2;
+  grid-column: span 3;
 }
 
-.grid6{
+.grid5{
   grid-column: span 2;
 }
 

@@ -1102,7 +1102,6 @@ body.light {
 .section-testimonial__cards {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr);
   gap: 1.25rem;
   padding-block: 1.25rem;
   margin-inline: auto;
@@ -1158,10 +1157,10 @@ body.light {
 }
 
 .grid1 {
-  grid-column: span 2;
+  grid-column: span 3;
 }
 
-.grid6 {
+.grid5 {
   grid-column: span 2;
 }
 
