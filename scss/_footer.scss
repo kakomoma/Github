@@ -77,3 +77,24 @@ footer {
     justify-content: center;
   }
 }
+
+@media screen and (max-width: 1250px) {
+  
+  footer {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    bottom: 0;
+    left: 50%;
+    margin: 0 auto rem(25);
+    border-radius: rem(10);
+    background: var(--menu);
+    backdrop-filter: blur(50px);
+    align-items: center;
+    width: 100%;
+    max-width: 1250px;
+    padding: rem(20);
+    margin-top: rem(100); 
+    
+  }
+}

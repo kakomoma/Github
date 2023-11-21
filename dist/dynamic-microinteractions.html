@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang='en'>
 
 <head>
@@ -50,18 +49,56 @@
       </label>
 
     </header>
-    <main>
-      <section class="container section">
-        <div class="section-header">
-          <h2>Blog</h2>
-          <p class="--regular">I learn and research in my free time, and here I tell you about it</p>
+    <main class="container">
+      <div class="blog__hero">
+        <div class="blog__hero-title">
+          <p>Blog</p>
+          <h1>Dynamic microinteractions</h1>
         </div>
-        <div class="tabs">
-          <button class="tab-button__recommended active" onclick="filterCardsBlog('all')">All</button>
-          <button class="tab-button__recommended" onclick="filterCardsBlog('UX/UI design')">UX/UI design</button>
-          <button class="tab-button__recommended" onclick="filterCardsBlog('Front-end')">Front-end</button>
+        <div class="blog__hero-divider">
+          <hr>
+          <p>Oct 21, 2022</p>
         </div>
-        <div class="blog-container" id="blog-container">
+      </div>
+      <div class="blog__content">
+        <p>Lorem ipsum dolor sit amet, <b>consectetur adipiscing elit</b>, sed do eiusmod tempor incididunt ut labore et
+          dolore magna aliqua.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat.</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
+          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+          consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+          est laborum.</p>
+      </div>
+      <div class="blog__nav">
+        <div class="blog__nav-header">
+          <hr>
+          <h2>Related articles</h2>
+          <p class="--regular">Discover other related articles</p>
+        </div>
+        <div class="blog__nav-container">
           <div class="card-blog" data-category="UX/UI design">
             <div class="card-blog__header">
               <span class="card-blog__header-date">Oct 21, 2022</span>
@@ -89,26 +126,8 @@
             <p>Integrating animations to enhance usability</p>
             <a href="#" target="_blank">Read more</a>
           </div>
-          <div class="card-blog" data-category="Front-end">
-            <div class="card-blog__header">
-              <span class="card-blog__header-date">March 03, 2023</span>
-              <span class="card-blog__header-tag">Front-end</span>
-            </div>
-            <p class="--regular-bold">Responsive frameworks</p>
-            <p>Optimizing web experiences for all devices</p>
-            <a href="#" target="_blank">Read more</a>
-          </div>
-          <div class="card-blog" data-category="Front-end">
-            <div class="card-blog__header">
-              <span class="card-blog__header-date">April 07, 2023</span>
-              <span class="card-blog__header-tag">Front-end</span>
-            </div>
-            <p class="--regular-bold">Efficient CSS</p>
-            <p>Streamlining styles for faster loading times</p>
-            <a href="#" target="_blank">Read more</a>
-          </div>
         </div>
-      </section>
+      </div>
     </main>
     <footer>
       <a href="#" class="logo-footer"><img src="assets/i/logo2.png" alt="Logo"></a>

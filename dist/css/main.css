@@ -1,3 +1,4 @@
+/*VARIABLES*/
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Proza+Libre:wght@400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Proza+Libre:wght@400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Proza+Libre:wght@400;700;800&display=swap");
@@ -11,6 +12,373 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Proza+Libre:wght@400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Proza+Libre:wght@400;700;800&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Proza+Libre:wght@400;700;800&display=swap");
+:root {
+  --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
+  --black: #000;
+  --white: #fff;
+  --dark-bg: hsl(225, 22%, 4%);
+  --dark-bg-hover: hsl(225, 22%, 14%);
+  --dark-btn: hsl(205, 16%, 30%);
+  --dark-btn-hover: hsl(212, 20%, 41%);
+  --dark-menu: hsla(213, 19%, 12%, 0.6);
+  --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
+  --dark-card-tag: hsl(218, 19%, 24%);
+  --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
+  --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
+  --dark-ancent: hsl(29, 100%, 66%);
+  --dark-ancent-hover: hsl(29, 100%, 76%);
+  --dark-ancent-lighter: hsl(225, 22%, 20%);
+  --dark-text-ancent: hsl(255, 12%, 18%);
+  --dark-text-1: hsl(204, 21%, 91%);
+  --dark-text-2: hsl(211, 20%, 76%);
+  --dark-text-3: hsl(212, 18%, 71%);
+  --dark-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.25) inset, -1px -1px 2px 0px rgba(131, 131, 131, 0.05) inset;
+  --dark-shadow-hero: 0 0.05em 1em hsl(204, 21%, 91%);
+  --light-bg: hsl(210, 50%, 94%);
+  --light-bg-hover: hsl(210, 50%, 84%);
+  --light-btn: hsl(216, 15%, 76%);
+  --light-btn-hover: hsl(208, 17%, 67%);
+  --light-menu: hsl(0, 0%, 100%);
+  --light-card: linear-gradient(90deg, hsl(210, 36%, 96%) 0%, hsl(207, 39%, 95%) 99.91%);
+  --light-card-tag: hsl(210, 46%, 90%);
+  --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
+  --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
+  --light-ancent: hsl(29, 100%, 56%);
+  --light-ancent-hover: hsl(29, 100%, 46%);
+  --light-ancent-lighter: hsl(226, 51%, 78%);
+  --light-text-ancent: hsl(0, 3%, 11%);
+  --light-text-1: hsl(220, 11%, 24%);
+  --light-text-2: hsl(209, 26%, 26%);
+  --light-text-3: hsl(0, 0%, 37%);
+  --light-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --light-shadow-hero: 0 0.1em 1em hsl(220, 11%, 24%);
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light-bg);
+    --bg-hover: (--light-bg-hover);
+    --btn: var(--light-btn);
+    --btn-hover: var(--light-btn-hover);
+    --menu: var(--light-menu);
+    --card: var(--light-card);
+    --card-tag: var(--light-card-tag);
+    --tab: var(--light-tab);
+    --tab-btn: var(--light-tab-btn);
+    --ancent: var(--light-ancent);
+    --ancent-hover: var(--light-ancent-hover);
+    --ancent-lighter: var(--light-ancent-lighter);
+    --text-ancent: var(--light-text-ancent);
+    --text-1: var(--light-text-1);
+    --text-2: var(--light-text-2);
+    --text-3: var(--light-text-3);
+    --shadow: var(--light-shadow);
+    --shadow-hero: var(--light-shadow-hero);
+  }
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --bg-hover: (--light-bg-hover);
+  --btn: var(--light-btn);
+  --btn-hover: var(--light-btn-hover);
+  --menu: var(--light-menu);
+  --card: var(--light-card);
+  --card-tag: var(--light-card-tag);
+  --tab: var(--light-tab);
+  --tab-btn: var(--light-tab-btn);
+  --ancent: var(--light-ancent);
+  --ancent-hover: var(--light-ancent-hover);
+  --ancent-lighter: var(--light-ancent-lighter);
+  --text-ancent: var(--light-text-ancent);
+  --text-1: var(--light-text-1);
+  --text-2: var(--light-text-2);
+  --text-3: var(--light-text-3);
+  --shadow: var(--light-shadow);
+  --shadow-hero: var(--light-shadow-hero);
+}
+
+/*General - Variables*/
+/*btnHover*/
+/*VARIABLES*/
+:root {
+  --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
+  --black: #000;
+  --white: #fff;
+  --dark-bg: hsl(225, 22%, 4%);
+  --dark-bg-hover: hsl(225, 22%, 14%);
+  --dark-btn: hsl(205, 16%, 30%);
+  --dark-btn-hover: hsl(212, 20%, 41%);
+  --dark-menu: hsla(213, 19%, 12%, 0.6);
+  --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
+  --dark-card-tag: hsl(218, 19%, 24%);
+  --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
+  --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
+  --dark-ancent: hsl(29, 100%, 66%);
+  --dark-ancent-hover: hsl(29, 100%, 76%);
+  --dark-ancent-lighter: hsl(225, 22%, 20%);
+  --dark-text-ancent: hsl(255, 12%, 18%);
+  --dark-text-1: hsl(204, 21%, 91%);
+  --dark-text-2: hsl(211, 20%, 76%);
+  --dark-text-3: hsl(212, 18%, 71%);
+  --dark-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.25) inset, -1px -1px 2px 0px rgba(131, 131, 131, 0.05) inset;
+  --dark-shadow-hero: 0 0.05em 1em hsl(204, 21%, 91%);
+  --light-bg: hsl(210, 50%, 94%);
+  --light-bg-hover: hsl(210, 50%, 84%);
+  --light-btn: hsl(216, 15%, 76%);
+  --light-btn-hover: hsl(208, 17%, 67%);
+  --light-menu: hsl(0, 0%, 100%);
+  --light-card: linear-gradient(90deg, hsl(210, 36%, 96%) 0%, hsl(207, 39%, 95%) 99.91%);
+  --light-card-tag: hsl(210, 46%, 90%);
+  --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
+  --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
+  --light-ancent: hsl(29, 100%, 56%);
+  --light-ancent-hover: hsl(29, 100%, 46%);
+  --light-ancent-lighter: hsl(226, 51%, 78%);
+  --light-text-ancent: hsl(0, 3%, 11%);
+  --light-text-1: hsl(220, 11%, 24%);
+  --light-text-2: hsl(209, 26%, 26%);
+  --light-text-3: hsl(0, 0%, 37%);
+  --light-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --light-shadow-hero: 0 0.1em 1em hsl(220, 11%, 24%);
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light-bg);
+    --bg-hover: (--light-bg-hover);
+    --btn: var(--light-btn);
+    --btn-hover: var(--light-btn-hover);
+    --menu: var(--light-menu);
+    --card: var(--light-card);
+    --card-tag: var(--light-card-tag);
+    --tab: var(--light-tab);
+    --tab-btn: var(--light-tab-btn);
+    --ancent: var(--light-ancent);
+    --ancent-hover: var(--light-ancent-hover);
+    --ancent-lighter: var(--light-ancent-lighter);
+    --text-ancent: var(--light-text-ancent);
+    --text-1: var(--light-text-1);
+    --text-2: var(--light-text-2);
+    --text-3: var(--light-text-3);
+    --shadow: var(--light-shadow);
+    --shadow-hero: var(--light-shadow-hero);
+  }
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --bg-hover: (--light-bg-hover);
+  --btn: var(--light-btn);
+  --btn-hover: var(--light-btn-hover);
+  --menu: var(--light-menu);
+  --card: var(--light-card);
+  --card-tag: var(--light-card-tag);
+  --tab: var(--light-tab);
+  --tab-btn: var(--light-tab-btn);
+  --ancent: var(--light-ancent);
+  --ancent-hover: var(--light-ancent-hover);
+  --ancent-lighter: var(--light-ancent-lighter);
+  --text-ancent: var(--light-text-ancent);
+  --text-1: var(--light-text-1);
+  --text-2: var(--light-text-2);
+  --text-3: var(--light-text-3);
+  --shadow: var(--light-shadow);
+  --shadow-hero: var(--light-shadow-hero);
+}
+
+/*General - Variables*/
+/*btnHover*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+p a {
+  display: inline;
+}
+
+video, iframe, picture, figure {
+  max-width: 100%;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 0.75rem;
+}
+
+form, select, textarea, button, label {
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.blog__hero {
+  display: flex;
+  flex-direction: column;
+  margin-top: 6.25rem;
+  gap: 6.25rem;
+}
+.blog__hero-title h1 {
+  color: var(--ancent);
+}
+.blog__hero-divider {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.blog__hero-divider hr {
+  border: 1px solid var(--ancent-lighter);
+}
+
+.blog__content {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.blog__nav {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+}
+.blog__nav-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
+  gap: 1.25rem;
+}
+
+.blog__nav-header {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.blog__nav-header hr {
+  border: 1px solid var(--ancent-lighter);
+}
+
+.card-blog.hidden {
+  display: none;
+}
+
 @media screen and (max-width: 1250px) {
   .content {
     width: 90%;
@@ -23,7 +391,7 @@
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    gap: rem(20);
+    gap: 1.25rem;
   }
   .about-me__profile {
     display: flex;
@@ -1833,6 +2201,25 @@ footer .hero__paragraph-btns-resume:hover {
   justify-content: center;
 }
 
+@media screen and (max-width: 1250px) {
+  footer {
+    display: flex;
+    flex-flow: nowrap;
+    justify-content: space-between;
+    bottom: 0;
+    left: 50%;
+    margin: 0 auto 1.5625rem;
+    border-radius: 0.625rem;
+    background: var(--menu);
+    -webkit-backdrop-filter: blur(50px);
+            backdrop-filter: blur(50px);
+    align-items: center;
+    width: 100%;
+    max-width: 1250px;
+    padding: 1.25rem;
+    margin-top: 6.25rem;
+  }
+}
 @media screen and (max-width: 1250px) {
   .content {
     width: 90%;

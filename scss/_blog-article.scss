@@ -1,0 +1,62 @@
+@import 'mixin';
+@import 'variables';
+@import 'function';
+@import 'reset';
+
+.blog__hero {
+  display: flex;
+  flex-direction: column;
+  margin-top: rem(100);
+  gap: rem(100);
+
+  &-title {
+
+    h1 {
+      color: var(--ancent);
+    }
+  }
+
+  &-divider {
+    display: flex;
+    flex-direction: column;
+    gap: rem(10);
+
+    hr {
+      border: 1px solid var(--ancent-lighter);
+    }
+  }
+}
+
+.blog__content {
+  display: flex;
+  flex-direction: column;
+  gap: rem(20);
+}
+
+.blog__nav {
+  display: flex;
+  flex-direction: column;
+  gap: rem(50);
+
+  &-header {}
+
+  &-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(min(15rem, 100%), 1fr));
+    gap: rem(20);
+  }
+}
+
+.blog__nav-header {
+  display: flex;
+  flex-direction: column;
+  gap: rem(10);
+
+  hr {
+    border: 1px solid var(--ancent-lighter);
+  }
+}
+
+.card-blog.hidden {
+  display: none;
+}
