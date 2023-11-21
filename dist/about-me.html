@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta name='description' content='This is my portfolio, where i show my work as a product designer'>
+  <meta name='author' content='Alejandro Moreno'>
+  <meta name='keywords' content='Portfolio, product designer, UX/UI design, web development'>
+  <title>Alejandro Moreno - Poroduct designer</title>
+  <!--Favicon-->
+  <link rel='icon' type='image/x-icon' href='assets/i/favicon2.ico'>
+  <!--Icons-->
+  <script src="https://kit.fontawesome.com/35d35eeb85.js" crossorigin="anonymous"></script>
+  <!--CSS-->
+  <link rel='stylesheet' type='text/css' href='css/main.css'>
+</head>
+
+<body>
+  <nav class="sidelist">
+    <ul class="nav-menu">
+      <li class="nav-menu__item"><a href="index.html" class="nav-menu__link">Home</a></li>
+      <li class="nav-menu__item"><a href="blog.html" class="nav-menu__link">Blog</a></li>
+      <li class="nav-menu__item"><a href="about-me.html" class="nav-menu__link active">About me</a></li>
+    </ul>
+    <p>&copy; 2024 Alejandro Moreno</p>
+    <div class="social">
+      <div class="social-btn"><a href="#!"><i class="social-icon fa-brands fa-linkedin-in"></i></a></div>
+      <div class="social-btn"><a href="#!"><i class="social-icon fa-brands fa-github"></i></a></div>
+      <div class="social-btn"><a href="#!"><i class="social-icon fa-brands fa-whatsapp"></i></a></div>
+      <div class="social-btn"><a href="#!"><i class="social-icon fa-solid fa-envelope"></i></a></div>
+    </div>
+  </nav>
+  <div class="content">
+    <header class="menu">
+      <div class="menu-bt" onclick="toggleNav()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <a href="#" class="logo"><img src="assets/i/logo2.png" alt="Logo"></a>
+      <ul class="nav-menu">
+        <li class="nav-menu__item"><a href="index.html" class="nav-menu__link">Home</a></li>
+        <li class="nav-menu__item"><a href="blog.html" class="nav-menu__link">Blog</a></li>
+        <li class="nav-menu__item"><a href="about-me.html" class="nav-menu__link active">About me</a></li>
+      </ul>
+      <label class="toggle">
+        <input id="themeToggle" type="checkbox">
+        <i class="toggle-sun fa-solid fa-sun"></i>
+        <i class="toggle-moon fa-solid fa-moon"></i>
+      </label>
+    </header>
+    <main>
+      <section class="container section-about-me">
+        <div class="section-header">
+          <h2>About me</h2>
+          <p class="--regular">Get to know a bit about what I've done and what I do</p>
+        </div>
+        <div class="section-about-me__introduction">
+          <p>I love <b>designing and creating digital experiences</b> that solve real user problems
+            and help companies achieve their goals. I consider myself a positive, proactive, methodical, self-taught
+            person,
+            and <b>I put my all</b> into every project I undertake.
+          </p>
+          <p>When I'm not working, I enjoy exercising, reading, traveling, spending time with family
+            and friends, cooking, and learning new skills.
+          </p>
+        </div>
+        <!--Tabs-->
+        <div class="tabs">
+          <button class="tab-button__about active" onclick="changeTab('educacion')" id="educacionBtn">Education</button>
+          <button class="tab-button__about" onclick="changeTab('experiencia')" id="experienciaBtn">Experience</button>
+        </div>
+        <!-- Bloque de Educación -->
+        <div id="educacion" class="tab-content active">
+          <div class="tab-content-1">
+            <div class="card-about">
+              <div class="card-about__header">
+                <img src="assets/i/Udemy.png" alt="Udemy">
+                <div class="card-about__header-text">
+                  <p class="--regular">Advanced CSS at <a href="https://www.udemy.com/" target="_blank">Udemy</a></p>
+                  <span>2023</span>
+                </div>
+              </div>
+              <p>Flexbox & Grid layout, responsive design, animations & transitions, advanced selectors, CSS
+                preposessors,
+                CSS custom properties, transformations & transitions, filters & shadows, CSS grid systems and perfomance
+                optimization </p>
+              <a class="card-about__btn" href="#!" target="_blank">Certificate</a>
+            </div>
+            <div class="card-about">
+              <div class="card-about__header">
+                <img src="assets/i/IDF.png" alt="Interaction design foundation">
+                <div class="card-about__header-text">
+                  <p class="--regular">Design 21st century at <a href="https://www.interaction-design.org/"
+                      target="_blank">IDF</a></p>
+                  <span>2022</span>
+                </div>
+              </div>
+              <p>How to solve global problems, how can we democratize design, how can we apply human-centered design and
+                how can we move up in a company</p>
+              <a class="card-about__btn" href="assets/cert/21st.pdf" target="_blank">Certificate</a>
+            </div>
+            <div class="card-about">
+              <div class="card-about__header">
+                <img src="assets/i/IDF.png" alt="Interaction design foundation">
+                <div class="card-about__header-text">
+                  <p class="--regular">Information vis at <a href="https://www.interaction-design.org/"
+                      target="_blank">IDF</a>
+                  </p>
+                  <span>2022</span>
+                </div>
+              </div>
+              <p>Mobile interfaces, mobile user experience, UI (android and IOS), how to avoid bad design and UX design
+                strategy</p>
+              <a class="card-about__btn" href="assets/cert/in.pdf" target="_blank">Certificate</a>
+            </div>
+            <div class="card-about">
+              <div class="card-about__header">
+                <img src="assets/i/IDF.png" alt="Interaction design foundation">
+                <div class="card-about__header-text">
+                  <p class="--regular">Emotional design at <a href="https://www.interaction-design.org/"
+                      target="_blank">IDF</a></p>
+                  <span>2022</span>
+                </div>
+              </div>
+              <p>Emotion and design, how human factors affect, positive emotional experiences, what the “Triune brain”
+                is
+                and visceral & reflective design</p>
+              <a class="card-about__btn" href="assets/cert/em.pdf" target="_blank">Certificate</a>
+            </div>
+            <div class="card-about">
+              <div class="card-about__header">
+                <img src="assets/i/IDF.png" alt="Interaction design foundation">
+                <div class="card-about__header-text">
+                  <p class="--regular">Visual design at <a href="https://www.interaction-design.org/"
+                      target="_blank">IDF</a></p>
+                  <span>2022</span>
+                </div>
+              </div>
+              <p>Mobile interfaces, mobile user experience, UI (android and IOS), how to avoid bad design and UX design
+                strategy</p>
+              <a class="card-about__btn" href="assets/cert/vi.pdf" target="_blank">Certificate</a>
+            </div>
+            <div class="card-about">
+              <div class="card-about__header">
+                <img src="assets/i/IDF.png" alt="Interaction design foundation">
+                <div class="card-about__header-text">
+                  <p class="--regular">HCI at <a href="https://www.interaction-design.org/" target="_blank">IDF</a>
+                  </p>
+                  <span>2021</span>
+                </div>
+              </div>
+              <p>Intuitive user experience, loyalty & business profitability and navigation & screen design</p>
+              <a class="card-about__btn" href="assets/cert/hu.pdf" target="_blank">Certificate</a>
+            </div>
+            <div class="card-about">
+              <div class="card-about__header">
+                <img src="assets/i/IDF.png" alt="Interaction design foundation">
+                <div class="card-about__header-text">
+                  <p class="--regular">User research at <a href="https://www.interaction-design.org/"
+                      target="_blank">IDF</a></p>
+                  <span>2021</span>
+                </div>
+              </div>
+              <p>Qualitative user research, design process, validation & ethical sound, usability test & observation,
+                how
+                to deal with results and how to deal with clients, bosses & stakeholders</p>
+              <a class="card-about__btn" href="assets/cert/us.pdf" target="_blank">Certificate</a>
+            </div>
+            <div class="card-about">
+              <div class="card-about__header">
+                <img src="assets/i/IDF.png" alt="Interaction design foundation">
+                <div class="card-about__header-text">
+                  <p class="--regular">Gestalt psychology at <a href="https://www.interaction-design.org/"
+                      target="_blank">IDF</a></p>
+                  <span>2021</span>
+                </div>
+              </div>
+              <p>Gestalt principles, origins of gestalt, gestalt laws, gestalt driven approach and perceptual
+                organization
+              </p>
+              <a class="card-about__btn" href="assets/cert/ge_3.pdf" target="_blank">Certificate</a>
+            </div>
+            <div class="card-about">
+              <div class="card-about__header">
+                <img src="assets/i/Google.png" alt="Google & Coursera">
+                <div class="card-about__header-text">
+                  <p class="--regular">Foundations of UX at <a href="https://www.interaction-design.org/"
+                      target="_blank">IDF</a></p>
+                  <span>2021</span>
+                </div>
+              </div>
+              <p>Consumers and business, UX design concepts, experience design, design sprints, UX research methods and
+                biases in UX design</p>
+              <a class="card-about__btn" href="assets/cert/G&C.pdf" target="_blank">Certificate</a>
+            </div>
+            <div class="card-about">
+              <div class="card-about__header">
+                <img src="assets/i/URJC.png" alt="URJC">
+                <div class="card-about__header-text">
+                  <p class="--regular">Marketing degree at <a href="https://www.urjc.es/" target="_blank">URJC</a></p>
+                  <span>2016</span>
+                </div>
+              </div>
+              <p>Data analysis and synthesis, organizational skills, communication, economic and business,
+                interdisciplinary skills and critical capacity</p>
+              <a class="card-about__btn" href="assets/cert/URJC.pdf" target="_blank">Certificate</a>
+            </div>
+          </div>
+        </div>
+        <!-- Bloque de Experiencia -->
+        <div id="experiencia" class="tab-content">
+          <div class="tab-content-2">
+            <div class="card-exp">
+              <div class="card-exp__header">
+                <img src="assets/i/geomites.png" alt="Geomites">
+                <div class="card-exp__header-text">
+                  <p class="--regular">Product designer at <a href="#" target="_blank">Geomites</a></p>
+                  <span>2023 - present</span>
+                </div>
+              </div>
+              <p>As a product designer, I am responsible for conducting market research, heuristic and content
+                evaluations, information architecture, user flows, wireframes, prototypes, and working closely with
+                developers to ensure designs are implemented effectively</p>
+            </div>
+            <hr>
+            <div class="card-exp">
+              <div class="card-exp__header">
+                <img src="assets/i/atipiko.png" alt="Atipko">
+                <div class="card-exp__header-text">
+                  <p class="--regular">Product designer at <a href="https://atipikotours.com/" target="_blank">Atipiko
+                      Tours</a></p>
+                  <span>2023</span>
+                </div>
+              </div>
+              <p>Atipiko Tours is a company dedicated to organizing trips worldwide. The objective of the project was to
+                design and develop a website that would establish the company's online presence and enable users to view
+                offers and make reservations</p>
+            </div>
+            <hr>
+            <div class="card-exp">
+              <div class="card-exp__header">
+                <img src="assets/i/tattoo.png" alt="Tattoo Paradise">
+                <div class="card-exp__header-text">
+                  <p class="--regular">Product designer at <a href="#" target="_blank">Tattoo Paradise</a></p>
+                  <span>2022</span>
+                </div>
+              </div>
+              <p>Tattoo Paradise is a personal project that entails building a mobile application from the ground up,
+                enabling users in the realm of tattoos to browse designs and discover independent studios and artists
+                based on their preferences</p>
+            </div>
+            <hr>
+            <div class="card-exp">
+              <div class="card-exp__header">
+                <img src="assets/i/senzo.png" alt="Senzo Studio">
+                <div class="card-exp__header-text">
+                  <p class="--regular">Product designer at <a href="https://senzostudio.com/" target="_blank">Senzo
+                      Studio</a></p>
+                  <span>2022</span>
+                </div>
+              </div>
+              <p>Senzo Studio is a VFX company dedicated to the creation of visual effects for film production
+                companies,
+                TV series, and other sectors such as video games, music, and advertising. The objective of the project
+                is
+                the design and development of a website that positions the company online and allows users to obtain
+                basic
+                information and view the company's showreel</p>
+            </div>
+            <hr>
+            <div class="card-exp">
+              <div class="card-exp__header">
+                <img src="assets/i/dako.png" alt="Dako">
+                <div class="card-exp__header-text">
+                  <p class="--regular">Product designer at <a href="#" target="_blank">Dako</a></p>
+                  <span>2021 - 2022</span>
+                </div>
+              </div>
+              <p>Dako was a personal project, through which we created a brand for food delivery in Madrid, specializing
+                in fresh pasta. The project didn't come to fruition due to funding issues</p>
+            </div>
+            <hr>
+            <div class="card-exp">
+              <div class="card-exp__header">
+                <img src="assets/i/promam.png" alt="Promam">
+                <div class="card-exp__header-text">
+                  <p class="--regular">Product designer at <a href="https://www.promam.es/en/"
+                      target="_blank">Promam</a>
+                  </p>
+                  <span>2021</span>
+                </div>
+              </div>
+              <p>Promam is an industrial machinery manufacturing company, specializing in the energy sector,
+                specifically
+                in liquefied petroleum gas. Its main activity is to supply companies in the machinery sector with the
+                necessary equipment, spare parts, and maintenance to support their operations</p>
+            </div>
+            <hr>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a href="#" class="logo-footer"><img src="assets/i/logo2.png" alt="Logo"></a>
+      <p>&copy; 2024 Alejandro Moreno</p>
+      <a class="hero__paragraph-btns-resume" href="#!" target="_blank">Download resume</a>
+      <div class="social">
+        <div class="social-btn"><a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank"><i
+              class="social-icon fa-brands fa-linkedin-in"></i></a></div>
+        <div class="social-btn"><a href="https://github.com/kakomoma" target="_blank"><i
+              class="social-icon fa-brands fa-github"></i></a></div>
+        <div class="social-btn"><a href="https://wa.me/+34618110583" target="_blank"><i
+              class="social-icon fa-brands fa-whatsapp"></i></a></div>
+        <div class="social-btn"><a href="mailto:alejandromorenomartin1990@gmail.com" target="_blank"><i
+              class="social-icon fa-solid fa-envelope"></i></a></div>
+      </div>
+    </footer>
+    <div id="progress">
+      <span id="progress-value">
+        <i class="fa-solid fa-chevron-up"></i>
+      </span>
+    </div>
+  </div>
+  <!--Scritps-->
+  <script defer src='js/main.js'></script>
+</body>
+
+</html>

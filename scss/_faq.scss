@@ -4,9 +4,7 @@
 @import 'variables';
 
 .section-faq {
-  .section-header {
-    margin-bottom: rem(50);
-  }
+  margin-bottom: rem(50);
 }
 
 .accordion {
@@ -19,10 +17,6 @@
   display: flex;
   flex-direction: column;
   gap: rem(10);
-
-  p {    
-    line-height: 1.4;    
-  }
 }
 
 .accordion__question {
@@ -33,6 +27,7 @@
   width: 100%;
   border: none;
   background: transparent;
+  cursor: pointer;
 
   i {
     font-size: rem(20);
@@ -58,7 +53,6 @@
   padding: rem(20);
   background: var(--card);
   border-radius: rem(10);
-
 }
 
 .accordion__collapse {
@@ -78,4 +72,24 @@
   display: block;
 }
 
-/* DESKTOP STYLES */
+@media screen and (max-width: 1250px) {  
+ 
+  .accordion__question {
+    display: flex;    
+    align-items: start;
+    gap: rem(10);
+    width: 100%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  
+    i {
+      font-size: rem(20);
+    }
+  
+    p {
+      color: var(--text-1);
+      font-weight: 700;
+    }
+  }
+}

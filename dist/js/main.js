@@ -7,7 +7,10 @@ document.addEventListener('DOMContentLoaded', function () {
       const targetPage = this.getAttribute('href');
       const targetBlank = this.getAttribute('target') === '_blank';
 
-      if (!targetBlank) {
+      // Añadir condición para excluir el enlace específico
+      const isExcludedLink = this.id === 'myLink';
+
+      if (!targetBlank && !isExcludedLink) {
         event.preventDefault();
         document.body.classList.add('page-hidden');
 
@@ -24,7 +27,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /* MENU APPEARS AND DISAPPEARS  */
-const body = document.body;
+/* const body = document.body;
 let lastScroll = 0;
 
 window.addEventListener('scroll', () => {
@@ -45,7 +48,7 @@ window.addEventListener('scroll', () => {
   }
 
   lastScroll = currentScroll;
-});
+}); */
 
 /* MENU NAVIAGTION */
 function toggleNav() {
@@ -72,13 +75,14 @@ function toggleNav() {
 }
 
 /* LOGO- ANIMATION */
-window.addEventListener('load', (event) => {
-  let logos = document.querySelectorAll('.logo');
+document.addEventListener('DOMContentLoaded', function () {
+  // Obtener el elemento del logo
+  var logo = document.querySelector('.logo');
 
-  logos.forEach(function (logo) {
-    logo.classList.add('animate-logo'); // Cambia el color del texto a rojo
-    // Agrega más cambios de estilo aquí según tus necesidades
-  });
+  // Agregar la clase 'animate-logo' después de un breve retraso (por ejemplo, 1 segundo)
+  setTimeout(function () {
+    logo.classList.add('animate-logo');
+  }, 1000); // 1000 milisegundos = 1 segundo
 });
 
 /* TOOGLE */
@@ -354,7 +358,7 @@ let calcScrollValue = () => {
     document.documentElement.scrollTop = 0;
   });
 
-  scrollProgress.style.background = `conic-gradient(var(--ancent)${scrollValue}%, var(--text-3) ${scrollValue}%)`;
+  scrollProgress.style.background = `conic-gradient(var(--ancent)${scrollValue}%, var(--ancent-lighter) ${scrollValue}%)`;
 };
 
 window.onscroll = calcScrollValue;

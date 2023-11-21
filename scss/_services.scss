@@ -1,0 +1,34 @@
+@import 'breakpoints';
+@import 'font';
+@import 'function';
+@import 'variables';
+
+.section-services {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-services__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+  gap: rem(20);
+}
+
+.section-services__card {
+  display: flex;
+  padding: rem(20);
+  flex-direction: column;
+  align-items: center;
+  gap: rem(20);
+  border-radius: rem(10);
+  background: var(--card);
+  box-shadow: var(--shadow);
+
+  i {
+    font-size: rem(36);
+    background: var(--ancent);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+  }  
+}

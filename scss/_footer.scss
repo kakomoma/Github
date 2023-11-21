@@ -3,49 +3,77 @@
 @import 'function';
 @import 'reset';
 
-footer{
+footer {
   display: flex;
-  flex-direction: row;
+  flex-flow: nowrap;
   justify-content: space-between;
-  align-items: center;
-  position: relative;
-  padding: rem(20) rem(120);
-  width: 100%;
-  margin: 0 auto;  
   bottom: 0;
+  left: 50%;
+  margin: 0 auto rem(25);
+  border-radius: 9999px;
   background: var(--menu);
-  backdrop-filter: var(--blur); 
+  backdrop-filter: blur(50px);
+  align-items: center;
+  width: 100%;
+  max-width: 1250px;
+  padding: rem(20);
+  margin-top: rem(200);
 
-  p{
-    color: var(--text-2);
-  }  
+  .logo-footer {
+    width: rem(36);
+    height: rem(36);
+  } 
+
+  .hero__paragraph-btns-resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: rem(10);
+    padding: rem(12) rem(16);
+    color: var(--text-1);
+    font-size: rem(16);
+    font-weight: 700;
+    background-color: var(--btn);
+    border-radius: rem(100);
+    transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-2px);
+      background-color: (var(--btn-hover));
+    }
+  }
 }
 
-.social{
+.social {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   gap: rem(20);
 
-  &-btn{
+  &-btn {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: rem(3) rem(8);
+    padding: rem(7) rem(8);
     color: var(--text-1);
     background-color: var(--btn);
-    border-radius: rem(100); 
+    border-radius: 9999px;
     transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
-    
-    &:hover{
-      transform: translateY(-10%);
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-2px);
       background-color: (var(--btn-hover));
     }
-  } 
+  }
 
-  &-icon{    
-    font-size: rem(20); 
+  &-icon {
+    font-size: rem(20);
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
-

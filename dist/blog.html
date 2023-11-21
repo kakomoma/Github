@@ -10,7 +10,7 @@
   <meta name='keywords' content='Portfolio, product designer, UX/UI design, web development'>
   <title>Alejandro Moreno - Poroduct designer</title>
   <!--Favicon-->
-  <link rel='icon' type='image/x-icon' href='assets/i/favicon.ico'>
+  <link rel='icon' type='image/x-icon' href='assets/i/favicon2.ico'>
   <!--Icons-->
   <script src="https://kit.fontawesome.com/35d35eeb85.js" crossorigin="anonymous"></script>
   <!--CSS-->
@@ -18,123 +18,12 @@
 </head>
 
 <body>
-  <header class="menu">
-    <div class="menu-bt" onclick="toggleNav()">
-      <i class="fa-solid fa-bars"></i>
-    </div>
-    <a href="#" class="logo"><img src="assets/i/logo.png" alt="Logo"></a>
+  <nav class="sidelist">
     <ul class="nav-menu">
       <li class="nav-menu__item"><a href="index.html" class="nav-menu__link">Home</a></li>
-      <li class="nav-menu__item"><a href="projects.html" class="nav-menu__link">Projects</a></li>
       <li class="nav-menu__item"><a href="blog.html" class="nav-menu__link active">Blog</a></li>
+      <li class="nav-menu__item"><a href="about-me.html" class="nav-menu__link">About me</a></li>
     </ul>
-    <label class="toggle">
-      <input id="themeToggle" type="checkbox">
-      <i class="toggle-sun fa-solid fa-sun"></i>
-      <i class="toggle-moon fa-solid fa-moon"></i>
-    </label>
-    <nav class="sidelist">
-      <ul class="nav-menu">
-        <li class="nav-menu__item"><a href="index.html" class="nav-menu__link">Home</a></li>
-        <li class="nav-menu__item"><a href="projects.html" class="nav-menu__link">Projects</a></li>
-        <li class="nav-menu__item"><a href="blog.html" class="nav-menu__link active">Blog</a></li>
-      </ul>
-      <p>&copy; 2024 Alejandro Moreno</p>
-      <div class="social">
-        <div class="social-btn"><a href="#!"><i class="social-icon fa-brands fa-linkedin-in"></i></a></div>
-        <div class="social-btn"><a href="#!"><i class="social-icon fa-brands fa-github"></i></a></div>
-        <div class="social-btn"><a href="#!"><i class="social-icon fa-brands fa-whatsapp"></i></a></div>
-        <div class="social-btn"><a href="#!"><i class="social-icon fa-solid fa-envelope"></i></a></div>
-      </div>
-    </nav>
-  </header>
-  <main>
-    <section class="container section">
-      <div class="section-header">
-        <h2>Blog</h2>
-        <p class="--regular">I learn and research in my free time, and here I tell you about it</p>
-      </div>
-      <div class="tabs">
-        <button class="tab-button__recommended active" onclick="filterCardsBlog('all')">All</button>
-        <button class="tab-button__recommended" onclick="filterCardsBlog('UX/UI design')">UX/UI design</button>
-        <button class="tab-button__recommended" onclick="filterCardsBlog('Front-end')">Front-end</button>
-      </div>
-      <div class="blog-container" id="blog-container">
-        <div class="card-blog" data-category="UX/UI design">
-          <div class="card-blog__header card-blog__img">
-            <img src="assets/img/dynamic.jpeg" alt="card-blog-image">
-          </div>
-          <div class="card-blog__body">
-            <div class="card-blog__body-header">
-              <span class="card-blog__date">Oct 21, 2022</span>
-              <span class="card-blog__tag">UX/UI design</span>
-            </div>
-            <h3>Dynamic Microinteractions</h3>
-            <p>How small details drive the user experience</p>
-            <a href="#" target="_blank">Read more</a>
-          </div>
-        </div>
-        <div class="card-blog" data-category="UX/UI design">
-          <div class="card-blog__header card-blog__img">
-            <img src="assets/img/color.jpeg" alt="card-blog-image">
-          </div>
-          <div class="card-blog__body">
-            <div class="card-blog__body-header">
-              <span class="card-blog__date">22 Nov, 2022</span>
-              <span class="card-blog__tag">UX/UI design</span>
-            </div>
-            <h3>Powerful Palette</h3>
-            <p>Explore the psychological impact of colors in design</p>
-            <a href="#" target="_blank">Read more</a>
-          </div>
-        </div>
-        <div class="card-blog" data-category="UX/UI design">
-          <div class="card-blog__header card-blog__img">
-            <img src="assets/img/animation.jpeg" alt="card-blog-image">
-          </div>
-          <div class="card-blog__body">
-            <div class="card-blog__body-header">
-              <span class="card-blog__date">02 Feb, 2023</span>
-              <span class="card-blog__tag">UX/UI design</span>
-            </div>
-            <h3>Strategic Animation</h3>
-            <p>Integrating animations to enhance usability</p>
-            <a href="#" target="_blank">Read more</a>
-          </div>
-        </div>
-        <div class="card-blog" data-category="Front-end">
-          <div class="card-blog__header card-blog__img">
-            <img src="assets/img/responsive.jpeg" alt="card-blog-image">
-          </div>
-          <div class="card-blog__body">
-            <div class="card-blog__body-header">
-              <span class="card-blog__date">03 March, 2022</span>
-              <span class="card-blog__tag">Front-end</span>
-            </div>
-            <h3>Responsive Frameworks</h3>
-            <p>Optimizing web experiences for all devices</p>
-            <a href="#" target="_blank">Read more</a>
-          </div>
-        </div>  
-        <div class="card-blog" data-category="Front-end">
-          <div class="card-blog__header card-blog__img">
-            <img src="assets/img/css.png" alt="card-blog-image">
-          </div>
-          <div class="card-blog__body">
-            <div class="card-blog__body-header">
-              <span class="card-blog__date">07 April, 2023</span>
-              <span class="card-blog__tag">Front-end</span>
-            </div>
-            <h3>Efficient CSS</h3>
-            <p>Streamlining styles for faster loading times</p>
-            <a href="#" target="_blank">Read more</a>
-          </div>
-        </div>      
-      </div>
-    </section>
-  </main>
-  <footer>
-    <a href="#" class="logo"><img src="assets/i/logo.png" alt="Logo"></a>
     <p>&copy; 2024 Alejandro Moreno</p>
     <div class="social">
       <div class="social-btn"><a href="#!"><i class="social-icon fa-brands fa-linkedin-in"></i></a></div>
@@ -142,11 +31,105 @@
       <div class="social-btn"><a href="#!"><i class="social-icon fa-brands fa-whatsapp"></i></a></div>
       <div class="social-btn"><a href="#!"><i class="social-icon fa-solid fa-envelope"></i></a></div>
     </div>
-  </footer>
-  <div id="progress">
-    <span id="progress-value">
-      <i class="fa-solid fa-chevron-up"></i>
-    </span>
+  </nav>
+  <div class="content">
+    <header class="menu">
+      <div class="menu-bt" onclick="toggleNav()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <a href="#" class="logo"><img src="assets/i/logo2.png" alt="Logo"></a>
+      <ul class="nav-menu">
+        <li class="nav-menu__item"><a href="index.html" class="nav-menu__link">Home</a></li>
+        <li class="nav-menu__item"><a href="blog.html" class="nav-menu__link active">Blog</a></li>
+        <li class="nav-menu__item"><a href="about-me.html" class="nav-menu__link">About me</a></li>
+      </ul>
+      <label class="toggle">
+        <input id="themeToggle" type="checkbox">
+        <i class="toggle-sun fa-solid fa-sun"></i>
+        <i class="toggle-moon fa-solid fa-moon"></i>
+      </label>
+
+    </header>
+    <main>
+      <section class="container section">
+        <div class="section-header">
+          <h2>Blog</h2>
+          <p class="--regular">I learn and research in my free time, and here I tell you about it</p>
+        </div>
+        <div class="tabs">
+          <button class="tab-button__recommended active" onclick="filterCardsBlog('all')">All</button>
+          <button class="tab-button__recommended" onclick="filterCardsBlog('UX/UI design')">UX/UI design</button>
+          <button class="tab-button__recommended" onclick="filterCardsBlog('Front-end')">Front-end</button>
+        </div>
+        <div class="blog-container" id="blog-container">
+          <div class="card-blog" data-category="UX/UI design">
+            <div class="card-blog__header">
+              <span class="card-blog__header-date">Oct 21, 2022</span>
+              <span class="card-blog__header-tag">UX/UI design</span>
+            </div>
+            <p class="--regular-bold">Dynamic Microinteractions</p>
+            <p>How small details drive the user experience</p>
+            <a href="#" target="_blank">Read more</a>
+          </div>
+          <div class="card-blog" data-category="UX/UI design">
+            <div class="card-blog__header">
+              <span class="card-blog__header-date">Nov 22, 2022</span>
+              <span class="card-blog__header-tag">UX/UI design</span>
+            </div>
+            <p class="--regular-bold">Dynamic Microinteractions</p>
+            <p>Explore the psychological impact of colors in design</p>
+            <a href="#" target="_blank">Read more</a>
+          </div>
+          <div class="card-blog" data-category="UX/UI design">
+            <div class="card-blog__header">
+              <span class="card-blog__header-date">Feb 02, 2023</span>
+              <span class="card-blog__header-tag">UX/UI design</span>
+            </div>
+            <p class="--regular-bold">Strategic animation</p>
+            <p>Integrating animations to enhance usability</p>
+            <a href="#" target="_blank">Read more</a>
+          </div>
+          <div class="card-blog" data-category="UX/UI design">
+            <div class="card-blog__header">
+              <span class="card-blog__header-date">March 03, 2023</span>
+              <span class="card-blog__header-tag">Front-end</span>
+            </div>
+            <p class="--regular-bold">Responsive frameworks</p>
+            <p>Optimizing web experiences for all devices</p>
+            <a href="#" target="_blank">Read more</a>
+          </div>
+          <div class="card-blog" data-category="UX/UI design">
+            <div class="card-blog__header">
+              <span class="card-blog__header-date">April 07, 2023</span>
+              <span class="card-blog__header-tag">Front-end</span>
+            </div>
+            <p class="--regular-bold">Efficient CSS</p>
+            <p>Streamlining styles for faster loading times</p>
+            <a href="#" target="_blank">Read more</a>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <a href="#" class="logo-footer"><img src="assets/i/logo2.png" alt="Logo"></a>
+      <p>&copy; 2024 Alejandro Moreno</p>
+      <a class="hero__paragraph-btns-resume" href="#!" target="_blank">Download resume</a>
+      <div class="social">
+        <div class="social-btn"><a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank"><i
+              class="social-icon fa-brands fa-linkedin-in"></i></a></div>
+        <div class="social-btn"><a href="https://github.com/kakomoma" target="_blank"><i
+              class="social-icon fa-brands fa-github"></i></a></div>
+        <div class="social-btn"><a href="https://wa.me/+34618110583" target="_blank"><i
+              class="social-icon fa-brands fa-whatsapp"></i></a></div>
+        <div class="social-btn"><a href="mailto:alejandromorenomartin1990@gmail.com" target="_blank"><i
+              class="social-icon fa-solid fa-envelope"></i></a></div>
+      </div>
+    </footer>
+    <div id="progress">
+      <span id="progress-value">
+        <i class="fa-solid fa-chevron-up"></i>
+      </span>
+    </div>
   </div>
   <!--Scritps-->
   <script defer src='js/main.js'></script>

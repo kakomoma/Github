@@ -43,6 +43,8 @@
       border-radius: rem(5);
       background: var(--card-tag);
       box-shadow: var(--shadow);
+      font-size: rem(16); 
+      color: var(--text-2);     
     }
   }
 
@@ -77,7 +79,7 @@
       font-size: rem(16);
 
       &:hover {
-        transform: translateY(-10%);
+        transform: translateY(-2px);
         background-color: (var(--btn-hover));
       }
     }

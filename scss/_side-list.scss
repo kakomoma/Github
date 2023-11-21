@@ -1,0 +1,52 @@
+@import 'mixin';
+@import 'variables';
+@import 'function';
+@import 'reset';
+
+.sidelist {
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 0 auto;
+  height: 100dvh;
+  width: 100%;
+  z-index: 8888;
+  background: var(--bg);
+  backdrop-filter: blur(200px);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: rem(60);
+  gap: rem(60);
+  overflow: hidden;
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    gap: rem(60);
+  }
+
+  &__btns-resume {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: rem(10);
+    padding: rem(12) rem(16);
+    color: var(--text-1);
+    font-size: rem(16);
+    font-weight: 700;
+    background-color: var(--btn);
+    border-radius: rem(100);
+    transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
+    cursor: pointer;
+
+    &:hover {
+      transform: translateY(-2px);
+      background-color: (var(--btn-hover));
+    }
+  }
+}
+

@@ -24,17 +24,7 @@ h3 {
 p {
   font-weight: 400;
   color: var(--text-2);
-  line-height: 1.1;
-}
-
-.--large-bold {
-  font-size: rem(28);
-  font-weight: 700;
-  letter-spacing: rem(2.5);
-}
-
-.--large {
-  font-size: rem(24);
+  line-height: 1.5;
 }
 
 .--regular-cap {
@@ -45,7 +35,8 @@ p {
 
 .--regular-bold {
   font-size: rem(20);
-  font-weight: 700;  
+  font-weight: 700; 
+  color: var(--ancent); 
 }
 
 .--regular {
@@ -59,6 +50,10 @@ p {
 
 .--little {
   font-size: rem(12);
+}
+
+b{
+  color: var(--ancent);
 }
 
 

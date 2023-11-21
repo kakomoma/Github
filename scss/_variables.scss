@@ -9,13 +9,14 @@
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
   --dark-btn-hover: hsl(212, 20%, 41%);
-  --dark-menu: hsl(213, 19%, 12%);
+  --dark-menu: hsla(213, 19%, 12%, 0.6);
   --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
   --dark-card-tag: hsl(218, 19%, 24%);
   --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
   --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
-  --dark-ancent: hsl(29, 100%, 50%);
-  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-ancent: hsl(29, 100%, 66%);
+  --dark-ancent-hover: hsl(29, 100%, 76%);
+  --dark-ancent-lighter: hsl(225, 22%, 20%);
   --dark-text-ancent: hsl(255, 12%, 18%);
   --dark-text-1: hsl(204, 21%, 91%);
   --dark-text-2: hsl(211, 20%, 76%);
@@ -32,8 +33,9 @@
   --light-card-tag: hsl(210, 46%, 90%);
   --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
   --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
-  --light-ancent: hsl(29, 100%, 50%);
-  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-ancent: hsl(29, 100%, 56%);
+  --light-ancent-hover: hsl(29, 100%, 46%);
+  --light-ancent-lighter: hsl(226, 51%, 78%);
   --light-text-ancent: hsl(0, 3%, 11%);
   --light-text-1: hsl(220, 11%, 24%);
   --light-text-2: hsl(209, 26%, 26%);
@@ -52,6 +54,7 @@
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -73,6 +76,7 @@
     --tab-btn: var(--light-tab-btn);
     --ancent: var(--light-ancent);
     --ancent-hover: var(--light-ancent-hover);
+    --ancent-lighter: var(--light-ancent-lighter);
     --text-ancent: var(--light-text-ancent);
     --text-1: var(--light-text-1);
     --text-2: var(--light-text-2);
@@ -94,6 +98,7 @@ body.dark {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -114,6 +119,7 @@ body.light {
   --tab-btn: var(--light-tab-btn);
   --ancent: var(--light-ancent);
   --ancent-hover: var(--light-ancent-hover);
+  --ancent-lighter: var(--light-ancent-lighter);
   --text-ancent: var(--light-text-ancent);
   --text-1: var(--light-text-1);
   --text-2: var(--light-text-2);

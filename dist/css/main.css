@@ -1,15 +1,18 @@
-@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;700;800&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Proza+Libre:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Proza+Libre:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Proza+Libre:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Proza+Libre:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Proza+Libre:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Proza+Libre:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Proza+Libre:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Proza+Libre:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Proza+Libre:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Proza+Libre:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Proza+Libre:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Proza+Libre:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Proza+Libre:wght@400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,700;1,400&family=Proza+Libre:wght@400;700;800&display=swap");
 @media screen and (max-width: 1250px) {
-  main {
+  .content {
     width: 90%;
     margin: 0 auto;
   }
@@ -30,7 +33,7 @@
   }
 }
 :root {
-  --font: "Proza Libre";
+  --font: "Montserrat";
 }
 
 /*VARIABLES*/
@@ -42,13 +45,14 @@
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
   --dark-btn-hover: hsl(212, 20%, 41%);
-  --dark-menu: hsl(213, 19%, 12%);
+  --dark-menu: hsla(213, 19%, 12%, 0.6);
   --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
   --dark-card-tag: hsl(218, 19%, 24%);
   --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
   --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
-  --dark-ancent: hsl(29, 100%, 50%);
-  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-ancent: hsl(29, 100%, 66%);
+  --dark-ancent-hover: hsl(29, 100%, 76%);
+  --dark-ancent-lighter: hsl(225, 22%, 20%);
   --dark-text-ancent: hsl(255, 12%, 18%);
   --dark-text-1: hsl(204, 21%, 91%);
   --dark-text-2: hsl(211, 20%, 76%);
@@ -64,8 +68,9 @@
   --light-card-tag: hsl(210, 46%, 90%);
   --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
   --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
-  --light-ancent: hsl(29, 100%, 50%);
-  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-ancent: hsl(29, 100%, 56%);
+  --light-ancent-hover: hsl(29, 100%, 46%);
+  --light-ancent-lighter: hsl(226, 51%, 78%);
   --light-text-ancent: hsl(0, 3%, 11%);
   --light-text-1: hsl(220, 11%, 24%);
   --light-text-2: hsl(209, 26%, 26%);
@@ -83,6 +88,7 @@
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -104,6 +110,7 @@
     --tab-btn: var(--light-tab-btn);
     --ancent: var(--light-ancent);
     --ancent-hover: var(--light-ancent-hover);
+    --ancent-lighter: var(--light-ancent-lighter);
     --text-ancent: var(--light-text-ancent);
     --text-1: var(--light-text-1);
     --text-2: var(--light-text-2);
@@ -124,6 +131,7 @@ body.dark {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -144,6 +152,7 @@ body.light {
   --tab-btn: var(--light-tab-btn);
   --ancent: var(--light-ancent);
   --ancent-hover: var(--light-ancent-hover);
+  --ancent-lighter: var(--light-ancent-lighter);
   --text-ancent: var(--light-text-ancent);
   --text-1: var(--light-text-1);
   --text-2: var(--light-text-2);
@@ -230,51 +239,30 @@ form, select, textarea, button, label {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+  padding: 1.25rem;
   border-radius: 0.625rem;
   background: var(--card);
   box-shadow: var(--shadow);
   overflow: hidden;
 }
 .card-blog__header {
-  padding: 1.25rem;
-  padding-bottom: 0;
-}
-.card-blog__header img {
-  display: block;
-  width: 100%;
-  max-height: 150px;
-  aspect-ratio: 16/9;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  transition: 0.25s transform ease-in-out;
-}
-.card-blog__body {
-  display: flex;
-  flex-direction: column;
-  gap: 0.9375rem;
-  padding: 0 0.9375rem 0.9375rem;
-  flex-grow: 1;
-}
-.card-blog__body-header {
   display: flex;
   align-items: center;
   gap: 1.25rem;
 }
-.card-blog__body-header .card-blog__date {
+.card-blog__header-date {
   color: var(--text-3);
 }
-.card-blog__body-header .card-blog__tag {
+.card-blog__header-tag {
   padding: 0.3125rem 0.625rem;
   border-radius: 0.3125rem;
   background: var(--card-tag);
   box-shadow: var(--shadow);
 }
-.card-blog__body p {
+.card-blog p {
   line-height: 1.4;
 }
-.card-blog__body a {
+.card-blog a {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -287,28 +275,16 @@ form, select, textarea, button, label {
   border-radius: 0.3125rem;
   transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
   font-size: 1rem;
+  font-weight: 700;
   margin-top: auto;
 }
-.card-blog__body a:hover {
-  transform: translateY(-10%);
+.card-blog a:hover {
+  transform: translateY(-2px);
   background-color: var(--btn-hover);
 }
 
-.card-blog__header.card-blog__img {
-  overflow: hidden;
-  padding: 0;
-}
-
-.card-blog:hover .card-blog__header.card-blog__img > img {
-  transform: scale(1.05);
-}
-
-.card-blog.hidden {
-  display: none;
-}
-
 @media screen and (max-width: 1250px) {
-  main {
+  .content {
     width: 90%;
     margin: 0 auto;
   }
@@ -329,7 +305,7 @@ form, select, textarea, button, label {
   }
 }
 @media screen and (max-width: 1250px) {
-  main {
+  .content {
     width: 90%;
     margin: 0 auto;
   }
@@ -350,7 +326,7 @@ form, select, textarea, button, label {
   }
 }
 :root {
-  --font: "Proza Libre";
+  --font: "Montserrat";
 }
 
 /*VARIABLES*/
@@ -362,13 +338,14 @@ form, select, textarea, button, label {
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
   --dark-btn-hover: hsl(212, 20%, 41%);
-  --dark-menu: hsl(213, 19%, 12%);
+  --dark-menu: hsla(213, 19%, 12%, 0.6);
   --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
   --dark-card-tag: hsl(218, 19%, 24%);
   --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
   --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
-  --dark-ancent: hsl(29, 100%, 50%);
-  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-ancent: hsl(29, 100%, 66%);
+  --dark-ancent-hover: hsl(29, 100%, 76%);
+  --dark-ancent-lighter: hsl(225, 22%, 20%);
   --dark-text-ancent: hsl(255, 12%, 18%);
   --dark-text-1: hsl(204, 21%, 91%);
   --dark-text-2: hsl(211, 20%, 76%);
@@ -384,8 +361,9 @@ form, select, textarea, button, label {
   --light-card-tag: hsl(210, 46%, 90%);
   --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
   --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
-  --light-ancent: hsl(29, 100%, 50%);
-  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-ancent: hsl(29, 100%, 56%);
+  --light-ancent-hover: hsl(29, 100%, 46%);
+  --light-ancent-lighter: hsl(226, 51%, 78%);
   --light-text-ancent: hsl(0, 3%, 11%);
   --light-text-1: hsl(220, 11%, 24%);
   --light-text-2: hsl(209, 26%, 26%);
@@ -403,6 +381,7 @@ form, select, textarea, button, label {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -424,6 +403,7 @@ form, select, textarea, button, label {
     --tab-btn: var(--light-tab-btn);
     --ancent: var(--light-ancent);
     --ancent-hover: var(--light-ancent-hover);
+    --ancent-lighter: var(--light-ancent-lighter);
     --text-ancent: var(--light-text-ancent);
     --text-1: var(--light-text-1);
     --text-2: var(--light-text-2);
@@ -444,6 +424,7 @@ body.dark {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -464,6 +445,7 @@ body.light {
   --tab-btn: var(--light-tab-btn);
   --ancent: var(--light-ancent);
   --ancent-hover: var(--light-ancent-hover);
+  --ancent-lighter: var(--light-ancent-lighter);
   --text-ancent: var(--light-text-ancent);
   --text-1: var(--light-text-1);
   --text-2: var(--light-text-2);
@@ -474,116 +456,17 @@ body.light {
 
 /*General - Variables*/
 /*btnHover*/
-.section-about-me {
+.section-about-me__introduction {
   display: flex;
   flex-direction: column;
-}
-
-.hero {
-  display: grid;
-  gap: 1.25rem;
-  grid-template-areas: "heading" "image" "paragraph";
-  position: relative;
-  margin-bottom: 3.125rem;
-}
-.hero .hero__title {
-  padding: 0.5rem 0;
-  grid-area: heading;
-}
-.hero__paragraph {
-  grid-area: paragraph;
-  margin-bottom: 0.625rem;
-}
-.hero__paragraph-btns {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-}
-.hero__paragraph-btns-resume {
-  grid-column: 2/span 1;
-  grid-row: span 1;
-  all: unset;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  cursor: pointer;
-  gap: 0.625rem;
-  padding: 0.75rem 1rem;
-  color: var(--text-1);
-  background-color: var(--btn);
-  border-radius: 0.3125rem;
-  transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
-  font-size: 1rem;
-  font-weight: 700;
-  width: -moz-fit-content;
-  width: fit-content;
-  margin-top: auto;
-}
-.hero__paragraph-btns-resume:hover {
-  transform: translateY(-10%);
-  background-color: var(--btn-hover);
-}
-.hero picture {
-  align-self: start;
-  background: var(--bg);
-  border: 0.5em solid transparent;
-  border-radius: 0.625rem;
-  box-shadow: var(--shadow-hero);
-  grid-area: image;
-  overflow: hidden;
-}
-.hero picture img {
-  border-radius: 0.625rem;
-  height: 100%;
-  max-height: inherit;
-  max-width: inherit;
-  min-width: inherit;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
-  width: inherit;
-}
-.hero img,
-.hero picture {
-  display: block;
-  max-width: 100%;
-}
-.hero .flow {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  gap: 1.25rem;
-}
-
-@media screen and (min-width: 1250px) {
-  .hero {
-    grid-template-areas: "image heading heading" "image paragraph paragraph";
-  }
-}
-@media screen and (max-width: 1250px) and (min-width: 751px) {
-  .hero {
-    grid-template-areas: "image heading" "paragraph paragraph";
-  }
-}
-.hero::before {
-  background: var(--ancent-linear);
-  border-radius: 1em;
-  bottom: -0.5em;
-  content: "";
-  grid-row: 1/2;
-  left: -0.5em;
-  position: absolute;
-  right: -0.5em;
-  top: -0.5em;
-  z-index: -1;
+  gap: 1.5625rem;
 }
 
 .tabs {
   display: flex;
   width: -moz-fit-content;
   width: fit-content;
+  flex-flow: nowrap;
   padding: 0.625rem 0.625rem;
   align-items: center;
   gap: 0.625rem;
@@ -614,13 +497,18 @@ body.light {
 
 .tab-content.active {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(25rem, 100%), 1fr));
+}
+
+.tab-content-1 {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
   gap: 1.25rem;
 }
 
 .card-about {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   gap: 1.25rem;
   padding: 1.25rem;
   border-radius: 0.625rem;
@@ -630,22 +518,27 @@ body.light {
 .card-about .card-about__header {
   display: flex;
   gap: 1.25rem;
-  justify-content: flex-start;
   align-items: center;
 }
 .card-about .card-about__header img {
-  width: 4.5rem;
-  height: 4.5rem;
+  width: 3rem;
+  height: 3rem;
 }
-.card-about .card-about__header a {
-  display: inline-block;
+.card-about .card-about__header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
+}
+.card-about .card-about__header p {
+  font-weight: 700;
+}
+.card-about .card-about__header p > a {
+  font-size: 1.25rem;
   color: var(--ancent);
 }
 .card-about .card-about__header span {
+  font-size: 1rem;
   color: var(--text-3);
-}
-.card-about p {
-  line-height: 1.4;
 }
 .card-about .card-about__btn {
   grid-column: 2/span 1;
@@ -668,8 +561,50 @@ body.light {
   margin-top: auto;
 }
 .card-about .card-about__btn:hover {
-  transform: translateY(-10%);
+  transform: translateY(-2px);
   background-color: var(--btn-hover);
+}
+
+/* Experiencia */
+.tab-content-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.tab-content-2 hr {
+  border: 1px solid var(--ancent-lighter);
+}
+
+.card-exp {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+.card-exp__header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  gap: 0.625rem;
+}
+.card-exp__header img {
+  height: 3rem;
+  width: 3rem;
+}
+.card-exp__header p {
+  font-weight: 700;
+}
+.card-exp__header p > a {
+  font-size: 1.25rem;
+  color: var(--ancent);
+}
+.card-exp__header span {
+  font-size: 1rem;
+  color: var(--text-3);
+}
+.card-exp__header-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.625rem;
 }
 
 @media screen and (max-width: 1250px) {
@@ -680,7 +615,7 @@ body.light {
   }
 }
 @media screen and (max-width: 1250px) {
-  main {
+  .content {
     width: 90%;
     margin: 0 auto;
   }
@@ -701,7 +636,7 @@ body.light {
   }
 }
 :root {
-  --font: "Proza Libre";
+  --font: "Montserrat";
 }
 
 /*VARIABLES*/
@@ -713,13 +648,14 @@ body.light {
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
   --dark-btn-hover: hsl(212, 20%, 41%);
-  --dark-menu: hsl(213, 19%, 12%);
+  --dark-menu: hsla(213, 19%, 12%, 0.6);
   --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
   --dark-card-tag: hsl(218, 19%, 24%);
   --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
   --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
-  --dark-ancent: hsl(29, 100%, 50%);
-  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-ancent: hsl(29, 100%, 66%);
+  --dark-ancent-hover: hsl(29, 100%, 76%);
+  --dark-ancent-lighter: hsl(225, 22%, 20%);
   --dark-text-ancent: hsl(255, 12%, 18%);
   --dark-text-1: hsl(204, 21%, 91%);
   --dark-text-2: hsl(211, 20%, 76%);
@@ -735,8 +671,9 @@ body.light {
   --light-card-tag: hsl(210, 46%, 90%);
   --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
   --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
-  --light-ancent: hsl(29, 100%, 50%);
-  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-ancent: hsl(29, 100%, 56%);
+  --light-ancent-hover: hsl(29, 100%, 46%);
+  --light-ancent-lighter: hsl(226, 51%, 78%);
   --light-text-ancent: hsl(0, 3%, 11%);
   --light-text-1: hsl(220, 11%, 24%);
   --light-text-2: hsl(209, 26%, 26%);
@@ -754,6 +691,7 @@ body.light {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -775,6 +713,7 @@ body.light {
     --tab-btn: var(--light-tab-btn);
     --ancent: var(--light-ancent);
     --ancent-hover: var(--light-ancent-hover);
+    --ancent-lighter: var(--light-ancent-lighter);
     --text-ancent: var(--light-text-ancent);
     --text-1: var(--light-text-1);
     --text-2: var(--light-text-2);
@@ -795,6 +734,7 @@ body.dark {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -815,6 +755,7 @@ body.light {
   --tab-btn: var(--light-tab-btn);
   --ancent: var(--light-ancent);
   --ancent-hover: var(--light-ancent-hover);
+  --ancent-lighter: var(--light-ancent-lighter);
   --text-ancent: var(--light-text-ancent);
   --text-1: var(--light-text-1);
   --text-2: var(--light-text-2);
@@ -891,8 +832,22 @@ form, select, textarea, button, label {
   color: inherit;
 }
 
+.tabs-button {
+  display: flex;
+  width: -moz-fit-content;
+  width: fit-content;
+  flex-flow: nowrap;
+  padding: 0.625rem 0.625rem;
+  align-items: center;
+  gap: 0.625rem;
+  border-radius: 0.625rem;
+  background: var(--tab);
+  box-shadow: var(--shadow);
+}
+
 .tab-button__recommended {
   display: flex;
+  flex-flow: nowrap;
   padding: 0.75rem 1.125rem;
   justify-content: center;
   align-items: center;
@@ -938,12 +893,12 @@ form, select, textarea, button, label {
 }
 .card-recommended__header {
   display: flex;
-  align-items: center;
   gap: 1.25rem;
 }
 .card-recommended__header-text {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
   gap: 0.625rem;
 }
 .card-recommended a {
@@ -960,13 +915,11 @@ form, select, textarea, button, label {
   transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
   font-size: 1rem;
   font-weight: 700;
+  margin-top: auto;
 }
 .card-recommended a:hover {
-  transform: translateY(-10%);
+  transform: translateY(-2px);
   background-color: var(--btn-hover);
-}
-.card-recommended p {
-  line-height: 1.4;
 }
 .card-recommended span {
   display: inline-flex;
@@ -975,6 +928,8 @@ form, select, textarea, button, label {
   padding: 0.3125rem 0.625rem;
   border-radius: 0.3125rem;
   background: var(--card-tag);
+  font-size: 1rem;
+  color: var(--text-2);
 }
 
 .card-recommended.hidden {
@@ -982,6 +937,9 @@ form, select, textarea, button, label {
 }
 
 @media screen and (max-width: 1250px) {
+  .tabs-button button {
+    font-size: 0.875rem;
+  }
   .section-recommended__cards {
     display: flex;
     flex-direction: column;
@@ -990,7 +948,7 @@ form, select, textarea, button, label {
   }
 }
 @media screen and (max-width: 1250px) {
-  main {
+  .content {
     width: 90%;
     margin: 0 auto;
   }
@@ -1011,7 +969,7 @@ form, select, textarea, button, label {
   }
 }
 :root {
-  --font: "Proza Libre";
+  --font: "Montserrat";
 }
 
 /*VARIABLES*/
@@ -1023,13 +981,14 @@ form, select, textarea, button, label {
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
   --dark-btn-hover: hsl(212, 20%, 41%);
-  --dark-menu: hsl(213, 19%, 12%);
+  --dark-menu: hsla(213, 19%, 12%, 0.6);
   --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
   --dark-card-tag: hsl(218, 19%, 24%);
   --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
   --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
-  --dark-ancent: hsl(29, 100%, 50%);
-  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-ancent: hsl(29, 100%, 66%);
+  --dark-ancent-hover: hsl(29, 100%, 76%);
+  --dark-ancent-lighter: hsl(225, 22%, 20%);
   --dark-text-ancent: hsl(255, 12%, 18%);
   --dark-text-1: hsl(204, 21%, 91%);
   --dark-text-2: hsl(211, 20%, 76%);
@@ -1045,8 +1004,9 @@ form, select, textarea, button, label {
   --light-card-tag: hsl(210, 46%, 90%);
   --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
   --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
-  --light-ancent: hsl(29, 100%, 50%);
-  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-ancent: hsl(29, 100%, 56%);
+  --light-ancent-hover: hsl(29, 100%, 46%);
+  --light-ancent-lighter: hsl(226, 51%, 78%);
   --light-text-ancent: hsl(0, 3%, 11%);
   --light-text-1: hsl(220, 11%, 24%);
   --light-text-2: hsl(209, 26%, 26%);
@@ -1064,6 +1024,7 @@ form, select, textarea, button, label {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -1085,6 +1046,7 @@ form, select, textarea, button, label {
     --tab-btn: var(--light-tab-btn);
     --ancent: var(--light-ancent);
     --ancent-hover: var(--light-ancent-hover);
+    --ancent-lighter: var(--light-ancent-lighter);
     --text-ancent: var(--light-text-ancent);
     --text-1: var(--light-text-1);
     --text-2: var(--light-text-2);
@@ -1105,6 +1067,7 @@ body.dark {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -1125,6 +1088,7 @@ body.light {
   --tab-btn: var(--light-tab-btn);
   --ancent: var(--light-ancent);
   --ancent-hover: var(--light-ancent-hover);
+  --ancent-lighter: var(--light-ancent-lighter);
   --text-ancent: var(--light-text-ancent);
   --text-1: var(--light-text-1);
   --text-2: var(--light-text-2);
@@ -1135,13 +1099,10 @@ body.light {
 
 /*General - Variables*/
 /*btnHover*/
-.section-testimonial {
-  display: flex;
-  flex-direction: column;
-}
-
 .section-testimonial__cards {
   display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr);
   gap: 1.25rem;
   padding-block: 1.25rem;
   margin-inline: auto;
@@ -1153,7 +1114,7 @@ body.light {
   padding: 1.25rem;
   gap: 1.25rem;
   border-radius: 0.625rem;
-  border: 1px solid var(--text-3);
+  border: 1px solid var(--ancent-lighter);
   position: relative;
   transition: transform 0.3s ease-in-out;
 }
@@ -1162,7 +1123,7 @@ body.light {
   top: 0;
   right: 5%;
   font-size: 12rem;
-  background: var(--ancent-linear);
+  background: var(--ancent);
   -webkit-background-clip: text;
   color: transparent;
   z-index: -1;
@@ -1171,10 +1132,6 @@ body.light {
 .card-testimonial span {
   font-size: 1.25rem;
   font-weight: 600;
-  line-height: 1.4;
-}
-.card-testimonial p {
-  font-size: 1rem;
   line-height: 1.4;
 }
 .card-testimonial .testimonial-btn {
@@ -1189,17 +1146,27 @@ body.light {
   background-color: var(--btn);
   border-radius: 6.25rem;
   transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
+  cursor: pointer;
+  margin-top: auto;
 }
 .card-testimonial .testimonial-btn:hover {
-  transform: translateY(-10%);
+  transform: translateY(-0.1rem);
   background-color: var(--btn-hover);
 }
 .card-testimonial .testimonial-icon {
   font-size: 1.25rem;
 }
 
+.grid1 {
+  grid-column: span 2;
+}
+
+.grid6 {
+  grid-column: span 2;
+}
+
 .card-testimonial:hover {
-  transform: translateY(-2.5%);
+  transform: translateY(-0.25rem);
 }
 
 .testimonial-header {
@@ -1229,20 +1196,15 @@ body.light {
   line-height: 1.1;
 }
 
-@media screen and (min-width: 1250px) {
-  .grid-col-span-2 {
-    grid-column: span 2;
-  }
+@media screen and (max-width: 1250px) {
   .section-testimonial__cards {
-    grid-template-columns: repeat(4, 1fr);
-  }
-  .card-testimonial:last-child {
-    grid-column-start: 4;
-    grid-row: 1/3;
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
   }
 }
 @media screen and (max-width: 1250px) {
-  main {
+  .content {
     width: 90%;
     margin: 0 auto;
   }
@@ -1263,7 +1225,7 @@ body.light {
   }
 }
 :root {
-  --font: "Proza Libre";
+  --font: "Montserrat";
 }
 
 /*VARIABLES*/
@@ -1275,13 +1237,14 @@ body.light {
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
   --dark-btn-hover: hsl(212, 20%, 41%);
-  --dark-menu: hsl(213, 19%, 12%);
+  --dark-menu: hsla(213, 19%, 12%, 0.6);
   --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
   --dark-card-tag: hsl(218, 19%, 24%);
   --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
   --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
-  --dark-ancent: hsl(29, 100%, 50%);
-  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-ancent: hsl(29, 100%, 66%);
+  --dark-ancent-hover: hsl(29, 100%, 76%);
+  --dark-ancent-lighter: hsl(225, 22%, 20%);
   --dark-text-ancent: hsl(255, 12%, 18%);
   --dark-text-1: hsl(204, 21%, 91%);
   --dark-text-2: hsl(211, 20%, 76%);
@@ -1297,8 +1260,9 @@ body.light {
   --light-card-tag: hsl(210, 46%, 90%);
   --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
   --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
-  --light-ancent: hsl(29, 100%, 50%);
-  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-ancent: hsl(29, 100%, 56%);
+  --light-ancent-hover: hsl(29, 100%, 46%);
+  --light-ancent-lighter: hsl(226, 51%, 78%);
   --light-text-ancent: hsl(0, 3%, 11%);
   --light-text-1: hsl(220, 11%, 24%);
   --light-text-2: hsl(209, 26%, 26%);
@@ -1316,6 +1280,7 @@ body.light {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -1337,6 +1302,7 @@ body.light {
     --tab-btn: var(--light-tab-btn);
     --ancent: var(--light-ancent);
     --ancent-hover: var(--light-ancent-hover);
+    --ancent-lighter: var(--light-ancent-lighter);
     --text-ancent: var(--light-text-ancent);
     --text-1: var(--light-text-1);
     --text-2: var(--light-text-2);
@@ -1357,6 +1323,7 @@ body.dark {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -1377,6 +1344,7 @@ body.light {
   --tab-btn: var(--light-tab-btn);
   --ancent: var(--light-ancent);
   --ancent-hover: var(--light-ancent-hover);
+  --ancent-lighter: var(--light-ancent-lighter);
   --text-ancent: var(--light-text-ancent);
   --text-1: var(--light-text-1);
   --text-2: var(--light-text-2);
@@ -1387,7 +1355,7 @@ body.light {
 
 /*General - Variables*/
 /*btnHover*/
-.section-faq .section-header {
+.section-faq {
   margin-bottom: 3.125rem;
 }
 
@@ -1402,9 +1370,6 @@ body.light {
   flex-direction: column;
   gap: 0.625rem;
 }
-.accordion__item p {
-  line-height: 1.4;
-}
 
 .accordion__question {
   display: flex;
@@ -1414,6 +1379,7 @@ body.light {
   width: 100%;
   border: none;
   background: transparent;
+  cursor: pointer;
 }
 .accordion__question i {
   font-size: 1.25rem;
@@ -1456,9 +1422,26 @@ body.light {
   display: block;
 }
 
-/* DESKTOP STYLES */
+@media screen and (max-width: 1250px) {
+  .accordion__question {
+    display: flex;
+    align-items: start;
+    gap: 0.625rem;
+    width: 100%;
+    border: none;
+    background: transparent;
+    cursor: pointer;
+  }
+  .accordion__question i {
+    font-size: 1.25rem;
+  }
+  .accordion__question p {
+    color: var(--text-1);
+    font-weight: 700;
+  }
+}
 :root {
-  --font: "Proza Libre";
+  --font: "Montserrat";
 }
 
 /*VARIABLES*/
@@ -1470,13 +1453,14 @@ body.light {
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
   --dark-btn-hover: hsl(212, 20%, 41%);
-  --dark-menu: hsl(213, 19%, 12%);
+  --dark-menu: hsla(213, 19%, 12%, 0.6);
   --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
   --dark-card-tag: hsl(218, 19%, 24%);
   --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
   --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
-  --dark-ancent: hsl(29, 100%, 50%);
-  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-ancent: hsl(29, 100%, 66%);
+  --dark-ancent-hover: hsl(29, 100%, 76%);
+  --dark-ancent-lighter: hsl(225, 22%, 20%);
   --dark-text-ancent: hsl(255, 12%, 18%);
   --dark-text-1: hsl(204, 21%, 91%);
   --dark-text-2: hsl(211, 20%, 76%);
@@ -1492,8 +1476,9 @@ body.light {
   --light-card-tag: hsl(210, 46%, 90%);
   --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
   --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
-  --light-ancent: hsl(29, 100%, 50%);
-  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-ancent: hsl(29, 100%, 56%);
+  --light-ancent-hover: hsl(29, 100%, 46%);
+  --light-ancent-lighter: hsl(226, 51%, 78%);
   --light-text-ancent: hsl(0, 3%, 11%);
   --light-text-1: hsl(220, 11%, 24%);
   --light-text-2: hsl(209, 26%, 26%);
@@ -1511,6 +1496,7 @@ body.light {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -1532,6 +1518,7 @@ body.light {
     --tab-btn: var(--light-tab-btn);
     --ancent: var(--light-ancent);
     --ancent-hover: var(--light-ancent-hover);
+    --ancent-lighter: var(--light-ancent-lighter);
     --text-ancent: var(--light-text-ancent);
     --text-1: var(--light-text-1);
     --text-2: var(--light-text-2);
@@ -1552,6 +1539,7 @@ body.dark {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -1572,6 +1560,7 @@ body.light {
   --tab-btn: var(--light-tab-btn);
   --ancent: var(--light-ancent);
   --ancent-hover: var(--light-ancent-hover);
+  --ancent-lighter: var(--light-ancent-lighter);
   --text-ancent: var(--light-text-ancent);
   --text-1: var(--light-text-1);
   --text-2: var(--light-text-2);
@@ -1591,13 +1580,14 @@ body.light {
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
   --dark-btn-hover: hsl(212, 20%, 41%);
-  --dark-menu: hsl(213, 19%, 12%);
+  --dark-menu: hsla(213, 19%, 12%, 0.6);
   --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
   --dark-card-tag: hsl(218, 19%, 24%);
   --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
   --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
-  --dark-ancent: hsl(29, 100%, 50%);
-  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-ancent: hsl(29, 100%, 66%);
+  --dark-ancent-hover: hsl(29, 100%, 76%);
+  --dark-ancent-lighter: hsl(225, 22%, 20%);
   --dark-text-ancent: hsl(255, 12%, 18%);
   --dark-text-1: hsl(204, 21%, 91%);
   --dark-text-2: hsl(211, 20%, 76%);
@@ -1613,8 +1603,9 @@ body.light {
   --light-card-tag: hsl(210, 46%, 90%);
   --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
   --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
-  --light-ancent: hsl(29, 100%, 50%);
-  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-ancent: hsl(29, 100%, 56%);
+  --light-ancent-hover: hsl(29, 100%, 46%);
+  --light-ancent-lighter: hsl(226, 51%, 78%);
   --light-text-ancent: hsl(0, 3%, 11%);
   --light-text-1: hsl(220, 11%, 24%);
   --light-text-2: hsl(209, 26%, 26%);
@@ -1632,6 +1623,7 @@ body.light {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -1653,6 +1645,7 @@ body.light {
     --tab-btn: var(--light-tab-btn);
     --ancent: var(--light-ancent);
     --ancent-hover: var(--light-ancent-hover);
+    --ancent-lighter: var(--light-ancent-lighter);
     --text-ancent: var(--light-text-ancent);
     --text-1: var(--light-text-1);
     --text-2: var(--light-text-2);
@@ -1673,6 +1666,7 @@ body.dark {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -1693,6 +1687,7 @@ body.light {
   --tab-btn: var(--light-tab-btn);
   --ancent: var(--light-ancent);
   --ancent-hover: var(--light-ancent-hover);
+  --ancent-lighter: var(--light-ancent-lighter);
   --text-ancent: var(--light-text-ancent);
   --text-1: var(--light-text-1);
   --text-2: var(--light-text-2);
@@ -1771,20 +1766,43 @@ form, select, textarea, button, label {
 
 footer {
   display: flex;
-  flex-direction: row;
+  flex-flow: nowrap;
   justify-content: space-between;
-  align-items: center;
-  position: relative;
-  padding: 1.25rem 7.5rem;
-  width: 100%;
-  margin: 0 auto;
   bottom: 0;
+  left: 50%;
+  margin: 0 auto 1.5625rem;
+  border-radius: 9999px;
   background: var(--menu);
-  -webkit-backdrop-filter: var(--blur);
-          backdrop-filter: var(--blur);
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  align-items: center;
+  width: 100%;
+  max-width: 1250px;
+  padding: 1.25rem;
+  margin-top: 12.5rem;
 }
-footer p {
-  color: var(--text-2);
+footer .logo-footer {
+  width: 2.25rem;
+  height: 2.25rem;
+}
+footer .hero__paragraph-btns-resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  padding: 0.75rem 1rem;
+  color: var(--text-1);
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: var(--btn);
+  border-radius: 6.25rem;
+  transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
+  cursor: pointer;
+}
+footer .hero__paragraph-btns-resume:hover {
+  transform: translateY(-2px);
+  background-color: var(--btn-hover);
 }
 
 .social {
@@ -1798,34 +1816,311 @@ footer p {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 0.1875rem 0.5rem;
+  padding: 0.4375rem 0.5rem;
   color: var(--text-1);
   background-color: var(--btn);
-  border-radius: 6.25rem;
+  border-radius: 9999px;
   transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
+  cursor: pointer;
 }
 .social-btn:hover {
-  transform: translateY(-10%);
+  transform: translateY(-2px);
   background-color: var(--btn-hover);
 }
 .social-icon {
   font-size: 1.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
-.container {
+@media screen and (max-width: 1250px) {
+  .content {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .about-me__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+:root {
+  --font: "Montserrat";
+}
+
+/*VARIABLES*/
+:root {
+  --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
+  --black: #000;
+  --white: #fff;
+  --dark-bg: hsl(225, 22%, 4%);
+  --dark-bg-hover: hsl(225, 22%, 14%);
+  --dark-btn: hsl(205, 16%, 30%);
+  --dark-btn-hover: hsl(212, 20%, 41%);
+  --dark-menu: hsla(213, 19%, 12%, 0.6);
+  --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
+  --dark-card-tag: hsl(218, 19%, 24%);
+  --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
+  --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
+  --dark-ancent: hsl(29, 100%, 66%);
+  --dark-ancent-hover: hsl(29, 100%, 76%);
+  --dark-ancent-lighter: hsl(225, 22%, 20%);
+  --dark-text-ancent: hsl(255, 12%, 18%);
+  --dark-text-1: hsl(204, 21%, 91%);
+  --dark-text-2: hsl(211, 20%, 76%);
+  --dark-text-3: hsl(212, 18%, 71%);
+  --dark-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.25) inset, -1px -1px 2px 0px rgba(131, 131, 131, 0.05) inset;
+  --dark-shadow-hero: 0 0.05em 1em hsl(204, 21%, 91%);
+  --light-bg: hsl(210, 50%, 94%);
+  --light-bg-hover: hsl(210, 50%, 84%);
+  --light-btn: hsl(216, 15%, 76%);
+  --light-btn-hover: hsl(208, 17%, 67%);
+  --light-menu: hsl(0, 0%, 100%);
+  --light-card: linear-gradient(90deg, hsl(210, 36%, 96%) 0%, hsl(207, 39%, 95%) 99.91%);
+  --light-card-tag: hsl(210, 46%, 90%);
+  --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
+  --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
+  --light-ancent: hsl(29, 100%, 56%);
+  --light-ancent-hover: hsl(29, 100%, 46%);
+  --light-ancent-lighter: hsl(226, 51%, 78%);
+  --light-text-ancent: hsl(0, 3%, 11%);
+  --light-text-1: hsl(220, 11%, 24%);
+  --light-text-2: hsl(209, 26%, 26%);
+  --light-text-3: hsl(0, 0%, 37%);
+  --light-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --light-shadow-hero: 0 0.1em 1em hsl(220, 11%, 24%);
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light-bg);
+    --bg-hover: (--light-bg-hover);
+    --btn: var(--light-btn);
+    --btn-hover: var(--light-btn-hover);
+    --menu: var(--light-menu);
+    --card: var(--light-card);
+    --card-tag: var(--light-card-tag);
+    --tab: var(--light-tab);
+    --tab-btn: var(--light-tab-btn);
+    --ancent: var(--light-ancent);
+    --ancent-hover: var(--light-ancent-hover);
+    --ancent-lighter: var(--light-ancent-lighter);
+    --text-ancent: var(--light-text-ancent);
+    --text-1: var(--light-text-1);
+    --text-2: var(--light-text-2);
+    --text-3: var(--light-text-3);
+    --shadow: var(--light-shadow);
+    --shadow-hero: var(--light-shadow-hero);
+  }
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --bg-hover: (--light-bg-hover);
+  --btn: var(--light-btn);
+  --btn-hover: var(--light-btn-hover);
+  --menu: var(--light-menu);
+  --card: var(--light-card);
+  --card-tag: var(--light-card-tag);
+  --tab: var(--light-tab);
+  --tab-btn: var(--light-tab-btn);
+  --ancent: var(--light-ancent);
+  --ancent-hover: var(--light-ancent-hover);
+  --ancent-lighter: var(--light-ancent-lighter);
+  --text-ancent: var(--light-text-ancent);
+  --text-1: var(--light-text-1);
+  --text-2: var(--light-text-2);
+  --text-3: var(--light-text-3);
+  --shadow: var(--light-shadow);
+  --shadow-hero: var(--light-shadow-hero);
+}
+
+/*General - Variables*/
+/*btnHover*/
+.section-hero {
+  height: 70vh;
+  display: flex;
+  flex-direction: row;
+  gap: 6.25rem;
   max-width: 76.25rem;
-  margin: 12.5rem auto;
+  margin: 0 auto;
+  margin-top: 12.5rem;
+}
+.section-hero picture {
+  width: 600px;
+  height: auto;
+  align-self: start;
+  background: var(--bg);
+  border-radius: 0.625rem;
+  overflow: hidden;
+}
+.section-hero picture img {
+  border-radius: 0.625rem;
+  height: 100%;
+  max-height: inherit;
+  max-width: inherit;
+  min-width: inherit;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  width: inherit;
+}
+.section-hero__btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  padding: 0.75rem 1rem;
+  color: var(--text-1);
+  background-color: var(--btn);
+  border-radius: 6.25rem;
+  transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
+  font-size: 1rem;
+  font-weight: 700;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.section-hero__btn:hover {
+  transform: translateY(-2px);
+  background-color: var(--btn-hover);
+}
+.section-hero img,
+.section-hero picture {
+  display: block;
+  max-width: 100%;
+}
+.section-hero__content {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+}
+.section-hero__paragraph {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5625rem;
+}
+.section-hero hr {
+  border: 1px solid var(--ancent-lighter);
+}
+
+@media screen and (max-width: 1250px) {
+  .section-hero {
+    height: 70vh;
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+    max-width: 76.25rem;
+    margin: 0 auto;
+    margin-top: 9.375rem;
+  }
+  .section-hero picture {
+    width: 300px;
+    height: 300px;
+    background: var(--bg);
+    border-radius: 0.625rem;
+    overflow: hidden;
+  }
+  .section-hero picture img {
+    border-radius: 0.625rem;
+  }
+  .section-hero__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.625rem;
+    padding: 0.75rem 1rem;
+    color: var(--text-1);
+    background-color: var(--btn);
+    border-radius: 6.25rem;
+    transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
+    font-size: 1rem;
+    font-weight: 700;
+    width: -moz-fit-content;
+    width: fit-content;
+  }
+  .section-hero__btn:hover {
+    transform: translateY(-2px);
+    background-color: var(--btn-hover);
+  }
+  .section-hero img,
+  .section-hero picture {
+    display: block;
+    max-width: 100%;
+  }
+  .section-hero__content {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5625rem;
+  }
+  .section-hero__paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5625rem;
+  }
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 3.125rem;
+  max-width: 76.25rem;
+  margin: 0 auto;
+  margin-top: 9.375rem;
 }
 
 .section-header {
   display: flex;
   flex-direction: column;
   gap: 0.625rem;
-  margin-bottom: 3.125rem;
-}
-
-.tabs {
-  margin-bottom: 3.125rem;
 }
 
 /*VARIABLES*/
@@ -1837,13 +2132,14 @@ footer p {
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
   --dark-btn-hover: hsl(212, 20%, 41%);
-  --dark-menu: hsl(213, 19%, 12%);
+  --dark-menu: hsla(213, 19%, 12%, 0.6);
   --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
   --dark-card-tag: hsl(218, 19%, 24%);
   --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
   --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
-  --dark-ancent: hsl(29, 100%, 50%);
-  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-ancent: hsl(29, 100%, 66%);
+  --dark-ancent-hover: hsl(29, 100%, 76%);
+  --dark-ancent-lighter: hsl(225, 22%, 20%);
   --dark-text-ancent: hsl(255, 12%, 18%);
   --dark-text-1: hsl(204, 21%, 91%);
   --dark-text-2: hsl(211, 20%, 76%);
@@ -1859,8 +2155,9 @@ footer p {
   --light-card-tag: hsl(210, 46%, 90%);
   --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
   --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
-  --light-ancent: hsl(29, 100%, 50%);
-  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-ancent: hsl(29, 100%, 56%);
+  --light-ancent-hover: hsl(29, 100%, 46%);
+  --light-ancent-lighter: hsl(226, 51%, 78%);
   --light-text-ancent: hsl(0, 3%, 11%);
   --light-text-1: hsl(220, 11%, 24%);
   --light-text-2: hsl(209, 26%, 26%);
@@ -1878,6 +2175,7 @@ footer p {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -1899,6 +2197,7 @@ footer p {
     --tab-btn: var(--light-tab-btn);
     --ancent: var(--light-ancent);
     --ancent-hover: var(--light-ancent-hover);
+    --ancent-lighter: var(--light-ancent-lighter);
     --text-ancent: var(--light-text-ancent);
     --text-1: var(--light-text-1);
     --text-2: var(--light-text-2);
@@ -1919,6 +2218,7 @@ body.dark {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -1939,6 +2239,7 @@ body.light {
   --tab-btn: var(--light-tab-btn);
   --ancent: var(--light-ancent);
   --ancent-hover: var(--light-ancent-hover);
+  --ancent-lighter: var(--light-ancent-lighter);
   --text-ancent: var(--light-text-ancent);
   --text-1: var(--light-text-1);
   --text-2: var(--light-text-2);
@@ -1958,13 +2259,14 @@ body.light {
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
   --dark-btn-hover: hsl(212, 20%, 41%);
-  --dark-menu: hsl(213, 19%, 12%);
+  --dark-menu: hsla(213, 19%, 12%, 0.6);
   --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
   --dark-card-tag: hsl(218, 19%, 24%);
   --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
   --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
-  --dark-ancent: hsl(29, 100%, 50%);
-  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-ancent: hsl(29, 100%, 66%);
+  --dark-ancent-hover: hsl(29, 100%, 76%);
+  --dark-ancent-lighter: hsl(225, 22%, 20%);
   --dark-text-ancent: hsl(255, 12%, 18%);
   --dark-text-1: hsl(204, 21%, 91%);
   --dark-text-2: hsl(211, 20%, 76%);
@@ -1980,8 +2282,9 @@ body.light {
   --light-card-tag: hsl(210, 46%, 90%);
   --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
   --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
-  --light-ancent: hsl(29, 100%, 50%);
-  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-ancent: hsl(29, 100%, 56%);
+  --light-ancent-hover: hsl(29, 100%, 46%);
+  --light-ancent-lighter: hsl(226, 51%, 78%);
   --light-text-ancent: hsl(0, 3%, 11%);
   --light-text-1: hsl(220, 11%, 24%);
   --light-text-2: hsl(209, 26%, 26%);
@@ -1999,6 +2302,7 @@ body.light {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -2020,6 +2324,7 @@ body.light {
     --tab-btn: var(--light-tab-btn);
     --ancent: var(--light-ancent);
     --ancent-hover: var(--light-ancent-hover);
+    --ancent-lighter: var(--light-ancent-lighter);
     --text-ancent: var(--light-text-ancent);
     --text-1: var(--light-text-1);
     --text-2: var(--light-text-2);
@@ -2040,6 +2345,7 @@ body.dark {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -2060,6 +2366,7 @@ body.light {
   --tab-btn: var(--light-tab-btn);
   --ancent: var(--light-ancent);
   --ancent-hover: var(--light-ancent-hover);
+  --ancent-lighter: var(--light-ancent-lighter);
   --text-ancent: var(--light-text-ancent);
   --text-1: var(--light-text-1);
   --text-2: var(--light-text-2);
@@ -2070,6 +2377,72 @@ body.light {
 
 /*General - Variables*/
 /*btnHover*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+p a {
+  display: inline;
+}
+
+video, iframe, picture, figure {
+  max-width: 100%;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 0.75rem;
+}
+
+form, select, textarea, button, label {
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
 .page-transition {
   opacity: 1;
   transition: opacity 0.5s ease-in-out;
@@ -2081,34 +2454,26 @@ body.light {
 
 .menu {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
   align-items: center;
-  position: fixed;
-  padding: 1.25rem 1.25rem;
-  width: 100%;
+  justify-content: space-between;
+  max-width: 1250px;
+  width: 90%;
+  padding: 1.25rem;
   top: 0;
-  left: 0;
+  margin: 1.5625rem auto;
+  left: 50%;
+  transform: translateX(-50%);
   background: var(--menu);
-  z-index: 999;
+  -webkit-backdrop-filter: blur(50px);
+          backdrop-filter: blur(50px);
+  z-index: 9999;
+  border-radius: 9999px;
+  position: fixed;
   transition: all 0.3s ease-in-out;
 }
 
 .menu-bt {
-  width: 36px;
-  height: 36px;
-  border-radius: 50%;
   display: none;
-  position: relative;
-  justify-content: center;
-  align-items: center;
-  background: var(--btn);
-  cursor: pointer;
-  transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
-}
-.menu-bt:hover {
-  transform: translateY(-10%);
-  background-color: var(--btn-hover);
 }
 .menu-bt .fa-solid {
   color: var(--text-1);
@@ -2144,7 +2509,7 @@ body.light {
   top: 1.875rem;
   bottom: 0;
   left: 0;
-  background: var(--ancent-linear);
+  background: var(--ancent);
   transition: all 0.3s ease-in-out;
 }
 .nav-menu__link:hover::after {
@@ -2153,6 +2518,7 @@ body.light {
 
 .nav-menu__link.active {
   color: var(--ancent);
+  font-weight: 700;
 }
 
 .toggle {
@@ -2167,7 +2533,7 @@ body.light {
   transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
 }
 .toggle:hover {
-  transform: translateY(-10%);
+  transform: translateY(-2px);
   background-color: var(--btn-hover);
 }
 .toggle input {
@@ -2196,45 +2562,31 @@ body.light {
   transition-delay: 0s;
 }
 
-.sidelist {
-  position: fixed;
-  right: 0;
-  top: 0;
-  margin: 0 auto;
-  height: 100dvh;
-  width: 100vw;
-  z-index: -1;
-  -webkit-backdrop-filter: blur(250px);
-          backdrop-filter: blur(250px);
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  padding: 3.75rem;
-  gap: 3.75rem;
-  overflow: hidden;
-}
-.sidelist .nav-menu {
-  display: flex;
-  flex-direction: column;
-  gap: 3.75rem;
-}
-
-@media screen and (max-width: 1024px) {
+@media screen and (max-width: 1250px) {
   .nav-menu {
     display: none;
   }
   .menu-bt {
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
     display: flex;
+    position: relative;
     justify-content: center;
     align-items: center;
+    background: var(--btn);
+    cursor: pointer;
+    transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
+  }
+  .menu-bt:hover {
+    transform: translateY(-2px);
+    background-color: var(--btn-hover);
   }
 }
 /* SCROLL STUFF */
-.scroll-down .menu {
-  transform: translate3d(0, -120%, 0);
-}
-
+/* .scroll-down .menu {
+  transform: translate3d(0, -140%, 0);
+} */
 /*VARIABLES*/
 :root {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
@@ -2244,13 +2596,14 @@ body.light {
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
   --dark-btn-hover: hsl(212, 20%, 41%);
-  --dark-menu: hsl(213, 19%, 12%);
+  --dark-menu: hsla(213, 19%, 12%, 0.6);
   --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
   --dark-card-tag: hsl(218, 19%, 24%);
   --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
   --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
-  --dark-ancent: hsl(29, 100%, 50%);
-  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-ancent: hsl(29, 100%, 66%);
+  --dark-ancent-hover: hsl(29, 100%, 76%);
+  --dark-ancent-lighter: hsl(225, 22%, 20%);
   --dark-text-ancent: hsl(255, 12%, 18%);
   --dark-text-1: hsl(204, 21%, 91%);
   --dark-text-2: hsl(211, 20%, 76%);
@@ -2266,8 +2619,9 @@ body.light {
   --light-card-tag: hsl(210, 46%, 90%);
   --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
   --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
-  --light-ancent: hsl(29, 100%, 50%);
-  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-ancent: hsl(29, 100%, 56%);
+  --light-ancent-hover: hsl(29, 100%, 46%);
+  --light-ancent-lighter: hsl(226, 51%, 78%);
   --light-text-ancent: hsl(0, 3%, 11%);
   --light-text-1: hsl(220, 11%, 24%);
   --light-text-2: hsl(209, 26%, 26%);
@@ -2285,6 +2639,7 @@ body.light {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -2306,6 +2661,7 @@ body.light {
     --tab-btn: var(--light-tab-btn);
     --ancent: var(--light-ancent);
     --ancent-hover: var(--light-ancent-hover);
+    --ancent-lighter: var(--light-ancent-lighter);
     --text-ancent: var(--light-text-ancent);
     --text-1: var(--light-text-1);
     --text-2: var(--light-text-2);
@@ -2326,6 +2682,7 @@ body.dark {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -2346,6 +2703,7 @@ body.light {
   --tab-btn: var(--light-tab-btn);
   --ancent: var(--light-ancent);
   --ancent-hover: var(--light-ancent-hover);
+  --ancent-lighter: var(--light-ancent-lighter);
   --text-ancent: var(--light-text-ancent);
   --text-1: var(--light-text-1);
   --text-2: var(--light-text-2);
@@ -2357,7 +2715,7 @@ body.light {
 /*General - Variables*/
 /*btnHover*/
 @media screen and (max-width: 1250px) {
-  main {
+  .content {
     width: 90%;
     margin: 0 auto;
   }
@@ -2378,7 +2736,7 @@ body.light {
   }
 }
 :root {
-  --font: "Proza Libre";
+  --font: "Montserrat";
 }
 
 /*VARIABLES*/
@@ -2390,13 +2748,14 @@ body.light {
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
   --dark-btn-hover: hsl(212, 20%, 41%);
-  --dark-menu: hsl(213, 19%, 12%);
+  --dark-menu: hsla(213, 19%, 12%, 0.6);
   --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
   --dark-card-tag: hsl(218, 19%, 24%);
   --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
   --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
-  --dark-ancent: hsl(29, 100%, 50%);
-  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-ancent: hsl(29, 100%, 66%);
+  --dark-ancent-hover: hsl(29, 100%, 76%);
+  --dark-ancent-lighter: hsl(225, 22%, 20%);
   --dark-text-ancent: hsl(255, 12%, 18%);
   --dark-text-1: hsl(204, 21%, 91%);
   --dark-text-2: hsl(211, 20%, 76%);
@@ -2412,8 +2771,9 @@ body.light {
   --light-card-tag: hsl(210, 46%, 90%);
   --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
   --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
-  --light-ancent: hsl(29, 100%, 50%);
-  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-ancent: hsl(29, 100%, 56%);
+  --light-ancent-hover: hsl(29, 100%, 46%);
+  --light-ancent-lighter: hsl(226, 51%, 78%);
   --light-text-ancent: hsl(0, 3%, 11%);
   --light-text-1: hsl(220, 11%, 24%);
   --light-text-2: hsl(209, 26%, 26%);
@@ -2431,6 +2791,7 @@ body.light {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -2452,6 +2813,7 @@ body.light {
     --tab-btn: var(--light-tab-btn);
     --ancent: var(--light-ancent);
     --ancent-hover: var(--light-ancent-hover);
+    --ancent-lighter: var(--light-ancent-lighter);
     --text-ancent: var(--light-text-ancent);
     --text-1: var(--light-text-1);
     --text-2: var(--light-text-2);
@@ -2472,6 +2834,7 @@ body.dark {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -2492,6 +2855,7 @@ body.light {
   --tab-btn: var(--light-tab-btn);
   --ancent: var(--light-ancent);
   --ancent-hover: var(--light-ancent-hover);
+  --ancent-lighter: var(--light-ancent-lighter);
   --text-ancent: var(--light-text-ancent);
   --text-1: var(--light-text-1);
   --text-2: var(--light-text-2);
@@ -2504,7 +2868,7 @@ body.light {
 /*btnHover*/
 #progress {
   position: fixed;
-  background: var(--ancent-linear);
+  background: var(--ancent);
   z-index: 1000;
   bottom: 5%;
   right: 2.5%;
@@ -2513,23 +2877,23 @@ body.light {
   display: none;
   place-items: center;
   border-radius: 50%;
-  color: var(--ancent-linear);
+  color: var(--ancent);
   cursor: pointer;
 }
 
 #progress-value {
   display: grid;
-  height: calc(100% - 8px);
-  width: calc(100% - 8px);
+  height: calc(100% - 4px);
+  width: calc(100% - 4px);
   background: var(--bg);
   border-radius: 50%;
-  color: var(--text-3);
+  color: var(--ancent-lighter);
   place-items: center;
   font-size: 1.5rem;
 }
 
 @media screen and (max-width: 1250px) {
-  main {
+  .content {
     width: 90%;
     margin: 0 auto;
   }
@@ -2550,7 +2914,7 @@ body.light {
   }
 }
 :root {
-  --font: "Proza Libre";
+  --font: "Montserrat";
 }
 
 /*VARIABLES*/
@@ -2562,13 +2926,14 @@ body.light {
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
   --dark-btn-hover: hsl(212, 20%, 41%);
-  --dark-menu: hsl(213, 19%, 12%);
+  --dark-menu: hsla(213, 19%, 12%, 0.6);
   --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
   --dark-card-tag: hsl(218, 19%, 24%);
   --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
   --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
-  --dark-ancent: hsl(29, 100%, 50%);
-  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-ancent: hsl(29, 100%, 66%);
+  --dark-ancent-hover: hsl(29, 100%, 76%);
+  --dark-ancent-lighter: hsl(225, 22%, 20%);
   --dark-text-ancent: hsl(255, 12%, 18%);
   --dark-text-1: hsl(204, 21%, 91%);
   --dark-text-2: hsl(211, 20%, 76%);
@@ -2584,8 +2949,9 @@ body.light {
   --light-card-tag: hsl(210, 46%, 90%);
   --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
   --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
-  --light-ancent: hsl(29, 100%, 50%);
-  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-ancent: hsl(29, 100%, 56%);
+  --light-ancent-hover: hsl(29, 100%, 46%);
+  --light-ancent-lighter: hsl(226, 51%, 78%);
   --light-text-ancent: hsl(0, 3%, 11%);
   --light-text-1: hsl(220, 11%, 24%);
   --light-text-2: hsl(209, 26%, 26%);
@@ -2603,6 +2969,7 @@ body.light {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -2624,6 +2991,7 @@ body.light {
     --tab-btn: var(--light-tab-btn);
     --ancent: var(--light-ancent);
     --ancent-hover: var(--light-ancent-hover);
+    --ancent-lighter: var(--light-ancent-lighter);
     --text-ancent: var(--light-text-ancent);
     --text-1: var(--light-text-1);
     --text-2: var(--light-text-2);
@@ -2644,6 +3012,7 @@ body.dark {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -2664,6 +3033,7 @@ body.light {
   --tab-btn: var(--light-tab-btn);
   --ancent: var(--light-ancent);
   --ancent-hover: var(--light-ancent-hover);
+  --ancent-lighter: var(--light-ancent-lighter);
   --text-ancent: var(--light-text-ancent);
   --text-1: var(--light-text-1);
   --text-2: var(--light-text-2);
@@ -2779,6 +3149,8 @@ form, select, textarea, button, label {
   border-radius: 0.3125rem;
   background: var(--card-tag);
   box-shadow: var(--shadow);
+  font-size: 1rem;
+  color: var(--text-2);
 }
 .card-project__body {
   display: flex;
@@ -2809,7 +3181,7 @@ form, select, textarea, button, label {
   font-size: 1rem;
 }
 .card-project__body a:hover {
-  transform: translateY(-10%);
+  transform: translateY(-2px);
   background-color: var(--btn-hover);
 }
 
@@ -2893,7 +3265,7 @@ form, select, textarea, button, label {
 }
 
 @media screen and (max-width: 1250px) {
-  main {
+  .content {
     width: 90%;
     margin: 0 auto;
   }
@@ -2914,7 +3286,7 @@ form, select, textarea, button, label {
   }
 }
 :root {
-  --font: "Proza Libre";
+  --font: "Montserrat";
 }
 
 /*VARIABLES*/
@@ -2926,13 +3298,14 @@ form, select, textarea, button, label {
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
   --dark-btn-hover: hsl(212, 20%, 41%);
-  --dark-menu: hsl(213, 19%, 12%);
+  --dark-menu: hsla(213, 19%, 12%, 0.6);
   --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
   --dark-card-tag: hsl(218, 19%, 24%);
   --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
   --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
-  --dark-ancent: hsl(29, 100%, 50%);
-  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-ancent: hsl(29, 100%, 66%);
+  --dark-ancent-hover: hsl(29, 100%, 76%);
+  --dark-ancent-lighter: hsl(225, 22%, 20%);
   --dark-text-ancent: hsl(255, 12%, 18%);
   --dark-text-1: hsl(204, 21%, 91%);
   --dark-text-2: hsl(211, 20%, 76%);
@@ -2948,8 +3321,9 @@ form, select, textarea, button, label {
   --light-card-tag: hsl(210, 46%, 90%);
   --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
   --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
-  --light-ancent: hsl(29, 100%, 50%);
-  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-ancent: hsl(29, 100%, 56%);
+  --light-ancent-hover: hsl(29, 100%, 46%);
+  --light-ancent-lighter: hsl(226, 51%, 78%);
   --light-text-ancent: hsl(0, 3%, 11%);
   --light-text-1: hsl(220, 11%, 24%);
   --light-text-2: hsl(209, 26%, 26%);
@@ -2967,6 +3341,7 @@ form, select, textarea, button, label {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -2988,6 +3363,7 @@ form, select, textarea, button, label {
     --tab-btn: var(--light-tab-btn);
     --ancent: var(--light-ancent);
     --ancent-hover: var(--light-ancent-hover);
+    --ancent-lighter: var(--light-ancent-lighter);
     --text-ancent: var(--light-text-ancent);
     --text-1: var(--light-text-1);
     --text-2: var(--light-text-2);
@@ -3008,6 +3384,7 @@ body.dark {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -3028,6 +3405,7 @@ body.light {
   --tab-btn: var(--light-tab-btn);
   --ancent: var(--light-ancent);
   --ancent-hover: var(--light-ancent-hover);
+  --ancent-lighter: var(--light-ancent-lighter);
   --text-ancent: var(--light-text-ancent);
   --text-1: var(--light-text-1);
   --text-2: var(--light-text-2);
@@ -3079,7 +3457,7 @@ body.light {
 }
 
 @media screen and (max-width: 1250px) {
-  main {
+  .content {
     width: 90%;
     margin: 0 auto;
   }
@@ -3100,7 +3478,7 @@ body.light {
   }
 }
 :root {
-  --font: "Proza Libre";
+  --font: "Montserrat";
 }
 
 /*VARIABLES*/
@@ -3112,13 +3490,14 @@ body.light {
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
   --dark-btn-hover: hsl(212, 20%, 41%);
-  --dark-menu: hsl(213, 19%, 12%);
+  --dark-menu: hsla(213, 19%, 12%, 0.6);
   --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
   --dark-card-tag: hsl(218, 19%, 24%);
   --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
   --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
-  --dark-ancent: hsl(29, 100%, 50%);
-  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-ancent: hsl(29, 100%, 66%);
+  --dark-ancent-hover: hsl(29, 100%, 76%);
+  --dark-ancent-lighter: hsl(225, 22%, 20%);
   --dark-text-ancent: hsl(255, 12%, 18%);
   --dark-text-1: hsl(204, 21%, 91%);
   --dark-text-2: hsl(211, 20%, 76%);
@@ -3134,8 +3513,9 @@ body.light {
   --light-card-tag: hsl(210, 46%, 90%);
   --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
   --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
-  --light-ancent: hsl(29, 100%, 50%);
-  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-ancent: hsl(29, 100%, 56%);
+  --light-ancent-hover: hsl(29, 100%, 46%);
+  --light-ancent-lighter: hsl(226, 51%, 78%);
   --light-text-ancent: hsl(0, 3%, 11%);
   --light-text-1: hsl(220, 11%, 24%);
   --light-text-2: hsl(209, 26%, 26%);
@@ -3153,6 +3533,7 @@ body.light {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -3174,6 +3555,7 @@ body.light {
     --tab-btn: var(--light-tab-btn);
     --ancent: var(--light-ancent);
     --ancent-hover: var(--light-ancent-hover);
+    --ancent-lighter: var(--light-ancent-lighter);
     --text-ancent: var(--light-text-ancent);
     --text-1: var(--light-text-1);
     --text-2: var(--light-text-2);
@@ -3194,6 +3576,7 @@ body.dark {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -3214,6 +3597,759 @@ body.light {
   --tab-btn: var(--light-tab-btn);
   --ancent: var(--light-ancent);
   --ancent-hover: var(--light-ancent-hover);
+  --ancent-lighter: var(--light-ancent-lighter);
+  --text-ancent: var(--light-text-ancent);
+  --text-1: var(--light-text-1);
+  --text-2: var(--light-text-2);
+  --text-3: var(--light-text-3);
+  --shadow: var(--light-shadow);
+  --shadow-hero: var(--light-shadow-hero);
+}
+
+/*General - Variables*/
+/*btnHover*/
+.section-services {
+  display: flex;
+  flex-direction: column;
+}
+
+.section-services__cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
+  gap: 1.25rem;
+}
+
+.section-services__card {
+  display: flex;
+  padding: 1.25rem;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  border-radius: 0.625rem;
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+.section-services__card i {
+  font-size: 2.25rem;
+  background: var(--ancent);
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+/*VARIABLES*/
+:root {
+  --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
+  --black: #000;
+  --white: #fff;
+  --dark-bg: hsl(225, 22%, 4%);
+  --dark-bg-hover: hsl(225, 22%, 14%);
+  --dark-btn: hsl(205, 16%, 30%);
+  --dark-btn-hover: hsl(212, 20%, 41%);
+  --dark-menu: hsla(213, 19%, 12%, 0.6);
+  --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
+  --dark-card-tag: hsl(218, 19%, 24%);
+  --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
+  --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
+  --dark-ancent: hsl(29, 100%, 66%);
+  --dark-ancent-hover: hsl(29, 100%, 76%);
+  --dark-ancent-lighter: hsl(225, 22%, 20%);
+  --dark-text-ancent: hsl(255, 12%, 18%);
+  --dark-text-1: hsl(204, 21%, 91%);
+  --dark-text-2: hsl(211, 20%, 76%);
+  --dark-text-3: hsl(212, 18%, 71%);
+  --dark-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.25) inset, -1px -1px 2px 0px rgba(131, 131, 131, 0.05) inset;
+  --dark-shadow-hero: 0 0.05em 1em hsl(204, 21%, 91%);
+  --light-bg: hsl(210, 50%, 94%);
+  --light-bg-hover: hsl(210, 50%, 84%);
+  --light-btn: hsl(216, 15%, 76%);
+  --light-btn-hover: hsl(208, 17%, 67%);
+  --light-menu: hsl(0, 0%, 100%);
+  --light-card: linear-gradient(90deg, hsl(210, 36%, 96%) 0%, hsl(207, 39%, 95%) 99.91%);
+  --light-card-tag: hsl(210, 46%, 90%);
+  --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
+  --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
+  --light-ancent: hsl(29, 100%, 56%);
+  --light-ancent-hover: hsl(29, 100%, 46%);
+  --light-ancent-lighter: hsl(226, 51%, 78%);
+  --light-text-ancent: hsl(0, 3%, 11%);
+  --light-text-1: hsl(220, 11%, 24%);
+  --light-text-2: hsl(209, 26%, 26%);
+  --light-text-3: hsl(0, 0%, 37%);
+  --light-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --light-shadow-hero: 0 0.1em 1em hsl(220, 11%, 24%);
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light-bg);
+    --bg-hover: (--light-bg-hover);
+    --btn: var(--light-btn);
+    --btn-hover: var(--light-btn-hover);
+    --menu: var(--light-menu);
+    --card: var(--light-card);
+    --card-tag: var(--light-card-tag);
+    --tab: var(--light-tab);
+    --tab-btn: var(--light-tab-btn);
+    --ancent: var(--light-ancent);
+    --ancent-hover: var(--light-ancent-hover);
+    --ancent-lighter: var(--light-ancent-lighter);
+    --text-ancent: var(--light-text-ancent);
+    --text-1: var(--light-text-1);
+    --text-2: var(--light-text-2);
+    --text-3: var(--light-text-3);
+    --shadow: var(--light-shadow);
+    --shadow-hero: var(--light-shadow-hero);
+  }
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --bg-hover: (--light-bg-hover);
+  --btn: var(--light-btn);
+  --btn-hover: var(--light-btn-hover);
+  --menu: var(--light-menu);
+  --card: var(--light-card);
+  --card-tag: var(--light-card-tag);
+  --tab: var(--light-tab);
+  --tab-btn: var(--light-tab-btn);
+  --ancent: var(--light-ancent);
+  --ancent-hover: var(--light-ancent-hover);
+  --ancent-lighter: var(--light-ancent-lighter);
+  --text-ancent: var(--light-text-ancent);
+  --text-1: var(--light-text-1);
+  --text-2: var(--light-text-2);
+  --text-3: var(--light-text-3);
+  --shadow: var(--light-shadow);
+  --shadow-hero: var(--light-shadow-hero);
+}
+
+/*General - Variables*/
+/*btnHover*/
+/*VARIABLES*/
+:root {
+  --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
+  --black: #000;
+  --white: #fff;
+  --dark-bg: hsl(225, 22%, 4%);
+  --dark-bg-hover: hsl(225, 22%, 14%);
+  --dark-btn: hsl(205, 16%, 30%);
+  --dark-btn-hover: hsl(212, 20%, 41%);
+  --dark-menu: hsla(213, 19%, 12%, 0.6);
+  --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
+  --dark-card-tag: hsl(218, 19%, 24%);
+  --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
+  --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
+  --dark-ancent: hsl(29, 100%, 66%);
+  --dark-ancent-hover: hsl(29, 100%, 76%);
+  --dark-ancent-lighter: hsl(225, 22%, 20%);
+  --dark-text-ancent: hsl(255, 12%, 18%);
+  --dark-text-1: hsl(204, 21%, 91%);
+  --dark-text-2: hsl(211, 20%, 76%);
+  --dark-text-3: hsl(212, 18%, 71%);
+  --dark-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.25) inset, -1px -1px 2px 0px rgba(131, 131, 131, 0.05) inset;
+  --dark-shadow-hero: 0 0.05em 1em hsl(204, 21%, 91%);
+  --light-bg: hsl(210, 50%, 94%);
+  --light-bg-hover: hsl(210, 50%, 84%);
+  --light-btn: hsl(216, 15%, 76%);
+  --light-btn-hover: hsl(208, 17%, 67%);
+  --light-menu: hsl(0, 0%, 100%);
+  --light-card: linear-gradient(90deg, hsl(210, 36%, 96%) 0%, hsl(207, 39%, 95%) 99.91%);
+  --light-card-tag: hsl(210, 46%, 90%);
+  --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
+  --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
+  --light-ancent: hsl(29, 100%, 56%);
+  --light-ancent-hover: hsl(29, 100%, 46%);
+  --light-ancent-lighter: hsl(226, 51%, 78%);
+  --light-text-ancent: hsl(0, 3%, 11%);
+  --light-text-1: hsl(220, 11%, 24%);
+  --light-text-2: hsl(209, 26%, 26%);
+  --light-text-3: hsl(0, 0%, 37%);
+  --light-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --light-shadow-hero: 0 0.1em 1em hsl(220, 11%, 24%);
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light-bg);
+    --bg-hover: (--light-bg-hover);
+    --btn: var(--light-btn);
+    --btn-hover: var(--light-btn-hover);
+    --menu: var(--light-menu);
+    --card: var(--light-card);
+    --card-tag: var(--light-card-tag);
+    --tab: var(--light-tab);
+    --tab-btn: var(--light-tab-btn);
+    --ancent: var(--light-ancent);
+    --ancent-hover: var(--light-ancent-hover);
+    --ancent-lighter: var(--light-ancent-lighter);
+    --text-ancent: var(--light-text-ancent);
+    --text-1: var(--light-text-1);
+    --text-2: var(--light-text-2);
+    --text-3: var(--light-text-3);
+    --shadow: var(--light-shadow);
+    --shadow-hero: var(--light-shadow-hero);
+  }
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --bg-hover: (--light-bg-hover);
+  --btn: var(--light-btn);
+  --btn-hover: var(--light-btn-hover);
+  --menu: var(--light-menu);
+  --card: var(--light-card);
+  --card-tag: var(--light-card-tag);
+  --tab: var(--light-tab);
+  --tab-btn: var(--light-tab-btn);
+  --ancent: var(--light-ancent);
+  --ancent-hover: var(--light-ancent-hover);
+  --ancent-lighter: var(--light-ancent-lighter);
+  --text-ancent: var(--light-text-ancent);
+  --text-1: var(--light-text-1);
+  --text-2: var(--light-text-2);
+  --text-3: var(--light-text-3);
+  --shadow: var(--light-shadow);
+  --shadow-hero: var(--light-shadow-hero);
+}
+
+/*General - Variables*/
+/*btnHover*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+*::before,
+*::after {
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+}
+
+body {
+  min-height: 100vh;
+  scroll-behavior: smooth;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+ul, ol {
+  list-style: none;
+}
+
+a {
+  display: block;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+p a {
+  display: inline;
+}
+
+video, iframe, picture, figure {
+  max-width: 100%;
+  display: block;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  font-style: italic;
+  background-repeat: no-repeat;
+  background-size: cover;
+  shape-margin: 0.75rem;
+}
+
+form, select, textarea, button, label {
+  display: block;
+  font-family: inherit;
+  font-size: inherit;
+  color: inherit;
+}
+
+.sidelist {
+  position: fixed;
+  right: 0;
+  top: 0;
+  margin: 0 auto;
+  height: 100dvh;
+  width: 100%;
+  z-index: 8888;
+  background: var(--bg);
+  -webkit-backdrop-filter: blur(200px);
+          backdrop-filter: blur(200px);
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 3.75rem;
+  gap: 3.75rem;
+  overflow: hidden;
+}
+.sidelist .nav-menu {
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+}
+.sidelist__btns-resume {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.625rem;
+  padding: 0.75rem 1rem;
+  color: var(--text-1);
+  font-size: 1rem;
+  font-weight: 700;
+  background-color: var(--btn);
+  border-radius: 6.25rem;
+  transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
+  cursor: pointer;
+}
+.sidelist__btns-resume:hover {
+  transform: translateY(-2px);
+  background-color: var(--btn-hover);
+}
+
+@media screen and (max-width: 1250px) {
+  .content {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .about-me__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+:root {
+  --font: "Montserrat";
+}
+
+/*VARIABLES*/
+:root {
+  --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
+  --black: #000;
+  --white: #fff;
+  --dark-bg: hsl(225, 22%, 4%);
+  --dark-bg-hover: hsl(225, 22%, 14%);
+  --dark-btn: hsl(205, 16%, 30%);
+  --dark-btn-hover: hsl(212, 20%, 41%);
+  --dark-menu: hsla(213, 19%, 12%, 0.6);
+  --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
+  --dark-card-tag: hsl(218, 19%, 24%);
+  --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
+  --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
+  --dark-ancent: hsl(29, 100%, 66%);
+  --dark-ancent-hover: hsl(29, 100%, 76%);
+  --dark-ancent-lighter: hsl(225, 22%, 20%);
+  --dark-text-ancent: hsl(255, 12%, 18%);
+  --dark-text-1: hsl(204, 21%, 91%);
+  --dark-text-2: hsl(211, 20%, 76%);
+  --dark-text-3: hsl(212, 18%, 71%);
+  --dark-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.25) inset, -1px -1px 2px 0px rgba(131, 131, 131, 0.05) inset;
+  --dark-shadow-hero: 0 0.05em 1em hsl(204, 21%, 91%);
+  --light-bg: hsl(210, 50%, 94%);
+  --light-bg-hover: hsl(210, 50%, 84%);
+  --light-btn: hsl(216, 15%, 76%);
+  --light-btn-hover: hsl(208, 17%, 67%);
+  --light-menu: hsl(0, 0%, 100%);
+  --light-card: linear-gradient(90deg, hsl(210, 36%, 96%) 0%, hsl(207, 39%, 95%) 99.91%);
+  --light-card-tag: hsl(210, 46%, 90%);
+  --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
+  --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
+  --light-ancent: hsl(29, 100%, 56%);
+  --light-ancent-hover: hsl(29, 100%, 46%);
+  --light-ancent-lighter: hsl(226, 51%, 78%);
+  --light-text-ancent: hsl(0, 3%, 11%);
+  --light-text-1: hsl(220, 11%, 24%);
+  --light-text-2: hsl(209, 26%, 26%);
+  --light-text-3: hsl(0, 0%, 37%);
+  --light-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --light-shadow-hero: 0 0.1em 1em hsl(220, 11%, 24%);
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light-bg);
+    --bg-hover: (--light-bg-hover);
+    --btn: var(--light-btn);
+    --btn-hover: var(--light-btn-hover);
+    --menu: var(--light-menu);
+    --card: var(--light-card);
+    --card-tag: var(--light-card-tag);
+    --tab: var(--light-tab);
+    --tab-btn: var(--light-tab-btn);
+    --ancent: var(--light-ancent);
+    --ancent-hover: var(--light-ancent-hover);
+    --ancent-lighter: var(--light-ancent-lighter);
+    --text-ancent: var(--light-text-ancent);
+    --text-1: var(--light-text-1);
+    --text-2: var(--light-text-2);
+    --text-3: var(--light-text-3);
+    --shadow: var(--light-shadow);
+    --shadow-hero: var(--light-shadow-hero);
+  }
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --bg-hover: (--light-bg-hover);
+  --btn: var(--light-btn);
+  --btn-hover: var(--light-btn-hover);
+  --menu: var(--light-menu);
+  --card: var(--light-card);
+  --card-tag: var(--light-card-tag);
+  --tab: var(--light-tab);
+  --tab-btn: var(--light-tab-btn);
+  --ancent: var(--light-ancent);
+  --ancent-hover: var(--light-ancent-hover);
+  --ancent-lighter: var(--light-ancent-lighter);
+  --text-ancent: var(--light-text-ancent);
+  --text-1: var(--light-text-1);
+  --text-2: var(--light-text-2);
+  --text-3: var(--light-text-3);
+  --shadow: var(--light-shadow);
+  --shadow-hero: var(--light-shadow-hero);
+}
+
+/*General - Variables*/
+/*btnHover*/
+.section-toolstack .section-header {
+  margin-bottom: 3.125rem;
+}
+
+.toolstack__list {
+  margin: 0;
+  padding-inline: 0;
+  list-style: none;
+  display: flex;
+}
+.toolstack__list li {
+  background: var(--card);
+  border-radius: 0.625rem;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  gap: 0.625rem;
+  padding: 1.25rem;
+  box-shadow: var(--shadow);
+}
+.toolstack__list img {
+  width: 2.25rem;
+  height: auto;
+}
+
+.scroller {
+  max-width: 1220px;
+}
+
+.scroller__inner {
+  display: flex;
+  gap: 0.625rem;
+  padding-block: 0.625rem;
+  flex-wrap: wrap;
+}
+
+.scroller[data-animated=true] {
+  overflow: hidden;
+  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
+}
+
+.scroller[data-animated=true] .scroller__inner {
+  width: -moz-max-content;
+  width: max-content;
+  flex-wrap: nowrap;
+  animation: scroll 20s linear infinite;
+}
+
+@keyframes scroll {
+  to {
+    transform: translate(calc(-50% - 0.3125rem));
+  }
+}
+@media screen and (max-width: 1250px) {
+  .content {
+    width: 90%;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 750px) {
+  footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1.25rem;
+  }
+  .about-me__profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+}
+:root {
+  --font: "Montserrat";
+}
+
+/*VARIABLES*/
+:root {
+  --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
+  --black: #000;
+  --white: #fff;
+  --dark-bg: hsl(225, 22%, 4%);
+  --dark-bg-hover: hsl(225, 22%, 14%);
+  --dark-btn: hsl(205, 16%, 30%);
+  --dark-btn-hover: hsl(212, 20%, 41%);
+  --dark-menu: hsla(213, 19%, 12%, 0.6);
+  --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
+  --dark-card-tag: hsl(218, 19%, 24%);
+  --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
+  --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
+  --dark-ancent: hsl(29, 100%, 66%);
+  --dark-ancent-hover: hsl(29, 100%, 76%);
+  --dark-ancent-lighter: hsl(225, 22%, 20%);
+  --dark-text-ancent: hsl(255, 12%, 18%);
+  --dark-text-1: hsl(204, 21%, 91%);
+  --dark-text-2: hsl(211, 20%, 76%);
+  --dark-text-3: hsl(212, 18%, 71%);
+  --dark-shadow: 2px 2px 4px 0px rgba(131, 131, 131, 0.25) inset, -1px -1px 2px 0px rgba(131, 131, 131, 0.05) inset;
+  --dark-shadow-hero: 0 0.05em 1em hsl(204, 21%, 91%);
+  --light-bg: hsl(210, 50%, 94%);
+  --light-bg-hover: hsl(210, 50%, 84%);
+  --light-btn: hsl(216, 15%, 76%);
+  --light-btn-hover: hsl(208, 17%, 67%);
+  --light-menu: hsl(0, 0%, 100%);
+  --light-card: linear-gradient(90deg, hsl(210, 36%, 96%) 0%, hsl(207, 39%, 95%) 99.91%);
+  --light-card-tag: hsl(210, 46%, 90%);
+  --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
+  --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
+  --light-ancent: hsl(29, 100%, 56%);
+  --light-ancent-hover: hsl(29, 100%, 46%);
+  --light-ancent-lighter: hsl(226, 51%, 78%);
+  --light-text-ancent: hsl(0, 3%, 11%);
+  --light-text-1: hsl(220, 11%, 24%);
+  --light-text-2: hsl(209, 26%, 26%);
+  --light-text-3: hsl(0, 0%, 37%);
+  --light-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.1);
+  --light-shadow-hero: 0 0.1em 1em hsl(220, 11%, 24%);
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+@media (prefers-color-scheme: light) {
+  :root {
+    --bg: var(--light-bg);
+    --bg-hover: (--light-bg-hover);
+    --btn: var(--light-btn);
+    --btn-hover: var(--light-btn-hover);
+    --menu: var(--light-menu);
+    --card: var(--light-card);
+    --card-tag: var(--light-card-tag);
+    --tab: var(--light-tab);
+    --tab-btn: var(--light-tab-btn);
+    --ancent: var(--light-ancent);
+    --ancent-hover: var(--light-ancent-hover);
+    --ancent-lighter: var(--light-ancent-lighter);
+    --text-ancent: var(--light-text-ancent);
+    --text-1: var(--light-text-1);
+    --text-2: var(--light-text-2);
+    --text-3: var(--light-text-3);
+    --shadow: var(--light-shadow);
+    --shadow-hero: var(--light-shadow-hero);
+  }
+}
+body.dark {
+  --bg: var(--dark-bg);
+  --bg-hover: (--dark-bg-hover);
+  --btn: var(--dark-btn);
+  --btn-hover: var(--dark-btn-hover);
+  --menu: var(--dark-menu);
+  --card: var(--dark-card);
+  --card-tag: var(--dark-card-tag);
+  --tab: var(--dark-tab);
+  --tab-btn: var(--dark-tab-btn);
+  --ancent: var(--dark-ancent);
+  --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
+  --text-ancent: var(--dark-text-ancent);
+  --text-1: var(--dark-text-1);
+  --text-2: var(--dark-text-2);
+  --text-3: var(--dark-text-3);
+  --shadow: var(--dark-shadow);
+  --shadow-hero: var(--dark-shadow-hero);
+}
+
+body.light {
+  --bg: var(--light-bg);
+  --bg-hover: (--light-bg-hover);
+  --btn: var(--light-btn);
+  --btn-hover: var(--light-btn-hover);
+  --menu: var(--light-menu);
+  --card: var(--light-card);
+  --card-tag: var(--light-card-tag);
+  --tab: var(--light-tab);
+  --tab-btn: var(--light-tab-btn);
+  --ancent: var(--light-ancent);
+  --ancent-hover: var(--light-ancent-hover);
+  --ancent-lighter: var(--light-ancent-lighter);
   --text-ancent: var(--light-text-ancent);
   --text-1: var(--light-text-1);
   --text-2: var(--light-text-2);
@@ -3245,17 +4381,7 @@ h3 {
 p {
   font-weight: 400;
   color: var(--text-2);
-  line-height: 1.1;
-}
-
-.--large-bold {
-  font-size: 1.75rem;
-  font-weight: 700;
-  letter-spacing: 0.15625rem;
-}
-
-.--large {
-  font-size: 1.5rem;
+  line-height: 1.5;
 }
 
 .--regular-cap {
@@ -3267,6 +4393,7 @@ p {
 .--regular-bold {
   font-size: 1.25rem;
   font-weight: 700;
+  color: var(--ancent);
 }
 
 .--regular {
@@ -3282,6 +4409,10 @@ p {
   font-size: 0.75rem;
 }
 
+b {
+  color: var(--ancent);
+}
+
 /*VARIABLES*/
 :root {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
@@ -3291,13 +4422,14 @@ p {
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
   --dark-btn-hover: hsl(212, 20%, 41%);
-  --dark-menu: hsl(213, 19%, 12%);
+  --dark-menu: hsla(213, 19%, 12%, 0.6);
   --dark-card: linear-gradient(90deg, hsl(218, 19%, 12%) 0%, hsl(218, 20%, 8%) 99.91%);
   --dark-card-tag: hsl(218, 19%, 24%);
   --dark-tab: linear-gradient(90deg, hsl(207, 17%, 12%) 0%, hsl(213, 16%, 11%) 99.91%);
   --dark-tab-btn: linear-gradient(90deg, hsl(208, 18%, 21%) 0%, hsl(212, 14%, 18%) 99.91%);
-  --dark-ancent: hsl(29, 100%, 50%);
-  --dark-ancent-hover: hsl(29, 100%, 60%);
+  --dark-ancent: hsl(29, 100%, 66%);
+  --dark-ancent-hover: hsl(29, 100%, 76%);
+  --dark-ancent-lighter: hsl(225, 22%, 20%);
   --dark-text-ancent: hsl(255, 12%, 18%);
   --dark-text-1: hsl(204, 21%, 91%);
   --dark-text-2: hsl(211, 20%, 76%);
@@ -3313,8 +4445,9 @@ p {
   --light-card-tag: hsl(210, 46%, 90%);
   --light-tab: linear-gradient(90deg, hsl(0, 0%, 100%) 0%, hsl(0, 0%, 96%) 99.91%);
   --light-tab-btn: linear-gradient(90deg, hsl(210, 12%, 87%) 0%, hsl(210, 13%, 85%) 99.91%);
-  --light-ancent: hsl(29, 100%, 50%);
-  --light-ancent-hover: hsl(29, 100%, 40%);
+  --light-ancent: hsl(29, 100%, 56%);
+  --light-ancent-hover: hsl(29, 100%, 46%);
+  --light-ancent-lighter: hsl(226, 51%, 78%);
   --light-text-ancent: hsl(0, 3%, 11%);
   --light-text-1: hsl(220, 11%, 24%);
   --light-text-2: hsl(209, 26%, 26%);
@@ -3332,6 +4465,7 @@ p {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -3353,6 +4487,7 @@ p {
     --tab-btn: var(--light-tab-btn);
     --ancent: var(--light-ancent);
     --ancent-hover: var(--light-ancent-hover);
+    --ancent-lighter: var(--light-ancent-lighter);
     --text-ancent: var(--light-text-ancent);
     --text-1: var(--light-text-1);
     --text-2: var(--light-text-2);
@@ -3373,6 +4508,7 @@ body.dark {
   --tab-btn: var(--dark-tab-btn);
   --ancent: var(--dark-ancent);
   --ancent-hover: var(--dark-ancent-hover);
+  --ancent-lighter: var(--dark-ancent-lighter);
   --text-ancent: var(--dark-text-ancent);
   --text-1: var(--dark-text-1);
   --text-2: var(--dark-text-2);
@@ -3393,6 +4529,7 @@ body.light {
   --tab-btn: var(--light-tab-btn);
   --ancent: var(--light-ancent);
   --ancent-hover: var(--light-ancent-hover);
+  --ancent-lighter: var(--light-ancent-lighter);
   --text-ancent: var(--light-text-ancent);
   --text-1: var(--light-text-1);
   --text-2: var(--light-text-2);
@@ -3414,181 +4551,4 @@ body {
 a {
   text-decoration: none;
   font-size: 1.75rem;
-}
-
-/* Section Welcome */
-.section-welcome {
-  display: flex;
-  gap: 3.125rem;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-.section-welcome .h2--job {
-  position: relative;
-  display: inline-block;
-}
-.section-welcome .h2--job span {
-  background: var(--ancent);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  cursor: pointer;
-}
-.section-welcome .h2--job span:nth-child(odd) {
-  display: inline-block;
-  animation: shake 0.75s forwards;
-}
-.section-welcome .h2--job span:nth-child(odd):hover {
-  animation: goUp 2s ease-in-out;
-}
-.section-welcome .h2--job span:nth-child(even) {
-  display: inline-block;
-  animation: shake-opposite 0.75s forwards;
-}
-.section-welcome .h2--job span:nth-child(even):hover {
-  animation: goDown 0.5s ease-in-out;
-}
-.section-welcome p {
-  text-align: center;
-}
-.section-welcome hr {
-  width: 100%;
-  border: none;
-  height: 1px;
-  margin: 20px 0;
-  background-image: var(--ancent-linear);
-}
-
-@keyframes goUp {
-  0%, 100% {
-    transform: translateY(-10%);
-  }
-}
-@keyframes goDown {
-  0%, 100% {
-    transform: translateY(10%);
-  }
-}
-@keyframes shake {
-  0%, 100% {
-    transform: translate(0);
-  }
-  10%, 30%, 50%, 70%, 90% {
-    transform: translate(-4px, -2px);
-  }
-  20%, 40%, 60%, 80% {
-    transform: translate(2px, 2px);
-  }
-}
-@keyframes shake-opposite {
-  0%, 100% {
-    transform: translate(0);
-  }
-  10%, 30%, 50%, 70%, 90% {
-    transform: translate(2px, 2px);
-  }
-  20%, 40%, 60%, 80% {
-    transform: translate(-2px, -4px);
-  }
-}
-/* Section Services */
-.section-services {
-  display: flex;
-  flex-direction: column;
-}
-
-.section-services__cards {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));
-  gap: 1.25rem;
-}
-
-.section-services__card {
-  display: flex;
-  padding: 1.25rem;
-  flex-direction: column;
-  align-items: center;
-  gap: 1.25rem;
-  border-radius: 0.625rem;
-  background: var(--card);
-  box-shadow: var(--shadow);
-}
-.section-services__card i {
-  font-size: 3rem;
-  background: var(--ancent-linear);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-.section-services__card p {
-  line-height: 1.4;
-}
-
-/* Section Toolstack */
-.section-toolstack .section-header {
-  margin-bottom: 3.125rem;
-}
-
-.toolstack__list {
-  margin: 0;
-  padding-inline: 0;
-  list-style: none;
-  display: flex;
-}
-.toolstack__list li {
-  background: var(--card);
-  border-radius: 0.625rem;
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  align-items: center;
-  gap: 0.625rem;
-  padding: 1.25rem;
-  box-shadow: var(--shadow);
-}
-.toolstack__list img {
-  width: 3rem;
-  height: auto;
-  background: var(--ancent-linear);
-  background-clip: text;
-  -webkit-background-clip: text;
-  color: transparent;
-}
-
-.scroller {
-  max-width: 1220px;
-}
-.scroller__card {
-  background-color: lime;
-}
-
-.scroller__card {
-  background: lime;
-}
-
-.scroller__inner {
-  display: flex;
-  gap: 1.25rem;
-  padding-block: 1.25rem;
-  flex-wrap: wrap;
-}
-
-.scroller[data-animated=true] {
-  overflow: hidden;
-  -webkit-mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-  mask: linear-gradient(90deg, transparent, white 20%, white 80%, transparent);
-}
-
-.scroller[data-animated=true] .scroller__inner {
-  width: -moz-max-content;
-  width: max-content;
-  flex-wrap: nowrap;
-  animation: scroll 20s linear infinite;
-}
-
-@keyframes scroll {
-  to {
-    transform: translate(calc(-50% - 0.3125rem));
-  }
 }/*# sourceMappingURL=main.css.map */
