@@ -1,0 +1,58 @@
+@import 'breakpoints';
+@import 'font';
+@import 'function';
+@import 'variables';
+@import 'reset';
+
+.section-development {
+  overflow: hidden;
+  max-width: rem(1220);
+  margin: 0 auto;  
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+  &__header {
+    margin-top: rem(150);
+
+    hr {
+      border: 2px solid var(--ancent-lighter);
+    }
+  }
+
+  &__content {
+    margin-top: rem(50);
+    display: flex;
+    gap: rem(50);
+    justify-content: space-between;
+    align-items: start;
+
+    &-1 {
+      display: flex;
+      flex-direction: column;
+      gap: rem(20);
+    }
+  }
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: rem(10);
+  padding: rem(12) rem(16);
+  color: var(--text-1);
+  font-size: rem(16);
+  font-weight: 700;
+  background-color: var(--btn);
+  border-radius: rem(100);
+  transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
+  width: fit-content;
+  cursor: pointer;
+
+  &:hover {
+    transform: translateY(-2px);
+    background-color: (var(--btn-hover));
+  }
+}

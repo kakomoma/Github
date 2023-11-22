@@ -3,15 +3,6 @@
 @import 'function';
 @import 'reset';
 
-.page-transition {
-  opacity: 1;
-  transition: opacity 0.5s ease-in-out;
-}
-
-.page-hidden {
-  opacity: 0;
-}
-
 .menu {
   display: flex;
   align-items: center;

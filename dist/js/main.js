@@ -1,31 +1,3 @@
-/* PAGE TRANSITIONS */
-document.addEventListener('DOMContentLoaded', function () {
-  const links = document.querySelectorAll('a');
-
-  links.forEach(link => {
-    link.addEventListener('click', function (event) {
-      const targetPage = this.getAttribute('href');
-      const targetBlank = this.getAttribute('target') === '_blank';
-
-      // Añadir condición para excluir el enlace específico
-      const isExcludedLink = this.id === 'myLink';
-
-      if (!targetBlank && !isExcludedLink) {
-        event.preventDefault();
-        document.body.classList.add('page-hidden');
-
-        setTimeout(function () {
-          window.location.href = targetPage;
-        }, 500);
-      }
-    });
-  });
-
-  window.addEventListener('load', function () {
-    document.body.classList.remove('page-hidden');
-  });
-});
-
 /* MENU APPEARS AND DISAPPEARS  */
 // Obtén el elemento del navbar
 const navbar = document.getElementById("navbar");
@@ -80,13 +52,15 @@ function toggleNav() {
 
 /* LOGO- ANIMATION */
 document.addEventListener('DOMContentLoaded', function () {
-  // Obtener el elemento del logo
-  var logo = document.querySelector('.logo');
+  // Obtener todos los elementos del logo
+  var logos = document.querySelectorAll('.logo');
 
-  // Agregar la clase 'animate-logo' después de un breve retraso (por ejemplo, 1 segundo)
+  // Agregar la clase 'animate-logo' después de un breve retraso a cada logo
   setTimeout(function () {
-    logo.classList.add('animate-logo');
-  }, 1000); // 1000 milisegundos = 1 segundo
+    logos.forEach(function (logo) {
+      logo.classList.add('animate-logo');
+    });
+  }, 1000);
 });
 
 /* TOOGLE */
@@ -367,3 +341,9 @@ let calcScrollValue = () => {
 
 window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
+
+/* BACK BTN */
+function goBack() {
+  // Utiliza window.history para navegar hacia atrás
+  window.history.back();
+}

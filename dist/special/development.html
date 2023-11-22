@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang='en'>
+
+<head>
+  <meta charset='UTF-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+  <meta name='description' content='This is my portfolio, where i show my work as a product designer'>
+  <meta name='author' content='Alejandro Moreno'>
+  <meta name='keywords' content='Portfolio, product designer, UX/UI design, web development'>
+  <title>Alejandro Moreno - Poroduct designer</title>
+  <!--Favicon-->
+  <link rel='icon' type='image/x-icon' href='/dist/assets/i/favicon2.ico'>
+  <!--Icons-->
+  <script src="https://kit.fontawesome.com/35d35eeb85.js" crossorigin="anonymous"></script>
+  <!--CSS-->
+  <link rel='stylesheet' type='text/css' href='/dist/css/main.css'>
+</head>
+
+<body>
+  <nav class="sidelist">
+    <ul class="nav-menu">
+      <li class="nav-menu__item page-transition"><a href="index.html" class="nav-menu__link active">Home</a></li>
+      <li class="nav-menu__item page-transition"><a href="blog.html" class="nav-menu__link">Blog</a></li>
+      <li class="nav-menu__item page-transition"><a href="about-me.html" class="nav-menu__link">About me</a></li>
+    </ul>
+    <p>&copy; 2024 Alejandro Moreno</p>
+    <a class="sidelist__btns-resume" href="/dist/special/unavailable.html" target="_blank">Download resume</a>
+    <div class="social">
+      <div class="social-btn"><a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/"><i class="social-icon fa-brands fa-linkedin-in"></i></a></div>
+      <div class="social-btn"><a href="https://github.com/kakomoma"><i class="social-icon fa-brands fa-github"></i></a></div>
+      <div class="social-btn"><a href="https://wa.me/+34618110583"><i class="social-icon fa-brands fa-whatsapp"></i></a></div>
+      <div class="social-btn"><a href="mailto:alejandromorenomartin1990@gmail.com"><i class="social-icon fa-solid fa-envelope"></i></a></div>
+    </div>
+  </nav>
+  <div class="content">
+    <header class="menu" id="navbar">
+      <div class="menu-bt" onclick="toggleNav()">
+        <i class="fa-solid fa-bars"></i>
+      </div>
+      <a href="/dist/index.html" class="logo"><img src="/dist/assets/i/logo2.png" alt="Logo"></a>
+      <ul class="nav-menu">
+        <li class="nav-menu__item page-transition"><a href="index.html" class="nav-menu__link active">Home</a></li>
+        <li class="nav-menu__item page-transition"><a href="blog.html" class="nav-menu__link">Blog</a></li>
+        <li class="nav-menu__item page-transition"><a href="about-me.html" class="nav-menu__link">About me</a></li>
+      </ul>
+      <label class="toggle">
+        <input id="themeToggle" type="checkbox">
+        <i class="toggle-sun fa-regular fa-sun"></i>
+        <i class="toggle-moon fa-regular fa-moon"></i>
+      </label>
+    </header>
+    <main>
+      <section class="section-development">
+        <div class="section-development__header">
+          <h1>Excuse the improvements</h1>
+          <hr>
+        </div>
+        <div class="section-development__content">
+          <div class="section-development__content-1">
+            <p>This <b>content is under development</b> and will be available in a few days.</p>
+            <p>In the meantime, <b>you can contact me</b> through the links provided on the website, and I will address any
+              inquiries you may have.</p>
+            <p>Thank you for your patience and apologies for the improvements.</p>
+            <a onclick="goBack()" class="back-btn"><i class="fa-solid fa-arrow-left"></i>Go
+              back</a>            
+          </div>
+          <div class="section-development__content-2">
+            <img src="/dist/assets/img/development.png" alt="Development" width="600" height="600">
+          </div>          
+        </div>
+        <footer>
+          <a href="/dist/index.html" class="logo"><img src="/dist/assets/i/logo2.png" alt="Logo"></a>
+          <p>&copy; 2024 Alejandro Moreno</p>
+          <a class="hero__paragraph-btns-resume">Download resume</a>
+          <div class="social">
+            <div class="social-btn"><a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/" target="_blank"><i
+                  class="social-icon fa-brands fa-linkedin-in"></i></a></div>
+            <div class="social-btn"><a href="https://github.com/kakomoma" target="_blank"><i
+                  class="social-icon fa-brands fa-github"></i></a></div>
+            <div class="social-btn"><a href="https://wa.me/+34618110583" target="_blank"><i
+                  class="social-icon fa-brands fa-whatsapp"></i></a></div>
+            <div class="social-btn"><a href="mailto:alejandromorenomartin1990@gmail.com" target="_blank"><i
+                  class="social-icon fa-solid fa-envelope"></i></a></div>
+          </div>
+        </footer>
+      </section>
+    </main>
+       
+  </div>
+  <!--Scritps-->
+  <script defer src='/dist/js/main.js'></script>
+</body>
+
+</html>
