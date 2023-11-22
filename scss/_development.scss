@@ -7,7 +7,7 @@
 .section-development {
   overflow: hidden;
   max-width: rem(1220);
-  margin: 0 auto;  
+  margin: 0 auto;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -54,5 +54,19 @@
   &:hover {
     transform: translateY(-2px);
     background-color: (var(--btn-hover));
+  }
+}
+
+@media screen and (max-width: 1250px) {
+  .section-development {
+
+    &__content {
+      margin-top: rem(50);
+      display: flex;
+      flex-direction: column;
+      gap: rem(50);
+      justify-content: space-between;
+      align-items: start;     
+    }
   }
 }

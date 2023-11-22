@@ -1839,6 +1839,16 @@ form, select, textarea, button, label {
 }
 
 @media screen and (max-width: 1250px) {
+  .section-development__content {
+    margin-top: 3.125rem;
+    display: flex;
+    flex-direction: column;
+    gap: 3.125rem;
+    justify-content: space-between;
+    align-items: start;
+  }
+}
+@media screen and (max-width: 1250px) {
   .content {
     width: 90%;
     margin: 0 auto;
@@ -2468,6 +2478,7 @@ footer .hero__paragraph-btns-resume:hover {
 @media screen and (max-width: 1250px) {
   footer {
     display: flex;
+    flex-direction: column;
     flex-flow: nowrap;
     justify-content: space-between;
     bottom: 0;
@@ -3224,10 +3235,6 @@ form, select, textarea, button, label {
     background-color: var(--btn-hover);
   }
 }
-/* SCROLL STUFF */
-/* .scroll-down .menu {
-  transform: translate3d(0, -140%, 0);
-} */
 /*VARIABLES*/
 :root {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
