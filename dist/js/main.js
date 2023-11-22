@@ -27,28 +27,32 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /* MENU APPEARS AND DISAPPEARS  */
-/* const body = document.body;
-let lastScroll = 0;
+// Obtén el elemento del navbar
+const navbar = document.getElementById("navbar");
 
-window.addEventListener('scroll', () => {
-  const currentScroll = window.pageYOffset
+// Inicializa la posición de desplazamiento anterior
+let prevScrollPos = window.pageYOffset;
 
-  if (currentScroll <= 0) {
-    body.classList.remove("scroll-up")
+// Función para manejar el evento de desplazamiento
+function handleScroll() {
+  // Obtén la posición actual de desplazamiento
+  const currentScrollPos = window.pageYOffset;
+
+  // Compara la posición actual con la anterior
+  if (prevScrollPos > currentScrollPos) {
+    // Si haces scroll hacia arriba, muestra el navbar
+    navbar.style.top = "0";
+  } else {
+    // Si haces scroll hacia abajo, esconde el navbar completamente
+    navbar.style.top = `-${navbar.offsetHeight + 30}px`; // Ajusta el valor 10 según tus necesidades
   }
 
-  if (currentScroll > lastScroll && !body.classList.contains("scroll-down")) {
-    body.classList.remove("scroll-up")
-    body.classList.add("scroll-down")
-  }
+  // Actualiza la posición anterior
+  prevScrollPos = currentScrollPos;
+}
 
-  if (currentScroll < lastScroll && body.classList.contains("scroll-down")) {
-    body.classList.remove("scroll-down")
-    body.classList.add("scroll-up")
-  }
-
-  lastScroll = currentScroll;
-}); */
+// Agrega un event listener al evento de scroll
+window.addEventListener("scroll", handleScroll);
 
 /* MENU NAVIAGTION */
 function toggleNav() {
