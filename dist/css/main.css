@@ -338,9 +338,6 @@ form, select, textarea, button, label {
   margin-top: 6.25rem;
   gap: 6.25rem;
 }
-.blog__hero-title h1 {
-  color: var(--ancent);
-}
 .blog__hero-divider {
   display: flex;
   flex-direction: column;
@@ -354,6 +351,9 @@ form, select, textarea, button, label {
   display: flex;
   flex-direction: column;
   gap: 1.25rem;
+}
+.blog__content img {
+  margin: 1.25rem auto;
 }
 
 .blog__nav {
@@ -5013,18 +5013,21 @@ h1 {
   font-size: 3rem;
   font-weight: 700;
   line-height: 1.2;
+  color: var(--text-1);
 }
 
 h2 {
   font-size: 2.5rem;
   font-weight: 700;
   line-height: 1.2;
+  color: var(--text-1);
 }
 
 h3 {
-  font-size: 1.75rem;
-  font-weight: 500;
-  line-height: 1.2;
+  font-size: 1.5rem;
+  font-weight: 700;
+  line-height: 2;
+  color: var(--text-1);
 }
 
 p {

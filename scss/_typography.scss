@@ -7,18 +7,21 @@ h1 {
   font-size: rem(48);
   font-weight: 700;
   line-height: 1.2;
+  color: var(--text-1);
 }
 
 h2 {
   font-size: rem(40);
   font-weight: 700;
   line-height: 1.2;
+  color: var(--text-1);
 }
 
 h3 {
-  font-size: rem(28);
-  font-weight: 500;
-  line-height: 1.2;
+  font-size: rem(24);
+  font-weight: 700;
+  line-height: 2;
+  color: var(--text-1);
 }
 
 p {

@@ -10,10 +10,7 @@
   gap: rem(100);
 
   &-title {
-
-    h1 {
-      color: var(--ancent);
-    }
+    
   }
 
   &-divider {
@@ -31,6 +28,10 @@
   display: flex;
   flex-direction: column;
   gap: rem(20);
+
+  img{
+    margin: rem(20) auto;
+  }
 }
 
 .blog__nav {
