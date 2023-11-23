@@ -355,6 +355,13 @@ form, select, textarea, button, label {
 .blog__content img {
   margin: 1.25rem auto;
 }
+.blog__content ol,
+.blog__content li {
+  list-style-type: decimal;
+  padding: 0.625rem 1.25rem 0.625rem;
+  line-height: 1.5;
+  color: var(--text-2);
+}
 
 .blog__nav {
   display: flex;

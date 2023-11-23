@@ -32,6 +32,14 @@
   img{
     margin: rem(20) auto;
   }
+
+  ol, 
+  li{
+    list-style-type: decimal;    
+    padding: rem(10) rem(20) rem(10);
+    line-height: 1.5;
+    color: var(--text-2);
+  }
 }
 
 .blog__nav {
@@ -61,3 +69,4 @@
 .card-blog.hidden {
   display: none;
 }
+
