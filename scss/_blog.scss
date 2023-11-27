@@ -23,7 +23,7 @@
   &__header {
     display: flex;
     align-items: center;
-    gap: rem(20);
+    justify-content: space-between;    
 
     &-date {
       color: var(--text-3);

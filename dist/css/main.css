@@ -624,7 +624,7 @@ form, select, textarea, button, label {
 .card-blog__header {
   display: flex;
   align-items: center;
-  gap: 1.25rem;
+  justify-content: space-between;
 }
 .card-blog__header-date {
   color: var(--text-3);
@@ -5033,7 +5033,7 @@ h2 {
 h3 {
   font-size: 1.5rem;
   font-weight: 700;
-  line-height: 2;
+  line-height: 1.2;
   color: var(--text-1);
 }
 
