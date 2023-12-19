@@ -24,6 +24,13 @@ h3 {
   color: var(--text-1);
 }
 
+h4 {
+  font-size: rem(20);
+  font-weight: 500;
+  line-height: 1.2;
+  color: var(--text-1);
+}
+
 p {
   font-weight: 400;
   color: var(--text-2);
@@ -38,13 +45,13 @@ p {
 
 .--regular-bold {
   font-size: rem(20);
-  font-weight: 700; 
-  color: var(--ancent); 
+  font-weight: 700;
+  color: var(--ancent);
 }
 
 .--regular {
   font-size: rem(20);
-  line-height: 1.4;  
+  line-height: 1.4;
 }
 
 .--small {
@@ -55,9 +62,6 @@ p {
   font-size: rem(12);
 }
 
-b{
+b {
   color: var(--ancent);
 }
-
-
-

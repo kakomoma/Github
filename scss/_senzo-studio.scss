@@ -1,0 +1,18 @@
+@import 'breakpoints';
+@import 'font';
+@import 'function';
+@import 'variables';
+@import 'reset';
+
+.project-hero {
+  h2 {
+    margin-bottom: rem(100);
+  }
+}
+
+.section-header{
+  h2{
+    margin-bottom: rem(25);
+  }
+  margin-bottom: rem(50);
+}
