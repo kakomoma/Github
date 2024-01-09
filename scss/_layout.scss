@@ -12,4 +12,8 @@
 .section-header{
   display: flex;
   flex-direction: column;
+
+  p{
+    margin-top: -12.5px;
+  }
 }

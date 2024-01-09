@@ -37,14 +37,14 @@
             class="social-icon fa-solid fa-envelope"></i></a></div>
     </div>
   </nav>
-  <div class="content">
+  <div class="container">
     <header class="menu" id="navbar">
       <div class="menu-bt" onclick="toggleNav()">
         <i class="fa-solid fa-bars"></i>
       </div>
       <a href="../index.html" class="logo"><img src="../assets/i/logo2.png" alt="Logo"></a>
       <ul class="nav-menu">
-        <li class="nav-menu__item page-transition"><a href="../index.html" class="nav-menu__link active">Home</a></li>
+        <li class="nav-menu__item page-transition"><a href="../index.html" class="nav-menu__link">Home</a></li>
         <li class="nav-menu__item page-transition"><a href="../blog.html" class="nav-menu__link">Blog</a></li>
         <li class="nav-menu__item page-transition"><a href="../about-me.html" class="nav-menu__link">About me</a></li>
       </ul>
@@ -54,246 +54,273 @@
         <i class="toggle-moon fa-regular fa-moon"></i>
       </label>
     </header>
-    <main class="container">
-      <section class="project-hero">
+    <main class="container__project">
+      <section class="project-section__hero">
         <h2> <b>Senzo Studio</b> is a VFX agency that works for globally recognized production companies.</h2>
         <picture>
           <img src="../assets/projects/senzoStudio/project_cover.png" alt="Senzo Studio cover" decoding="async">
         </picture>
       </section>
-      <section class="project-introduction">
-        <div class="section-header">
-          <h2>Project goal</h2>
+      <section class="project-section project-section__introduction">
+        <div class="section__header">
+          <h2>Introduction</h2>
           <p class="--regular">The project consists of designing a website that allows Senzo Studio to gain visibility
             on the internet and strengthen their brand image.</p>
         </div>
-        <div class="project-introduction__info">
-          <div class="project-introduction__info-rol">
-            <h3>Rol</h3>
-            <p>Product designer</p>
+        <div class="project-section__introduction-info">
+          <div class="introduction-info__column">
+            <p class="--regular-cap">Rol</p>
+            <hr class="--gentle">
+            <p class="--regular">Product designer</p>
           </div>
-          <div class="project-introduction__info-date">
-            <h3>Date</h3>
-            <p>March, 2021</p>
+          <div class="introduction-info__column">
+            <p class="--regular-cap">Date</p>
+            <hr class="--gentle">
+            <p class="--regular">September, 2022</p>
           </div>
-          <div class="project-introduction__info-category">
-            <h3>Category</h3>
-            <p>Web design</p>
+          <div class="introduction-info__column">
+            <p class="--regular-cap">Category</p>
+            <hr class="--gentle">
+            <p class="--regular">Web design</p>
           </div>
-          <div class="project-introduction__info-timeline">
-            <h3>Timeline</h3>
-            <p>4 weeks</p>
+          <div class="introduction-info__column">
+            <p class="--regular-cap">Timeline</p>
+            <hr class="--gentle">
+            <p class="--regular">4 weeks</p>
           </div>
         </div>
       </section>
-      <hr>
-      <section class="project-research">
-        <h2>Research</h2>
-        <div class="project-user__interview">
-          <h3>User interviews & Job to be done</h3>
-          <p>For the analysis, I interviewed a VFX student and a film producer, a potential client of Senzo Studio. The
-            goal is to extract the information that both profiles need in order to build the website, including this
-            content.</p>
-          <div class="project-research__job-story">
-            <div class="job-story-title">
-              <img src="../assets/projects/senzoStudio/mario.png" alt="Mario González">
-              <h4>Mario González</h4>
-            </div>
-            <div class="job-story-intro">
-              <p><b>Age:</b> 21</p>
-              <p><b>Occupation:</b> VFX student</p>
-              <p><b>Location:</b> Madrid</p>
-            </div>
-            <div class="job-story-purpose">
-              <h4>What is your purpose?</h4>
-              <p>"I am looking to learn about animation techniques and tools used in the industry to improve my skills
-                and
-                stay on top of market trends. I'm also interested in being able to get my first job as a VFX artist to
-                improve my skills and launch my career".</p>
-            </div>
-            <div class="job-story-done">
-              <h4>Job to be done</h4>
-              <p>When <i>I just finished graduating as a VFX Artist</i> I want to <i>find a job opportunity</i> So I can
-                <i>that will allow me to get my first job and not delay my career as a VFX specialist</i>
+      <section class="project-section project-section__research">
+        <div class="section__header">
+          <h2>Research</h2>
+          <p class="--regular">For the research, conducted an interview with two potential users. Below are the
+            questions asked in the survey and an excerpt of the insights obtained.</p>
+        </div>
+        <div class="section__sub-section">
+          <div class="sub-section__header">
+            <h3>Survey</h3>
+            <p>After analyzing the type of user for Senzo Studio, I prepared the following list of questions.</p>
+          </div>
+          <ol>
+            <li>
+              <p>How do you anticipate using Senzo Studio's website in your professional workflow within the VFX
+                industry?
               </p>
-            </div>
+            </li>
+            <li>
+              <p>Can you describe specific tasks or activities for which you would rely on Senzo Studio's website to
+                enhance your work?</p>
+            </li>
+            <li>
+              <p>In your opinion, what are the key functionalities or features that a VFX studio's website should offer
+                to
+                cater to your needs effectively?</p>
+            </li>
+            <li>
+              <p>What types of content or resources would you consider essential for a VFX studio's website to provide
+                in
+                order to be a valuable tool for professionals in the field?</p>
+            </li>
+            <li>
+              <p>Considering your role and responsibilities in the VFX industry, what specific tools or functionalities
+                do
+                you believe should be easily accessible on the Senzo Studio website to streamline your tasks?</p>
+            </li>
+          </ol>
+        </div>
+        <div class="section__sub-section">
+          <div class="sub-section__header">
+            <h3>Insights</h3>
+            <p>After asking the questions to the two users, I extracted the following information.</p>
           </div>
-          <div class="project-research__job-story">
-            <div class="job-story-title">
-              <img src="../assets/projects/senzoStudio/brian.png" alt="Brian Johnson">
-              <h4>Brian Johnson</h4>
+          <div class="personas">
+            <div class="user-persona">
+              <div class="user-persona__header">
+                <img src="../assets/projects/senzoStudio/mario.png" alt="Mario González" width="96px">
+                <div class="user-persona__header-info">
+                  <h4>Mario González</h4>
+                  <p>24</p>
+                  <p>VFX student</p>
+                  <p>Madrid</p>
+                </div>
+              </div>
+              <div class="user-persona__insight">
+                <p class="--regular">"Finding job opportunities after completing studies"</p>
+              </div>
             </div>
-            <div class="job-story-intro">
-              <p><b>Age:</b> 48</p>
-              <p><b>Occupation:</b> True Lights CEO</p>
-              <p><b>Location:</b> London</p>
-            </div>
-            <div class="job-story-purpose">
-              <h4>What is your purpose?</h4>
-              <p>"I need to speed up my production and post-production process so that I can meet the project's
-                deadlines
-                and the film can be released on the agreed-upon date".</p>
-            </div>
-            <div class="job-story-done">
-              <h4>Job to be done</h4>
-              <p>When <i>I just signed a new contract with a production company</i> I want to <i>speed up the
-                  post-production process</i> So I can <i>devliver the project on time</i></p>
-            </div>
-          </div>
-          <div class="project-research_user-story">
-            <div class="job-story-title">
-              <img src="" alt="Mario González">
-              <h4>Mario González</h4>
+            <div class="user-persona">
+              <div class="user-persona__header">
+                <img src="../assets/projects/senzoStudio/brian.png" alt="Pedro Jiménez" width="96px">
+                <div class="user-persona__header-info">
+                  <h4>Pedro Jiménez</h4>
+                  <p>42</p>
+                  <p>True Lights CEO</p>
+                  <p>Madrid</p>
+                </div>
+              </div>
+              <div class="user-persona__insight">
+                <p class="--regular">"Being able to showcase the work done for potential hiring"</p>
+              </div>
             </div>
           </div>
         </div>
-        <div class="project-user__storyMap">
-          <h3>User-story Map</h3>
-          <p>With a clear understanding of the jobs to be done, the user map is established.</p>
-          <div class="project-user__storyMap-images">
-            <div class="project-user__storyMap-images-1">
-              <p class="--regular">User-story map: web site feature to provide employment opportunities</p>
-              <img src="../assets/projects/senzoStudio/userStoryMap1.png" alt="User-story map 1" height="240"
-                width="480">
-            </div>
-            <div class="project-user__storyMap-images-1">
-              <p class="--regular">User-story map: web site feature to show work and experience</p>
-              <img src="../assets/projects/senzoStudio/userStoryMap2.png" alt="User-story map 1" height="240"
-                width="480">
-            </div>
+        <div class="section__sub-section">
+          <div class="sub-section__header">
+            <h3>User-story map</h3>
+            <p>With the information extracted from the survey, I create the user story maps for both users.</p>
+          </div>
+          <div class="storyMap">
+            <a href="../assets/projects/senzoStudio/marioUserStoryMap.png" target="_blank">
+              <img src="../assets/projects/senzoStudio/marioUserStoryMap.png" alt="User-story map Mario González">
+            </a>
+            <a href="../assets/projects/senzoStudio/pedroUserStoryMap.png" target="_blank">
+              <img src="../assets/projects/senzoStudio/pedroUserStoryMap.png" alt="User-story map Pedro Jiménez">
+            </a>
           </div>
         </div>
-        <div class="project-analysis__competitors">
-          <h3>Analysis of the competitors</h3>
-          <p>We identify who the main competitors are and establish the lines of study..</p>
-          <p><b>Purpose</b></p>
-          <p>One of the critical steps when developing a new product is finding out where you stand with the
-            competition. Competitive analysis is a necessary part of the design process to help businesses gain valuable
-            insight into the market, identify their products’ strengths and weaknesses, and develop effective product
-            strategies to create winning results.</p>
-          <p><b>What we did</b></p>
-          <p>We examined and collected data, from 18 different direct and indirect competitors (some provide by the
-            company and some chosen by the design team).</p>
-          <p><b>What was evaluated</b></p>
-          <ul>
-            <li>General UX
-              <ul>
-                <li>Customer journeys</li>
-                <li>User flows</li>
-                <li>Ease of use</li>
-                <li>Strenghts</li>
-                <li>Architecture and hierarchy
-                  <ul>
-                    <li>Prominent Call to Action per page and section</li>
-                    <li>Ease of navigation</li>
-                    <li>Layout</li>
-                    <li>Information presented at each point</li>
-                    <li>Division of content per customer segments</li>
-                  </ul>
-                </li>
-              </ul>
-            </li>
-            <li>Branding
-              <ul>
-                <li>General look and feel</li>
-                <li>Tone of voice and language</li>
-                <li>Industry slangs and language used per customer segment</li>
-              </ul>
-            </li>
-            <li>Customer segment
-              <ul>
-                <li>Employer</li>
-                <li>Job seeker - Multiple circunstances</li>
-                <li>Aprenctice</li>
-              </ul>
-            </li>
-            <li>Activities beyond website
-              <ul>
-                <li>Socal media presence</li>
-                <li>Customer service and interaction</li>
-                <li>Branding</li>
-              </ul>
-            </li>
-          </ul>
-          <p><b>Competitors</b></p>
-          <div class="scroller">
-            <ul class="toolstack__list scroller__inner">
-              <li><img src="../assets/projects/senzoStudio/MPC.png" alt="MPC"></li>
-              <li><img src="../assets/projects/senzoStudio/industrialLight&Magic.png" alt="Industrial Light&Magic"></li>
-              <li><img src="../assets/projects/senzoStudio/wetaFX.png" alt="Weta FX"></li>
-              <li><img src="../assets/projects/senzoStudio/framestore.png" alt="Framestore"></li>
-              <li><img src="../assets/projects/senzoStudio/doubleNegative.png" alt="Double Negative"></li>
-              <li><img src="../assets/projects/senzoStudio/cinesite.png" alt="Cinesite"></li>
-              <li><img src="../assets/projects/senzoStudio/twinePines.png" alt="Twine Pines"></li>
-              <li><img src="../assets/projects/senzoStudio/digitalDomain.png" alt="Digital Domain"></li>
-              <li><img src="../assets/projects/senzoStudio/elRanchito.png" alt="El Ranchito"></li>
-              <li><img src="../assets/projects/senzoStudio/theMonk.png" alt="The Monk"></li>
-              <li><img src="../assets/projects/senzoStudio/squeeze.png" alt="Squeeze"></li>
-            </ul>
+        <div class="section__sub-section">
+          <div class="sub-section__header">
+            <h3>Competitors</h3>
+            <p>I conduct an analysis of the leading VFX studios in the market, creating a competitor analysis, a
+              heuristic evaluation, and a content evaluation.</p>
+          </div>
+          <div class="benchmark">
+            <a href="../assets/projects/senzoStudio/competitorAnalysis.png" target="_blank">
+              <img src="../assets/projects/senzoStudio/competitorAnalysis.png" alt="Competitor analysis">
+            </a>
+            <a href="../assets/projects/senzoStudio/heuristicEvaluation.png" target="_blank">
+              <img src="../assets/projects/senzoStudio/heuristicEvaluation.png" alt="Heuristic evaluation">
+            </a>
+            <a href="../assets/projects/senzoStudio/contentEvaluation.png" target="_blank">
+              <img src="../assets/projects/senzoStudio/contentEvaluation.png" alt="Content evaluation">
+            </a>
           </div>
         </div>
       </section>
-      <section class="project-section__validation">
-        <h2>Validation</h2>
-        <h3>Card sorting</h3>
-        <img src="../assets/projects/senzoStudio/cardSorting.png" alt="Card sorting" height="240" width="480">
-      </section>
-      <section class="project-section__siteMap">
-        <h2>Site Map</h2>
-        <img src="../assets/projects/senzoStudio/Site map.png" alt="Card sorting" height="240" width="480">
-      </section>
-      <section class="project-section__screenShots">
-        <h2>Screen shots</h2>
-        <h3>Desktop version</h3>
-        <div class="project-screenshots__grid">
-          <img src="../assets/projects/senzoStudio/Desktop_Home.png" alt="Desktop screenshot1" height="120" width="240">
-          <img src="../assets/projects/senzoStudio/Desktop_Services.png" alt="Desktop screenshot2" height="120"
-            width="240">
-          <img src="../assets/projects/senzoStudio/Desktop_Projects.png" alt="Desktop screenshot3" height="120"
-            width="240">
-          <img src="../assets/projects/senzoStudio/Desktop_AboutUs.png" alt="Desktop screenshot4" height="120"
-            width="240">
-          <img src="../assets/projects/senzoStudio/Desktop_Career.png" alt="Desktop screenshot5" height="120"
-            width="240">
-          <img src="../assets/projects/senzoStudio/Desktop_Contact.png" alt="Desktop screenshot6" height="120"
-            width="240">
+      <section class="project-section project-section__validation">
+        <div class="section__header">
+          <h2>Validation</h2>
+          <p class="--regular">For the research, conducted an interview with two potential users. Below are the
+            questions asked in the survey and an excerpt of the insights obtained.</p>
         </div>
-        <h3>Mobile version</h3>
-        <div class="project-screenshots__grid">
-          <img src="../assets/projects/senzoStudio/Mobile_Home.png" alt="Mobile screenshot1" height="120" width="240">
-          <img src="../assets/projects/senzoStudio/Mobile_Services.png" alt="Mobile screenshot2" height="120"
-            width="240">
-          <img src="../assets/projects/senzoStudio/Mobile_Projects.png" alt="Mobile screenshot3" height="120"
-            width="240">
-          <img src="../assets/projects/senzoStudio/Mobile_AboutUs.png" alt="Mobile screenshot4" height="120"
-            width="240">
-          <img src="../assets/projects/senzoStudio/Mobile_Career.png" alt="Mobile screenshot5" height="120" width="240">
-          <img src="../assets/projects/senzoStudio/Mobile_Contact.png" alt="Mobile screenshot6" height="120"
-            width="240">
+        <a href="../assets/projects/senzoStudio/cardSorting.png" target="_blank">
+          <img src="../assets/projects/senzoStudio/cardSorting.png" alt="Card sorting">
+        </a>
+      </section>
+      <section class="project-section project-section__siteMap">
+        <div class="section__header">
+          <h2>Site map</h2>
+          <p class="--regular">With the clear content structure, I arrange the information architecture for the website.
+            It would look like this:</p>
+        </div>
+        <a href="../assets/projects/senzoStudio/siteMap.png" target="_blank">
+          <img src="../assets/projects/senzoStudio/siteMap.png" alt="Site map">
+        </a>
+      </section>
+      <section class="project-section project-section__screenShots">
+        <div class="section__header">
+          <h2>Screen shots</h2>
+          <p class="--regular">After completing the final design, I prepared a version for desktop and another version
+            for mobile devices.</p>
+        </div>
+        <div class="section__sub-section">
+          <div class="sub-section__header">
+            <h3>Desktop version</h3>
+            <p>The final design has a technological and futuristic style, in line with the type of service provided by
+              Senzo Studio. It includes the functionalities requested by users and extracted from the survey, along with
+              features typical of a website of this nature, as identified in the benchmark research.</p>
+          </div>
+          <div class="sub-section__grid-desktop">
+            <div class="sub-section__grid-image">
+              <img src="../assets/projects/senzoStudio/Desktop_Home.png" alt="Desktop screenshot 1">
+            </div>
+            <div class="sub-section__grid-image">
+              <img src="../assets/projects/senzoStudio/Desktop_Services.png" alt="Desktop screenshot 2">
+            </div>
+            <div class="sub-section__grid-image">
+              <img src="../assets/projects/senzoStudio/Desktop_Projects.png" alt="Desktop screenshot 3">
+            </div>
+            <div class="sub-section__grid-image">
+              <img src="../assets/projects/senzoStudio/Desktop_AboutUs.png" alt="Desktop screenshot 4">
+            </div>
+            <div class="sub-section__grid-image">
+              <img src="../assets/projects/senzoStudio/Desktop_Career.png" alt="Desktop screenshot 5">
+            </div>
+            <div class="sub-section__grid-image">
+              <img src="../assets/projects/senzoStudio/Desktop_Contact.png" alt="Desktop screenshot 6">
+            </div>
+          </div>
+        </div>
+        <div class="section__sub-section">
+          <div class="sub-section__header">
+            <h3>Mobile version</h3>
+            <p>I optimized the version for mobile devices. Here are some examples of the final result.</p>
+          </div>
+          <div class="sub-section__grid-mobile">
+            <div class="sub-section__grid-image">
+              <img src="../assets/projects/senzoStudio/Mobile_Home.png" alt="Desktop screenshot 1">
+            </div>
+            <div class="sub-section__grid-image">
+              <img src="../assets/projects/senzoStudio/Mobile_Services.png" alt="Desktop screenshot 2">
+            </div>
+            <div class="sub-section__grid-image">
+              <img src="../assets/projects/senzoStudio/Mobile_Projects.png" alt="Desktop screenshot 3">
+            </div>
+            <div class="sub-section__grid-image">
+              <img src="../assets/projects/senzoStudio/Mobile_AboutUs.png" alt="Desktop screenshot 4">
+            </div>
+            <div class="sub-section__grid-image">
+              <img src="../assets/projects/senzoStudio/Mobile_Career.png" alt="Desktop screenshot 5">
+            </div>
+            <div class="sub-section__grid-image">
+              <img src="../assets/projects/senzoStudio/Mobile_Contact.png" alt="Desktop screenshot 6">
+            </div>
+          </div>
         </div>
       </section>
-      <section class="project-section__prototype">
-        <h2>Prototype</h2>
-        <p>The project concludes with a prototyping in Figma, where the work is brought together for visualization.</p>
+      <section class="project-section project-section__prototype">
+        <div class="section__header">
+          <h2>Prototype</h2>
+          <p class="--regular">For a better overview of the project, I created a prototype in Figma for both versions.
+          </p>
+        </div>
         <div class="project-section__prototype-btns">
-          <a href="https://www.figma.com/proto/Afrea49uUSI6mKA9ks4eyC/SENZO?type=design&node-id=1101-90&viewport=366%2C654%2C0.02&t=EctfUC2dcnjiRofq-0&scaling=scale-down&starting-point-node-id=1361%3A13422&show-proto-sidebar=1"
-            target="_blank">Desktop prototype</a>
-          <a href="https://www.figma.com/proto/Afrea49uUSI6mKA9ks4eyC/SENZO?type=design&node-id=1101-90&viewport=366%2C654%2C0.02&t=EctfUC2dcnjiRofq-0&scaling=scale-down&starting-point-node-id=1361%3A21063&show-proto-sidebar=1"
-            target="_blank">Mobile prototype</a>
+          <a class="prototype-btn" href="https://www.figma.com/proto/Afrea49uUSI6mKA9ks4eyC/SENZO?type=design&node-id=1101-90&viewport=366%2C654%2C0.02&t=EctfUC2dcnjiRofq-0&scaling=scale-down&starting-point-node-id=1361%3A13422&show-proto-sidebar=1"
+            target="_blank">
+            Desktop prototype</a>
+          <a class="prototype-btn" href="https://www.figma.com/proto/Afrea49uUSI6mKA9ks4eyC/SENZO?type=design&node-id=1101-90&viewport=366%2C654%2C0.02&t=EctfUC2dcnjiRofq-0&scaling=scale-down&starting-point-node-id=1361%3A21063&show-proto-sidebar=1"
+            target="_blank">
+            Mobile prototype</a>
         </div>
       </section>
-      <section class="project-section__learnings">
-        <h2>Learnings</h2>
-        <ul>
-          <li>Market research</li>
-          <li>Data validation</li>
-          <li>Design patterns</li>
-          <li>Prototyping</li>
-        </ul>
+      <section class="project-section project-section__learnings">
+        <div class="section__header">
+          <h2>Learnings</h2>
+          <p class="--regular">Here are some of the lessons learned in the project.</p>
+        </div>
+        <ol>
+          <li>
+            <p>Market research</p>
+          </li>
+          <li>
+            <p>Data validation</p>
+          </li>
+          <li>
+            <p>Design patterns</p>
+          </li>
+          <li>
+            <p>Prototyping</p>
+          </li>
+        </ol>
       </section>
-      <section class="projects__nav">
+      <section class="project-section project-section__navigation">
+        <hr class="--gentle">
+        <div class="section__header">
+          <h2>Related articles</h2>
+          <p class="--regular">Discover other related articles.</p>
+        </div>
         <div class="blog__nav-header">
-          <hr>
+          <hr class="--gentle">
           <h2>Related articles</h2>
           <p class="--regular">Discover other related articles</p>
         </div>
@@ -342,7 +369,6 @@
           </div>
         </div>
       </section>
-
     </main>
     <footer>
       <a href="../index.html" class="logo"><img src="../assets/i/logo2.png" alt="Logo"></a>

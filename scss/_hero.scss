@@ -10,7 +10,7 @@
   gap: rem(100);
   max-width: rem(1220);
   margin: 0 auto;
-  margin-top: rem(250);
+  margin-top: rem(200);
 
   picture {
     width: 800px;
@@ -69,11 +69,7 @@
     flex-direction: column;
     gap: rem(25);
   
-  }
-  
-  hr {
-    border: 1px solid var(--ancent-lighter);
-  }
+  }  
 }
 
 @media screen and (max-width: 1250px) {
