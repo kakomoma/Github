@@ -18,6 +18,11 @@
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
@@ -145,6 +150,11 @@ body.light {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
@@ -418,6 +428,11 @@ form, select, textarea, button, label {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
@@ -711,6 +726,11 @@ form, select, textarea, button, label {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
@@ -1023,6 +1043,11 @@ body.light {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
@@ -1356,6 +1381,11 @@ form, select, textarea, button, label {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
@@ -1611,6 +1641,11 @@ body.light {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
@@ -1888,6 +1923,11 @@ form, select, textarea, button, label {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
@@ -2104,6 +2144,11 @@ body.light {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
@@ -2231,6 +2276,11 @@ body.light {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
@@ -2535,6 +2585,11 @@ footer .hero__paragraph-btns-resume:hover {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
@@ -2798,6 +2853,11 @@ body.light {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
@@ -2925,6 +2985,11 @@ body.light {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
@@ -3249,6 +3314,11 @@ form, select, textarea, button, label {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
@@ -3401,6 +3471,11 @@ body.light {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
@@ -3579,6 +3654,11 @@ body.light {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
@@ -3952,6 +4032,11 @@ form, select, textarea, button, label {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
@@ -4144,6 +4229,11 @@ body.light {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
@@ -4351,7 +4441,7 @@ form, select, textarea, button, label {
   gap: 1.25rem;
 }
 .container__project .project-section .section__sub-section {
-  margin-bottom: 6.25rem;
+  margin-top: 1.5625rem;
 }
 .container__project .project-section .section__sub-section ol {
   list-style-type: decimal;
@@ -4425,6 +4515,87 @@ form, select, textarea, button, label {
   grid-template-rows: repeat(2, 1fr);
   gap: 9.375rem;
 }
+.container__project .project-section .section__sub-section .sub-section__survey {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+}
+.container__project .project-section .section__sub-section .sub-section__survey-header {
+  display: flex;
+  padding: 1.5rem 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.5rem;
+  align-self: stretch;
+  background: var(--gray-light);
+  border-radius: 0.625rem 0.625rem 0px 0px;
+}
+.container__project .project-section .section__sub-section .sub-section__survey-header .title {
+  display: flex;
+  align-items: center;
+  gap: 3rem;
+  align-self: stretch;
+}
+.container__project .project-section .section__sub-section .sub-section__survey-header .title img {
+  width: 96px;
+}
+.container__project .project-section .section__sub-section .sub-section__survey-body {
+  display: flex;
+  padding: 3rem;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+  background: var(--white);
+}
+.container__project .project-section .section__sub-section .sub-section__survey-body .survey-question {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 1.5rem;
+  align-self: stretch;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+.container__project .project-section .section__sub-section .sub-section__survey-footer {
+  display: flex;
+  padding: 1.5rem 3rem;
+  justify-content: center;
+  align-items: center;
+  align-self: stretch;
+  border-radius: 0px 0px 0.625rem 0.625rem;
+  background: var(--gray-light);
+}
+.container__project .project-section .section__sub-section .sub-section__survey h3, .container__project .project-section .section__sub-section .sub-section__survey p {
+  color: var(--black);
+}
+.container__project .project-section .section__sub-section .color__container {
+  display: flex;
+  gap: 6.25rem;
+}
+.container__project .project-section .section__sub-section .color__container-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0.625rem;
+  gap: 0.625rem;
+}
+.container__project .project-section .section__sub-section .color__container-info .rectangle {
+  width: 15rem;
+  height: 7.5rem;
+  border-radius: 0.625rem;
+}
+.container__project .project-section .section__sub-section .color__container-info .rectangle-1 {
+  background-color: var(--senzo-primary);
+}
+.container__project .project-section .section__sub-section .color__container-info .rectangle-2 {
+  background-color: var(--senzo-secondary);
+}
 .container__project .project-section .sub-section__header {
   display: flex;
   flex-direction: column;
@@ -4444,22 +4615,31 @@ form, select, textarea, button, label {
   flex-direction: column;
   gap: 0.625rem;
 }
-.container__project .project-section__validation img {
-  width: 50%;
-}
-.container__project .project-section__siteMap img {
-  width: 50%;
-}
-.container__project .project-section__prototype-btns {
+.container__project .project-section .section__prototype {
   display: flex;
-  justify-content: flex-start;
-  gap: 6.25rem;
+  gap: 3.125rem;
 }
-.container__project .project-section__prototype-btns .prototype-btn {
+.container__project .project-section .section__prototype .sub-section__btn {
+  width: 20%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  background: var(--card);
+  box-shadow: var(--shadow);
+}
+.container__project .project-section .section__prototype .sub-section__btn img {
+  width: 48px;
+}
+.container__project .project-section .section__prototype .sub-section__btn .prototype-btn {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  width: 100%;
   gap: 0.625rem;
   padding: 0.75rem 1rem;
   color: var(--text-1);
@@ -4470,16 +4650,46 @@ form, select, textarea, button, label {
   transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
   cursor: pointer;
 }
-.container__project .project-section__prototype-btns .prototype-btn:hover {
+.container__project .project-section .section__prototype .sub-section__btn .prototype-btn:hover {
   transform: translateY(-2px);
   background-color: var(--btn-hover);
 }
-.container__project .project-section__learnings ol {
-  list-style-type: decimal;
-  margin-left: 1.5625rem;
+.container__project .project-section .section__navigation {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  gap: 1.5625rem;
 }
-.container__project .project-section__learnings ol li {
-  margin-bottom: 0.78125rem;
+.container__project .project-section .section__navigation .card-project {
+  width: 33%;
+}
+.container__project .project-section .section__learnings {
+  display: flex;
+  justify-content: space-between;
+}
+.container__project .project-section .section__learnings-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 1.25rem;
+  border-radius: 0.625rem;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  width: 20%;
+}
+.container__project .project-section .section__learnings-card i {
+  font-size: 24px;
+  color: var(--dark-ancent);
+}
+
+.project-section__validation img {
+  width: 50%;
+}
+
+.project-section__siteMap img {
+  width: 50%;
 }
 
 @media screen and (max-width: 1250px) {
@@ -4512,6 +4722,11 @@ form, select, textarea, button, label {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
@@ -4668,6 +4883,11 @@ body.light {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
@@ -4795,6 +5015,11 @@ body.light {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
@@ -5057,6 +5282,11 @@ form, select, textarea, button, label {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
@@ -5264,6 +5494,11 @@ body.light {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
@@ -5458,6 +5693,11 @@ b {
   --ancent-linear: linear-gradient(90deg, hsla(29, 100%, 60%, 1), hsla(29, 100%, 50%, 1), hsla(29, 100%, 40%, 1));
   --black: #000;
   --white: #fff;
+  --gray-dark: #cfcfcf;
+  --gray-light: #e6e6e6;
+  --senzo-primary: #FF0A44;
+  --senzo-secondary: #C1C1C1;
+  --senzo-background: #1E1E1E;
   --dark-bg: hsl(225, 22%, 4%);
   --dark-bg-hover: hsl(225, 22%, 14%);
   --dark-btn: hsl(205, 16%, 30%);
