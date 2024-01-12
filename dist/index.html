@@ -14,7 +14,7 @@
   <!--Icons-->
   <script src="https://kit.fontawesome.com/35d35eeb85.js" crossorigin="anonymous"></script>
   <!--CSS-->
-  <link rel='stylesheet' type='text/css' href='css/main.css'>  
+  <link rel='stylesheet' type='text/css' href='css/main.css'>
 </head>
 
 <body>
@@ -27,14 +27,18 @@
     <p>&copy; 2024 Alejandro Moreno</p>
     <a class="sidelist__btns-resume" href="assets/cert/resume.pdf" target="_blank">Resume</a>
     <div class="social">
-      <div class="social-btn"><a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/"><i class="social-icon fa-brands fa-linkedin-in"></i></a></div>
-      <div class="social-btn"><a href="https://github.com/kakomoma"><i class="social-icon fa-brands fa-github"></i></a></div>
-      <div class="social-btn"><a href="https://wa.me/+34618110583"><i class="social-icon fa-brands fa-whatsapp"></i></a></div>
-      <div class="social-btn"><a href="mailto:alejandromorenomartin1990@gmail.com"><i class="social-icon fa-solid fa-envelope"></i></a></div>
+      <div class="social-btn"><a href="https://www.linkedin.com/in/alejandromorenoproductdesigner/"><i
+            class="social-icon fa-brands fa-linkedin-in"></i></a></div>
+      <div class="social-btn"><a href="https://github.com/kakomoma"><i class="social-icon fa-brands fa-github"></i></a>
+      </div>
+      <div class="social-btn"><a href="https://wa.me/+34618110583"><i class="social-icon fa-brands fa-whatsapp"></i></a>
+      </div>
+      <div class="social-btn"><a href="mailto:alejandromorenomartin1990@gmail.com"><i
+            class="social-icon fa-solid fa-envelope"></i></a></div>
     </div>
   </nav>
   <div class="content">
-    <header class="menu" id="navbar">
+    <header>
       <div class="menu-bt" onclick="toggleNav()">
         <i class="fa-solid fa-bars"></i>
       </div>
@@ -48,16 +52,14 @@
         <input id="themeToggle" type="checkbox">
         <i class="toggle-sun fa-regular fa-sun"></i>
         <i class="toggle-moon fa-regular fa-moon"></i>
-      </label>      
+      </label>
     </header>
-    <main>
-      <section class="section-hero">
-        <picture>
-          <img src="assets/img/alejandro.jpg" width="300" height="300" alt="Alejandro Moreno" decoding="async">
-        </picture>
-        <div class="section-hero__content">
-          <h1 class="section-hero__title">Hi, I'm Alejandro, <b> product designer</b>.</h1>
-          <div class="section-hero__paragraph">            
+    <main class="container">
+      <section class="hero section-hero__index">
+        <img src="assets/img/alejandro.jpg" width="300" height="300" alt="Alejandro Moreno" decoding="async">
+        <div class="section-hero__index-content">
+          <h1>Hi, I'm Alejandro, <b> product designer</b>.</h1>
+          <div class="section-hero__index-content-paragraph">
             <h3>I'm currently working on a personal project with a group of people, designing and developing a
               mobile
               game called <b>Geomites.</b></h3>
@@ -70,14 +72,17 @@
               class="fa-solid fa-arrow-down"></i></a>
         </div>
       </section>
-      <section class="container section-projects">
-        <div id="my-section" class="section-header">
+      <section id="my-section" class="section section-projects">
+        <div class="section__header">
           <h2>Projects</h2>
-          <p class="--regular">This are some of the projects I have worked on</p>
+          <div class="section__header-quote">
+            <hr class="section__header-quote-line">
+            <p class="--regular">These are some of the projects I have worked on. If you have any proposals, I would be delighted to hear them.</p>
+          </div>
         </div>
         <!--Tabs-->
         <div class="tabs">
-          <button class="tab-button__recommended active" onclick="filterCardsProjects('all')">All</button>          
+          <button class="tab-button__recommended active" onclick="filterCardsProjects('all')">All</button>
           <button class="tab-button__recommended" onclick="filterCardsProjects('Mobile design')">Mobile design</button>
           <button class="tab-button__recommended" onclick="filterCardsProjects('Web design')">Web design</button>
         </div>
@@ -141,12 +146,14 @@
           </div>
         </div>
       </section>
-      <section class="container section-services">
-        <div class="section-header">
+      <section class="section section-services">
+        <div class="section__header">
           <h2>Skills</h2>
-          <p class="--regular">My goal is to unite users and business objectives in my designs. To achieve this, I
-            specialize in the following activities</p>
-        </div>
+          <div class="section__header-quote">
+            <hr class="section__header-quote-line">
+            <p class="--regular">My objective is to comprehend all stakeholders involved in the design process. Without a comprehensive understanding of the overall context, proposing effective solutions becomes challenging. These are the areas that empower me to engage in design.</p>
+          </div>
+        </div>        
         <div class="section-services__cards">
           <div class="section-services__card">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -186,13 +193,16 @@
           </div>
         </div>
       </section>
-      <section class="container section-toolstack">
-        <div class="section-header">
+      <section class="section section-toolstack">
+        <div class="section__header">
           <h2>Toolstack</h2>
-          <p class="--regular">As a designer, I strive to stay up-to-date on new technologies and tools. Here are some
-            of
-            the ones I typically use</p>
-        </div>
+          <div class="section__header-quote">
+            <hr class="section__header-quote-line">
+            <p class="--regular">As a designer, I strive to stay up-to-date on new technologies and tools. Here are some
+              of
+              the ones I typically use.</p>
+          </div>
+        </div>        
         <div class="scroller">
           <ul class="toolstack__list scroller__inner">
             <li><img src="assets/i/figma.png" alt="Figma"></li>
@@ -210,12 +220,14 @@
           </ul>
         </div>
       </section>
-      <section class="container section-testimonial">
-        <div class="section-header">
+      <section class="section section-testimonial">
+        <div class="section__header">
           <h2>Testimonial</h2>
-          <p class="--regular">Some of the people I collaborate with or have worked with have offered to write their
-            testimonies about that experience</p>
-        </div>
+          <div class="section__header-quote">
+            <hr class="section__header-quote-line">
+            <p class="--regular">Throughout my career, I have collaborated with numerous individuals. Some of them have kindly offered to provide testimonials about me in this section.</p>
+          </div>
+        </div>         
         <div class="section-testimonial__cards">
           <article class="card-testimonial grid1">
             <div class="testimonial-header">
@@ -236,7 +248,7 @@
             </p>
             <div class="testimonial-btn"><a href="https://www.linkedin.com/in/diego-villarroel-zaballos/"
                 target="_blank"><i class="testimonial-icon fa-brands fa-linkedin-in"></i></a></div>
-          </article>          
+          </article>
           <article class="card-testimonial grid2">
             <div class="testimonial-header">
               <div class="testimonial-image"><img src="assets/img/lluis-min.png" alt="Lluis Fortuny Marin"></div>
@@ -309,18 +321,21 @@
             </p>
             <div class="testimonial-btn"><a href="https://www.linkedin.com/in/llu%C3%ADs-fortuny-marin-a76999186/"
                 target="_blank"><i class="testimonial-icon fa-brands fa-linkedin-in"></i></a></div>
-          </article>         
+          </article>
         </div>
       </section>
-      <section class="container section-recommended">
-        <div class="section-header">
+      <section class="section section-recommended">
+        <div class="section__header">
           <h2>Recommended readings</h2>
-          <p class="--regular">I love reading and learning new things. Here are some readings I can
-            recommend to you</p>
-        </div>
+          <div class="section__header-quote">
+            <hr class="section__header-quote-line">
+            <p class="--regular">I love reading and learning new things. Here are some readings I can
+              recommend to you.</p>
+          </div>
+        </div>         
         <div class="tabs-button">
           <button class="tab-button__recommended active" onclick="filterCards('all')">All</button>
-          <button class="tab-button__recommended" onclick="filterCards('Design')">Design</button>          
+          <button class="tab-button__recommended" onclick="filterCards('Design')">Design</button>
           <button class="tab-button__recommended" onclick="filterCards('Psychology')">Psychology</button>
         </div>
         <div class="section-recommended__cards" id="cards-container">
@@ -496,11 +511,14 @@
           </div>
         </div>
       </section>
-      <section class="container section-faq">
-        <div class="section-header">
+      <section class="section section-faq">
+        <div class="section__header">
           <h2>FAQ</h2>
-          <p class="--regular">Some of the most frequently asked questions I receive</p>
-        </div>
+          <div class="section__header-quote">
+            <hr class="section__header-quote-line">
+            <p class="--regular">Here is a compilation of questions you may have. If you have any further inquiries, feel free to contact me.</p>
+          </div>
+        </div>        
         <section class="section-faq-accordion">
           <div class="accordion">
             <div class="accordion__item">

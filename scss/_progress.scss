@@ -16,8 +16,11 @@
   border-radius: 50%;
   color: var(--ancent);
   cursor: pointer;
-}
 
+  i {
+    color: var(--white);
+  }
+}
 
 #progress-value {
   display: grid;

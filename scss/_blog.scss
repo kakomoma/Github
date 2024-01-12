@@ -23,7 +23,7 @@
   &__header {
     display: flex;
     align-items: center;
-    justify-content: space-between;    
+    justify-content: space-between;
 
     &-date {
       color: var(--text-3);
@@ -63,6 +63,27 @@
   }
 }
 
+.card-author {
+  display: flex;
+  gap: rem(50); 
+  width: fit-content;
+  align-items: center;
+  justify-content: space-between;  
 
+  &__left {
+    display: flex;
+    gap: rem(25);
+    align-items: center;
+  }
 
+  img {
+    width: 72px;
+    border-radius: rem(200);
+  }
 
+  &__info {
+    display: flex;
+    flex-direction: column;
+    gap: rem(5);
+  }
+}

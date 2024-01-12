@@ -21,11 +21,7 @@
     flex-direction: column;
     gap: rem(50);
 
-    .section__header {
-      display: flex;
-      flex-direction: column;
-      gap: rem(20);
-    }
+   
 
     .section__sub-section {      
       margin-top: rem(25);
@@ -125,22 +121,26 @@
 
         &-header {
           display: flex;
-          padding: rem(24) rem(48);
+          padding: rem(12*8) rem(24) rem(12) rem(24);
           flex-direction: column;
           justify-content: center;
           align-items: center;
-          gap: rem(24);
+          gap: rem(12);
           align-self: stretch;
           background: var(--gray-light);
           border-radius: rem(10) rem(10) 0px 0px;
+          position: relative;
 
           .title {
             display: flex;
             align-items: center;
-            gap: rem(48);
+            gap: rem(24);
             align-self: stretch;
 
             img {
+              position: absolute;
+              top: rem(12);
+              right: 47.55%;
               width: 96px;
             }
           }
@@ -148,7 +148,7 @@
 
         &-body {
           display: flex;
-          padding: rem(48);
+          padding: rem(24);
           flex-direction: column;
           justify-content: center;
           align-items: flex-start;
@@ -160,7 +160,7 @@
             display: flex;
             justify-content: center;
             align-items: flex-start;
-            gap: rem(24);
+            gap: rem(12);
             align-self: stretch;
             width: fit-content;
           }
@@ -168,8 +168,8 @@
 
         &-footer {
           display: flex;
-          padding: rem(24) rem(48);
-          justify-content: center;
+          padding: rem(12) rem(24);
+          justify-content: flex-start;
           align-items: center;
           align-self: stretch;
           border-radius: 0px 0px rem(10) rem(10);
@@ -209,14 +209,7 @@
         }
       }
 
-    }
-
-    .sub-section__header {
-      display: flex;
-      flex-direction: column;
-      gap: rem(10);
-      margin-bottom: rem(50);
-    }
+    }  
 
     &__introduction-info {
       display: flex;

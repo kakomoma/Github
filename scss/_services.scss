@@ -3,11 +3,6 @@
 @import 'function';
 @import 'variables';
 
-.section-services {
-  display: flex;
-  flex-direction: column;
-}
-
 .section-services__cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(min(20rem, 100%), 1fr));

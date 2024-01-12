@@ -3,11 +3,11 @@
 @import 'function';
 @import 'reset';
 
-.menu {
+header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  max-width: 1250px;
+  max-width: 1220px;
   width: 90%;
   padding: rem(20);
   top: 0;

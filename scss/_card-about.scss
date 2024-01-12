@@ -3,9 +3,7 @@
 @import 'function';
 @import 'variables';
 
-.section-about-me{
-
-  
+.section-about-me{  
 
   &__introduction{
     display: flex;
@@ -174,7 +172,6 @@
     }
   }
 }
-
 
 @media screen and (max-width: 1250px) {
   .tab-content.active {

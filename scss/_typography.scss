@@ -11,15 +11,15 @@ h1 {
 }
 
 h2 {
-  font-size: rem(40);
+  font-size: rem(36);
   font-weight: 700;
   line-height: 1.2;
   color: var(--text-1);
 }
 
 h3 {
-  font-size: rem(24);
-  font-weight: 700;
+  font-size: rem(30);
+  font-weight: 600;
   line-height: 1.2;
   color: var(--text-1);
 }
@@ -32,9 +32,10 @@ h4 {
 }
 
 p {
+  font-size: rem(16);
   font-weight: 400;
   color: var(--text-2);
-  line-height: 1.2;
+  line-height: 1.6;
 }
 
 .--regular-cap {
@@ -50,8 +51,9 @@ p {
 }
 
 .--regular {
+  font-weight: 500;
   font-size: rem(20);
-  line-height: 1.2;
+  line-height: 1.4;
 }
 
 .--small {
@@ -68,4 +70,9 @@ b {
 
 .--gentle {
   border: 1px solid var(--ancent-lighter);
+}
+
+.--special {
+  font-size: rem(56);
+  color: var(--ancent);
 }

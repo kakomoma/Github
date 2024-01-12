@@ -1,0 +1,25 @@
+@import 'breakpoints';
+@import 'font';
+@import 'function';
+@import 'variables';
+@import 'reset';
+
+.project-hero {
+  height: 100vh;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  
+  
+  &__content{
+    display: flex;
+    flex-direction: column;
+    gap: rem(50);
+    justify-content: center;
+    align-items: center;
+
+    img {
+      
+    }
+  }
+}

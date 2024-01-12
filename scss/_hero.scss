@@ -3,73 +3,47 @@
 @import 'function';
 @import 'variables';
 
-.section-hero {
-  height: 70vh;
-  display: flex;
-  flex-direction: row;
-  gap: rem(100);
-  max-width: rem(1220);
-  margin: 0 auto;
-  margin-top: rem(200);
+/* HERO INDEX */
 
-  picture {
-    width: 800px;
-    height: auto;
-    align-self: start;
-    background: var(--bg);
+.section-hero__index {  
+
+  img {
     border-radius: rem(10);
-    overflow: hidden;
-  
-    img {
-      border-radius: rem(10);
-      height: 100%;
-      max-height: inherit;
-      max-width: inherit;
-      min-width: inherit;
-      object-fit: cover;
-      object-position: center;
-      width: inherit;
-    }
+    max-width: 368px;
   }
-  
-  &__btn {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: rem(10);
-    padding: rem(12) rem(16);
-    color: var(--text-1);
-    background-color: var(--btn);
-    border-radius: rem(100);
-    transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
-    font-size: rem(16);
-    font-weight: 700;
-    width: fit-content;
-  
-    &:hover {
-      transform: translateY(-2px);
-      background-color: (var(--btn-hover));
-    }
-  }
-  
-  img,
-  picture {
-    display: block;
-    max-width: 100%;
-  }
-  
-  &__content {
+
+  &-content {
     display: flex;
     flex-direction: column;
     gap: rem(50);
+
+    &-paragraph {
+      display: flex;
+      flex-direction: column;
+      gap: rem(25);
+    }
+
+    a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: rem(10);
+      padding: rem(12) rem(16);
+      color: var(--text-1);
+      background-color: var(--btn);
+      border-radius: rem(100);
+      transition: all 0.25s cubic-bezier(1, -1.33, 0, 1.98);
+      font-size: rem(16);
+      font-weight: 700;
+      width: fit-content;
+
+      &:hover {
+        transform: translateY(-2px);
+        background-color: (var(--btn-hover));
+      }
+
+    }
   }
-  
-  &__paragraph {
-    display: flex;
-    flex-direction: column;
-    gap: rem(25);
-  
-  }  
 }
 
 @media screen and (max-width: 1250px) {
@@ -82,19 +56,19 @@
     max-width: rem(1220);
     margin: 0 auto;
     margin-top: rem(150);
-  
+
     picture {
       width: 300px;
-      height: 300px;    
+      height: 300px;
       background: var(--bg);
       border-radius: rem(10);
       overflow: hidden;
-    
+
       img {
-        border-radius: rem(10);      
+        border-radius: rem(10);
       }
     }
-    
+
     &__btn {
       display: flex;
       align-items: center;
@@ -108,31 +82,31 @@
       font-size: rem(16);
       font-weight: 700;
       width: fit-content;
-    
+
       &:hover {
         transform: translateY(-2px);
         background-color: (var(--btn-hover));
       }
     }
-    
+
     img,
     picture {
       display: block;
       max-width: 100%;
     }
-    
+
     &__content {
       display: flex;
       flex-direction: column;
       gap: rem(25);
     }
-    
+
     &__paragraph {
       display: flex;
       flex-direction: column;
       gap: rem(25);
-    
-    }  
-    
+
+    }
+
   }
 }

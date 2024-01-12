@@ -38,7 +38,7 @@
     </div>
   </nav>
   <div class="content">
-    <header class="menu">
+    <header>
       <div class="menu-bt" onclick="toggleNav()">
         <i class="fa-solid fa-bars"></i>
       </div>
@@ -54,22 +54,17 @@
         <i class="toggle-moon fa-solid fa-moon"></i>
       </label>
     </header>
-    <main>
-      <section class="container section-about-me">
-        <div class="section-header">
+    <main class="container">
+      <section class="section section-hero">
+        <div class="section__header">
           <h2>About me</h2>
-          <p class="--regular">Get to know a bit about what I've done and what I do</p>
-        </div>
-        <div class="section-about-me__introduction">
-          <p>I love <b>designing and creating digital experiences</b> that solve real user problems
-            and help companies achieve their goals. I consider myself a positive, proactive, methodical, self-taught
-            person,
-            and <b>I put my all</b> into every project I undertake.
-          </p>
-          <p>When I'm not working, I enjoy exercising, reading, traveling, spending time with family
-            and friends, cooking, and learning new skills.
-          </p>
-        </div>
+          <div class="section__header-quote">
+            <hr class="section__header-quote-line">
+            <p class="--regular">I love designing and creating digital experiences that solve real user problems
+              and help companies achieve their goals. I consider myself a positive, proactive, methodical, self-taught
+              person and I put my all into every project I undertake.</p>
+          </div>
+        </div>      
         <!--Tabs-->
         <div class="tabs">
           <button class="tab-button__about active" onclick="changeTab('educacion')" id="educacionBtn">Education</button>

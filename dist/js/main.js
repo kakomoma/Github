@@ -1,4 +1,5 @@
 /* MENU APPEARS AND DISAPPEARS  */
+
 // Obtén el elemento del navbar
 const navbar = document.getElementById("navbar");
 
@@ -27,6 +28,7 @@ function handleScroll() {
 window.addEventListener("scroll", handleScroll);
 
 /* MENU NAVIAGTION */
+
 function toggleNav() {
   var sidelist = document.querySelector('.sidelist');
   var menuBtn = document.querySelector('.menu-bt i');
@@ -51,6 +53,7 @@ function toggleNav() {
 }
 
 /* LOGO- ANIMATION */
+
 document.addEventListener('DOMContentLoaded', function () {
   // Obtener todos los elementos del logo
   var logos = document.querySelectorAll('.logo');
@@ -64,6 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 /* TOOGLE */
+
 const DARK_MODE = 'dark';
 const LIGHT_MODE = 'light';
 
@@ -112,6 +116,7 @@ loadAndUpdateColor();
 
 
 /* TABS */
+
 function changeTab(tab) {
   // Obtener todos los botones de pestañas
   var tabButtons = document.getElementsByClassName("tab-button__about");
@@ -141,6 +146,7 @@ function showTab(tabName) {
 }
 
 /* TOOLSTACK - SCROLLER */
+
 const scrollers = document.querySelectorAll(".scroller");
 
 // If a user hasn't opted in for recuded motion, then we add the animation
@@ -183,6 +189,7 @@ function resumeAnimation(event) {
 }
 
 /* FAQ */
+
 document.querySelectorAll('.accordion__question').forEach((item) => {
   item.addEventListener('click', (event) => {
     console.log('click!');
@@ -232,6 +239,7 @@ document.querySelectorAll('.accordion__question').forEach((item) => {
 });
 
 /* RECOMMENDED READINGS */
+
 function filterCards(category) {
   const cards = document.querySelectorAll('.card-recommended');
 
@@ -261,6 +269,7 @@ function filterCards(category) {
 filterCards('all');
 
 /* TABS PROJECTS */
+
 function filterCardsProjects(category) {
   const cards = document.querySelectorAll('.card-project');
 
@@ -290,6 +299,7 @@ function filterCardsProjects(category) {
 filterCardsProjects('all');
 
 /* TABS BLOG */
+
 function filterCardsBlog(category) {
   const cards = document.querySelectorAll('.card-blog');
 
@@ -319,6 +329,7 @@ function filterCardsBlog(category) {
 filterCardsBlog('all');
 
 /* PROGRESS BAR */
+
 let calcScrollValue = () => {
   let scrollProgress = document.getElementById("progress");
   let pos = document.documentElement.scrollTop;
@@ -343,7 +354,31 @@ window.onscroll = calcScrollValue;
 window.onload = calcScrollValue;
 
 /* BACK BTN */
+
 function goBack() {
   // Utiliza window.history para navegar hacia atrás
   window.history.back();
 }
+
+ /* BOTÓN "TAKE A LOOK" FROM INDEX */
+
+ document.addEventListener('DOMContentLoaded', function() {
+  // Función para manejar el clic en el enlace
+  function scrollToSection() {
+    const section = document.getElementById('my-section');
+    const yOffset = -200; // Ajusta este valor según tus necesidades
+
+    // Obtener la posición de la sección
+    const y = section.getBoundingClientRect().top + window.pageYOffset + yOffset;
+
+    // Desplazamiento suave
+    window.scrollTo({ top: y, behavior: 'smooth' });
+  }
+
+  // Agregar el evento de clic al enlace
+  const myLink = document.getElementById('myLink');
+  myLink.addEventListener('click', function(event) {
+    event.preventDefault(); // Evitar el comportamiento predeterminado del enlace
+    scrollToSection();
+  });
+}); 
